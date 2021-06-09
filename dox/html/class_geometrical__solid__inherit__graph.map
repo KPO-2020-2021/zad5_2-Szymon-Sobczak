@@ -1,0 +1,5 @@
+<map id="Geometrical_solid" name="Geometrical_solid">
+<area shape="rect" id="node1" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="31,5,171,32"/>
+<area shape="rect" id="node2" href="$class_cuboid.html" title="Klasa modelujaca w programie pojecie prostopadloscianu, ktorego wierzcholki i centrum sa wyrazone za ..." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$class_hexagonal__prism.html" title="Klasa modelujaca w programie pojecie graniastoslupa prawidlowego szesciokatnego, ktorego wierzcholki ..." alt="" coords="96,80,232,107"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Drone::Calculate_and_save_to_file_front_camera" name="Drone::Calculate_and_save_to_file_front_camera">
+<area shape="rect" id="node1" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych kamery przedniej do pli..." alt="" coords="5,90,207,131"/>
+<area shape="rect" id="node2" href="$class_cuboid.html#a46a9dbfb801dcd0e0a7e9773be14520a" title="Metoda pozwaljaca pobrac aktualny kat obrotu prostopadloscianu." alt="" coords="290,5,429,32"/>
+<area shape="rect" id="node3" href="$class_geometrical__solid.html#a1c03748a689e6596927b1358f141ff85" title="Metoda pozwalajaca na pobranie nazwy bryly geometrycznej." alt="" coords="267,57,452,98"/>
+<area shape="rect" id="node4" href="$class_hexagonal__prism.html#a816173bc7296b7b9ae88da8cf3a56872" title="Metoda pozawlajaca na transforamacje graniastoslupa prawidlowego szesciokatnego z ukladu lokalnego do..." alt="" coords="255,122,464,163"/>
+<area shape="rect" id="node7" href="$class_geometrical__solid.html#ac1b0e258250344308e07f7f7175e19f3" title="Metoda pozwalajaca na aktualizacje skali bryly geometrycznej." alt="" coords="285,187,433,229"/>
+<area shape="rect" id="node5" href="$matrix3x3_8hh.html#a09eb2fbe2cced0556e119e17cd95a8dd" title="Funkcja wypelniajaca Matrix3x3 wartosciaciami macierzy obrotu 3D w osi OZ, dla zadanego kata." alt="" coords="527,100,645,127"/>
+<area shape="rect" id="node6" href="$class_geometrical__solid.html#ade2f1d26e6ba5e52d6ac2bd18833dda2" title="Metoda pozwalajaca na pobranie skali bryly geometrycznej." alt="" coords="512,151,660,193"/>
+</map>

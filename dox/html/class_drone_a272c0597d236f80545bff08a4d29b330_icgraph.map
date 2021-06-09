@@ -1,0 +1,8 @@
+<map id="Drone::Calculate_and_save_to_file_rotor" name="Drone::Calculate_and_save_to_file_rotor">
+<area shape="rect" id="node1" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych wybranego rotora do pli..." alt="" coords="723,42,884,83"/>
+<area shape="rect" id="node2" href="$class_drone.html#aa10733e2e71e7316ee19f1a09c67331e" title="Metoda realizujaca zapis calego drona do pliku." alt="" coords="513,42,675,83"/>
+<area shape="rect" id="node3" href="$class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="108,24,265,51"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Glowna funkcja programu." alt="" coords="5,75,60,101"/>
+<area shape="rect" id="node5" href="$class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="119,125,255,152"/>
+<area shape="rect" id="node6" href="$class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="313,24,465,51"/>
+</map>

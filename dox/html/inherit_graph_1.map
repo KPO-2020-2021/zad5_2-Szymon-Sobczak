@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_geometrical__solid.html" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="5,31,145,57"/>
+<area shape="rect" id="node2" href="$class_cuboid.html" title="Klasa modelujaca w programie pojecie prostopadloscianu, ktorego wierzcholki i centrum sa wyrazone za ..." alt="" coords="228,5,295,32"/>
+<area shape="rect" id="node3" href="$class_hexagonal__prism.html" title="Klasa modelujaca w programie pojecie graniastoslupa prawidlowego szesciokatnego, ktorego wierzcholki ..." alt="" coords="193,56,329,83"/>
+</map>

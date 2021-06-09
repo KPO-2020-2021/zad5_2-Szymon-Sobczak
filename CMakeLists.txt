@@ -17,7 +17,8 @@ project(CPP_BOILERPLATE VERSION 1.2.3.4 LANGUAGES CXX)
 option(ENABLE_WARNINGS_SETTINGS "Allow target_set_warnings to add flags and defines.
                                  Set this to OFF if you want to provide your own warning parameters." ON)
 option(ENABLE_LTO "Enable link time optimization" ON)
-option(ENABLE_DOCTESTS "Include tests in the library. Setting this to OFF will remove all doctest related code.
+option(ENABLE_DOCTESTS "Include tests in the library. Setting this to OFF will remove all do
+est related code.
                         Tests in tests/*.cpp will still be enabled." ON)
 
 # Include stuff. No change needed.
@@ -37,13 +38,26 @@ find_lto(CXX)
 # --------------------------------------------------------------------------------
 #                         Locate files (change as needed).
 # --------------------------------------------------------------------------------
+
 set(SOURCES          # All .cpp files in src/
-    src/example.cpp
     src/lacze_do_gnuplota.cpp
+    src/Cuboid.cpp
+    src/Drone.cpp
+    src/Geometrical_solid.cpp
+    src/Hexagonal_prism.cpp
+    src/matrix3x3.cpp
+    src/Scene.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
-    tests/dummy.cpp
+    tests/test_vector3D.cpp
+    tests/test_vector3D_counters.cpp
+    tests/test_matrix3x3.cpp
+    tests/test_Cuboid.cpp
+    tests/test_Drone.cpp
+    tests/test_Geometrical_solid.cpp
+    tests/test_Hexagonal_prism.cpp
+    tests/test_Scene.cpp
 )
 set(LIBRARY_NAME program)  # Default name for the library built from src/*.cpp (change if you wish)
 

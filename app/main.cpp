@@ -1,176 +1,215 @@
-// Executables must have the following defined if the library contains
-// doctest definitions. For builds with this disabled, e.g. code shipped to
-// users, this can be left out.
+/* Executables must have the following defined if the library contains
+doctest definitions. For builds with this disabled, e.g. code shipped to
+users, this can be left out. */
+
+/*!
+    \file
+        \brief Plik zawierajacy "main" programu.
+*/
+
 #ifdef ENABLE_DOCTEST_IN_LIBRARY
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "../tests/doctest/doctest.h"
 #endif
 
-#include <iostream>
-#include <iomanip>
-#include <stdlib.h>
-#include <fstream>
-#include <string>
-
 #include "exampleConfig.h"
-#include "example.h"
 #include "vector.hh"
 #include "matrix.hh"
+#include "vector3D.hh"
+#include "matrix3x3.hh"
+#include "vector.hh"
+#include "Drone.hh"
+#include "Scene.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
-/*!
- * Simple main program that demontrates how access
- * CMake definitions (here the version number) from source code.
- * 
- * EDIT: dodane kreowanie wektorow i macierzy plus obsluga lacza do gnuplota
- */
+/*! \brief Glowna funkcja programu.*/
 
-#define DL_KROTKI_BOK  100
-#define DL_DLUGI_BOK   150
+int main(){
+   char Option; /* Inicjalizacja zmiennych tymczasowych */
+   double user_angle=0,distance = 0;
+   unsigned int nbr_of_act_drone=1;
+   PzG::LaczeDoGNUPlota Link; /* Zmienna potrzebna do wizualizacji rysunku sceny*/
+   Scene Scenery(Link); /* Inicjalizacja sceny */
 
-/*!
- * Przyklad zapisu wspolrzednych zbioru punktow do strumienia wyjściowego.
- * Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową
- * z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola 
- * to 16 miejsc, sposób wyrównywania - do prawej strony.
- * \param[in] StrmWy - strumien wyjsciowy, do ktorego maja zostac zapisane
- *                     kolejne wspolrzedne.
- * \param[in] Przesuniecie - ten parameter jest tylko po to, aby pokazać
- *                          mozliwosc zmiany wspolrzednych i prostokata
- *                          i zmiane jego polorzenia na okienku graficznym
- *                         rysownym przez gnuplota.
- * \retval true - gdy operacja zapisu powiodła się,
- * \retval false - w przypadku przeciwnym.
- */
-void PrzykladZapisuWspolrzednychDoStrumienia( std::ostream&     StrmWy, 
-                                              double       Przesuniecie
-                                            )
-{
-   //---------------------------------------------------------------
-   // To tylko przyklad !!!
-   // W programie nalezy uzywać pojęcia wektora, a nie oddzielnych 
-   // zmiennych do reprezentowania wspolrzednych!
-   //
-  double  x1, y1, x2, y2, x3, y3, x4, y4; 
+   try{
+      /* Zapis i wyswietlenie stanu poczatkowego dronow */
+      Scenery.use_active_drone().Calculate_and_save_to_file_drone();
+      Scenery.choose_drone(2);
 
-  x1 = y1 = 10;
-  x2 = x1 + DL_DLUGI_BOK;  y2 = y1;
-  x3 = x2;  y3 = y2 + DL_KROTKI_BOK;
-  x4 = x3 - DL_DLUGI_BOK; y4 = y3;
+      Scenery.use_active_drone().Calculate_and_save_to_file_drone();
+      Scenery.choose_drone(1);
+      
+      Link.Rysuj();
+      
+      std::cout << "Menu wyboru opcji:" << std::endl
+               << "\ta - wybierz aktywnego drona" << std::endl
+               << "\tp - zadaj parametry przelotu" << std::endl
+               << "\tm - wyswietl menu" << std::endl 
+               << "\tz - wykonaj zwiad" << std::endl << std::endl
+               << "\tk - koniec dzialania programu" << std::endl << std::endl;
+        
+      std::cout << "Laczna ilosc obiektow Wektor3D: " << Vector3D::get_counter_all_vectors() << std::endl;  
+      std::cout << "Aktualna ilosc obiektow Wektor3D: " << Vector3D::get_counter_actual_vectors() << std::endl; 
+        
+      while (Option != 'k'){ /* Glowna petla menu, dzialajaca do czasu wybrania opcji zakonczenia- k */
+         std::cout << "Twoj wybor? (m - menu) > ";
+         std::cin >> Option;
+         switch(Option){  
+            case 'a': /* Opcja pozwalajaca na zmiane aktywnego drona */
+               std::cout << "Obecnie aktywny dron: "<< nbr_of_act_drone << std::endl;
+               std::cout << "Wybor aktywnego drona: "<< std::endl;
+               
+               Scenery.choose_drone(1);
+               std::cout << "Dron 1. Polozenie x: " 
+                         << std::fixed << std::setprecision(5) << Scenery.get_active_drone().get_drone_location()[0] << "\ty: " 
+                         << std::fixed << std::setprecision(5) << Scenery.get_active_drone().get_drone_location()[1] << std::endl;
+               
+               Scenery.choose_drone(2);
+               std::cout << "Dron 2. Polozenie x: "   
+                         << std::fixed << std::setprecision(5) << Scenery.get_active_drone().get_drone_location()[0] << "\ty: " 
+                         << std::fixed << std::setprecision(5) << Scenery.get_active_drone().get_drone_location()[1] << std::endl;
+               while (true){
+                  try{
+                        std::cout << "Podaj numer drona, ktory ma byc aktywny: "<< std::endl;
+                        std::cin >> nbr_of_act_drone;
+                        if(std::cin.fail() || nbr_of_act_drone > 2)
+                           throw std::invalid_argument(":/ Podano bledny numer prostopadloscianu ");
+                        else{
+                           Scenery.choose_drone(nbr_of_act_drone);
+                           break;
+                        }
+                  }
+                  catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
+                     std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;
+                     std::cin.clear();
+                     std::cin.ignore(10000,'\n');   
+                  }
+               }
+               Link.Rysuj();
+            break;
+            
+            case 'p': /* Opcja pozwalajaca na przemieszenie aktywnego drona w okreslonym kierunku o okreslona dlugosc */
+               while (true){
+                  try{
+                        std::cout << "Podaj kat obrotu w stopniach > ";
+                        std::cin >> user_angle;
+                        if(std::cin.fail())
+                           throw std::invalid_argument(":/ Podano bledna wartosc kata obrotu ");
+                        std::cout << "Podaj dlugosc lotu > ";
+                        std::cin >> distance;
+                        if(std::cin.fail())
+                           throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
+                        else   
+                           break;
+                  }
+                  catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
+                        std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(10000,'\n');   
+                  }
+               }
 
+               /* Wyrysowanie sciezki przelotu */
+               std::cout << "Rysowanie zaplanowanej sciezki przelotu ... " << std::endl;
+               Scenery.use_active_drone().plan_path(user_angle,distance,Link);
+               Link.DodajNazwePliku("../datasets/path.dat");
+               usleep(100000);
+               
+               /* Wykonanie sekwencji ruchow drona */
+               std::cout << "Wznoszenie ... " << std::endl;    
+               Scenery.use_active_drone().go_verical(ALTITUDE,Link);
+               usleep(100000);
+                  
+               std::cout << "Przelot ... " << std::endl;    
+               Scenery.use_active_drone().go_horizontal(distance,user_angle,Link);
+               usleep(100000);
+               
+               std::cout << "Ladowanie ... " << std::endl;    
+               Scenery.use_active_drone().go_verical(-ALTITUDE,Link);
+               usleep(100000);
 
-  StrmWy << std::setw(16) << std::fixed << std::setprecision(10) << x1+Przesuniecie 
-         << std::setw(16) << std::fixed << std::setprecision(10) << y1+Przesuniecie << std::endl;
-  StrmWy << std::setw(16) << std::fixed << std::setprecision(10) << x2+Przesuniecie 
-         << std::setw(16) << std::fixed << std::setprecision(10) << y2+Przesuniecie << std::endl;
-  StrmWy << std::setw(16) << std::fixed << std::setprecision(10) << x3+Przesuniecie 
-         << std::setw(16) << std::fixed << std::setprecision(10) << y3+Przesuniecie << std::endl;
-  StrmWy << std::setw(16) << std::fixed << std::setprecision(10) << x4+Przesuniecie 
-         << std::setw(16) << std::fixed << std::setprecision(10) << y4+Przesuniecie << std::endl;
-  StrmWy << std::setw(16) << std::fixed << std::setprecision(10) << x1+Przesuniecie 
-         << std::setw(16) << std::fixed << std::setprecision(10) << y1+Przesuniecie << std::endl; 
-                             // Jeszcze raz zapisujemy pierwszy punkt,
-                             // aby gnuplot narysowal zamkniętą linię.
-}
+               std::cout << "Dron wyladowal ... " << std::endl; 
+               
+               Link.UsunNazwePliku("../datasets/path.dat");
 
+               Link.Rysuj();
+            break;
+            
+            case 'm': /* Opcja wyswietlajaca dostepne w menu opcje */  
+               std::cout << "Menu wyboru opcji:" << std::endl
+               << "\ta - wybierz aktywnego drona" << std::endl
+               << "\tp - zadaj parametry przelotu" << std::endl
+               << "\tm - wyswietl menu" << std::endl 
+               << "\tz - wykonaj zwiad" << std::endl << std::endl
+               << "\tk - koniec dzialania programu" << std::endl << std::endl;
+            break;
+               
+            case 'k': /* Opcja konczaca program */
+               std::cout << "Konczenie pracy programu ..." << std::endl;
+            break;
 
+            case 'z': /* Opcjaq pozwalajaca na wykonanie zwiadu, predefiniowanego ruchu po osmiokacie */
+               
+               std::cout << "Wykonywanie zwiadu ..." << std::endl;
 
-/*!
- * Przyklad zapisu wspolrzednych zbioru punktow do pliku, z ktorego
- * dane odczyta program gnuplot i narysuje je w swoim oknie graficznym.
- * \param[in] sNazwaPliku - nazwa pliku, do którego zostana zapisane
- *                          wspolrzędne punktów.
- * \param[in] Przesuniecie - ten parameter jest tylko po to, aby pokazać
- *                          mozliwosc zmiany wspolrzednych i prostokata
- *                          i zmiane jego polorzenia na okienku graficznym
- *                         rysownym przez gnuplota.
- * \retval true - gdy operacja zapisu powiodła się,
- * \retval false - w przypadku przeciwnym.
- */
-bool PrzykladZapisuWspolrzednychDoPliku( const char  *sNazwaPliku,
-                                         double       Przesuniecie
-                                       )
-{
-  std::ofstream  StrmPlikowy;
+               /* Wyrysowanie sciezki zwiadu */
+               std::cout << "Rysowanie zaplanowanej sciezki przelotu ... " << std::endl;
+               Scenery.use_active_drone().plan_reacon(Link);
+               Link.DodajNazwePliku("../datasets/path_reacon.dat");
+               Link.Rysuj();
+               usleep(100000);
 
-  StrmPlikowy.open(sNazwaPliku);
-  if (!StrmPlikowy.is_open())  {
-    std::cerr << ":(  Operacja otwarcia do zapisu \"" << sNazwaPliku << "\"" << std::endl
-	 << ":(  nie powiodla sie." << std::endl;
-    return false;
-  }
+                /* Wykonanie sekwencji ruchow drona podczas zwiadu */
+               std::cout << "Wznoszenie ... " << std::endl;    
+               Scenery.use_active_drone().go_verical(ALTITUDE,Link);
+               usleep(100000);
+               
+               std::cout << "Przelot ... " << std::endl;   
+               Scenery.use_active_drone().go_horizontal(REACON_RADIUS,0,Link);
+               usleep(100000);
 
-  PrzykladZapisuWspolrzednychDoStrumienia(StrmPlikowy, Przesuniecie);
+               Scenery.use_active_drone().update_angle(112.5);
+               Scenery.use_active_drone().go_horizontal(REACON_RADIUS/sqrt((2+sqrt(2))/2),112.5,Link);
+               usleep(100000);
 
-  StrmPlikowy.close();
-  return !StrmPlikowy.fail();
-}
+               for (unsigned int i = 0;i < 7 ; ++i){
+                  Scenery.use_active_drone().update_angle(45);
+                  Scenery.use_active_drone().go_horizontal(REACON_RADIUS/sqrt((2+sqrt(2))/2),45,Link);
+                  usleep(100000);
+               }
+            
+               Scenery.use_active_drone().update_angle(112.5);
+               Scenery.use_active_drone().go_horizontal(REACON_RADIUS,112.5,Link);
+               usleep(100000);
 
-int main() {
-  std::cout << "Project Rotation 2D based on C++ Boiler Plate v"
-            << PROJECT_VERSION_MAJOR /*duże zmiany, najczęściej brak kompatybilności wstecz */
-            << "."
-            << PROJECT_VERSION_MINOR /* istotne zmiany */
-            << "."
-            << PROJECT_VERSION_PATCH /* naprawianie bugów */
-            << "."
-            << PROJECT_VERSION_TWEAK /* zmiany estetyczne itd. */
-            << std::endl;
-  // std::system("cat ../LICENSE");
-  // do zadania Rotacja 2D
-  std::cout << "Vector:" << std::endl;
-  Vector tmpV1 = Vector();
-  std::cout << "Vector - konstruktor bezparametryczny:\n" << tmpV1 << std::endl;
-  double argumentsV[] = {1.0, 2.0};
-  Vector tmpV2 = Vector(argumentsV);
-  std::cout << "Vector - konstruktor parametryczny:\n" << tmpV2 << std::endl;
+               Scenery.use_active_drone().update_angle(180);
+               Scenery.use_active_drone().go_horizontal(0,180,Link);
+               usleep(10000);
 
-  std::cout << "Matrix:" << std::endl;
-  Matrix tmpM1 = Matrix();
-  std::cout << "Matrix - konstruktor bezparametryczny:\n" << tmpM1 << std::endl;
-  double argumentsM[][SIZE] = {{1.0, 2.0},{3.0, 4.0}};
-  Matrix tmpM2 = Matrix(argumentsM);
-  std::cout << "Matrix - konstruktor parametryczny:\n" << tmpM2 << std::endl;
+               std::cout << "Ladowanie ... " << std::endl;    
+               Scenery.use_active_drone().go_verical(-ALTITUDE,Link);
+               usleep(100000); 
 
-    PzG::LaczeDoGNUPlota  Lacze;  // Ta zmienna jest potrzebna do wizualizacji
-                                // rysunku prostokata
+               std::cout << "Dron wyladowal ... " << std::endl; 
 
-   //-------------------------------------------------------
-   //  Wspolrzedne wierzcholkow beda zapisywane w pliku "prostokat.dat"
-   //  Ponizsze metody powoduja, ze dane z pliku beda wizualizowane
-   //  na dwa sposoby:
-   //   1. Rysowane jako linia ciagl o grubosci 2 piksele
-   //
-  Lacze.DodajNazwePliku("../datasets/prostokat.dat",PzG::RR_Ciagly,2);
-   //
-   //   2. Rysowane jako zbior punktow reprezentowanych przez kwadraty,
-   //      których połowa długości boku wynosi 2.
-   //
-  Lacze.DodajNazwePliku("../datasets/prostokat.dat",PzG::RR_Punktowy,2);
-   //
-   //  Ustawienie trybu rysowania 2D, tzn. rysowany zbiór punktów
-   //  znajduje się na wspólnej płaszczyźnie. Z tego powodu powoduj
-   //  jako wspolrzedne punktow podajemy tylko x,y.
-   //
-  Lacze.ZmienTrybRys(PzG::TR_2D);
+               Link.UsunNazwePliku("../datasets/path_reacon.dat");
+               Link.Rysuj();
+            break;
 
-  PrzykladZapisuWspolrzednychDoStrumienia(std::cout,0);
-  if (!PrzykladZapisuWspolrzednychDoPliku("../datasets/prostokat.dat",0)) return 1;
-  Lacze.Rysuj(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-  std::cout << "Naciśnij ENTER, aby kontynuowac" << std::endl;
-  std::cin.ignore(100000,'\n');
-   //----------------------------------------------------------
-   // Ponownie wypisuje wspolrzedne i rysuje prostokąt w innym miejscu.
-   //
-  PrzykladZapisuWspolrzednychDoStrumienia(std::cout,50);
-  if (!PrzykladZapisuWspolrzednychDoPliku("../datasets/prostokat.dat",50)) return 1;
-  Lacze.Rysuj(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
-  std::cout << "Naciśnij ENTER, aby kontynuowac" << std::endl;
-  std::cin.ignore(100000,'\n');
+            default: /* dzialanie, gdy podana opcja nie bedzie uprzednio zdefiniowana */
+               std::cout << ":/ Opcja niezdefiniowana" << std::endl;
+         }
+         
+         /* Wypisanie licznika wszystkich instancji Wektora3D w porgramie, ktore powstaly */
+         std::cout << "Laczna ilosc obiektow Wektor3D: " << Vector3D::get_counter_all_vectors() << std::endl;  
 
-  // Z bazy projektu-wydmuszki Boiler Plate C++:
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
-}
+         /* Wypisanie licznika akutalnie istniejacych instancji Wektora3D w porgramie */
+         std::cout << "Aktualna ilosc obiektow Wektor3D: " << Vector3D::get_counter_actual_vectors() << std::endl << std::endl;   
+      }
+   }
+   catch (std::runtime_error & e){ /* W wyniku wyrzucenia bledu program poinformuje o tym i zakonczy swoje dzialanie */
+      std::cerr << ":O Wystapil blad!"<< std::endl << e.what() << std::endl;
+      exit(1);
+   }
+   return 0;
+} 

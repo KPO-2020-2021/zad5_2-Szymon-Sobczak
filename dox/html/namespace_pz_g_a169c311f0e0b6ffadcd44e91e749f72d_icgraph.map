@@ -1,0 +1,12 @@
+<map id="PzG::WczytajListeRoznychPunktow" name="PzG::WczytajListeRoznychPunktow">
+<area shape="rect" id="node1" title="Wczytuje z pliku listę punktów." alt="" coords="1109,74,1303,116"/>
+<area shape="rect" id="node2" href="$namespace_pz_g.html#a7227cb39c785b1c746b6bb5515c0b781" title="Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach." alt="" coords="827,74,1061,116"/>
+<area shape="rect" id="node3" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#aee10e48fe1b9fba6e2897b4ccfa27aef" title="Tworzy listę parametrów umożliwiających rysowanie brył z plików." alt="" coords="513,41,779,82"/>
+<area shape="rect" id="node4" href="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335" title="Generuje polecenie rysowania i przesyła je do gnuplota." alt="" coords="559,106,733,148"/>
+<area shape="rect" id="node5" href="$class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="108,38,265,64"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Glowna funkcja programu." alt="" coords="5,139,60,166"/>
+<area shape="rect" id="node7" href="$class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="119,139,255,166"/>
+<area shape="rect" id="node8" href="$class_drone.html#ab7c2b727392f63b2783ebb9bbbf72085" title="Metoda wyznaczajaca, zapisujaca oraz rysujaca sciezke pojedynczego przelotu." alt="" coords="120,190,253,216"/>
+<area shape="rect" id="node9" href="$class_drone.html#a97fe0330e4a247df2be8d8b1dbff8773" title="Metoda wyznaczajaca, zapisujaca oraz rysujaca sciezke zwiadu." alt="" coords="315,240,463,267"/>
+<area shape="rect" id="node10" href="$class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="313,38,465,64"/>
+</map>

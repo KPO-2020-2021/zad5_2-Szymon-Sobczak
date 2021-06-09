@@ -1,0 +1,13 @@
+<map id="Geometrical_solid.hh" name="Geometrical_solid.hh">
+<area shape="rect" id="node1" title="Definicja klasy Geometrical_solid." alt="" coords="174,5,334,32"/>
+<area shape="rect" id="node2" href="$_cuboid_8hh.html" title="Definicja klasy Cuboid." alt="" coords="65,80,152,107"/>
+<area shape="rect" id="node9" href="$_hexagonal__prism_8hh.html" title="Definicja klasy Cuboid." alt="" coords="176,80,332,107"/>
+<area shape="rect" id="node11" href="$_geometrical__solid_8cpp.html" title="Definicje metod klasy Geometrical_solid." alt="" coords="356,80,523,107"/>
+<area shape="rect" id="node3" href="$_drone_8hh.html" title="Definicja klasy Drone." alt="" coords="124,155,205,181"/>
+<area shape="rect" id="node8" href="$_cuboid_8cpp.html" title="Definicje metod klasy Cuboid." alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="Plik zawierajacy &quot;main&quot; programu." alt="" coords="45,304,127,331"/>
+<area shape="rect" id="node5" href="$_scene_8hh.html" title="Definicja klasy Scene." alt="" coords="124,229,205,256"/>
+<area shape="rect" id="node7" href="$_drone_8cpp.html" title="Definicje metod klasy Drone." alt="" coords="230,229,318,256"/>
+<area shape="rect" id="node6" href="$_scene_8cpp.html" title="Definicje metod klasy Drone." alt="" coords="151,304,239,331"/>
+<area shape="rect" id="node10" href="$_hexagonal__prism_8cpp.html" title="Definicje metod klasy Cuboid." alt="" coords="230,155,393,181"/>
+</map>
