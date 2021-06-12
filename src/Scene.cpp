@@ -20,8 +20,8 @@
 
 Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     Nbr_of_active_drone = 1;
-    double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3};
-    Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2);
+    double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3},val_ctr3[3]={30,30,3}, val_ctr4[3]={150,150,3};
+    Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2),center_of_drone3(val_ctr3),center_of_drone4(val_ctr4);
     Drone drone_1(center_of_drone1,1), drone_2(center_of_drone2,2); 
     
     Drones.push_back(drone_1);
@@ -29,6 +29,10 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
 
     Drones.push_back(drone_2);
     Drones.at(1).set_ID(2);
+
+    add_new_drone(center_of_drone3);
+
+    add_new_drone(center_of_drone4);
 
     Link.ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
     Link.UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
@@ -38,20 +42,20 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     PzG::InfoPlikuDoRysowania *File_info_bed = & Link.DodajNazwePliku("../datasets/bed.dat");
     File_info_bed -> ZmienKolor(4);
     File_info_bed -> ZmienSzerokosc(2); 
+    
+    Tab_of_properties_d1[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_fuselage.dat");
+    Tab_of_properties_d1[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor0.dat");
+    Tab_of_properties_d1[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor1.dat");
+    Tab_of_properties_d1[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor2.dat");
+    Tab_of_properties_d1[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor3.dat");
+    Tab_of_properties_d1[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_front_camera.dat");
 
-    Tab_of_properties_d1[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_fuselage.dat");
-    Tab_of_properties_d1[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor0.dat");
-    Tab_of_properties_d1[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor1.dat");
-    Tab_of_properties_d1[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor2.dat");
-    Tab_of_properties_d1[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor3.dat");
-    Tab_of_properties_d1[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_front_camera.dat");
-
-    Tab_of_properties_d2[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_fuselage.dat");
-    Tab_of_properties_d2[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_rotor0.dat");
-    Tab_of_properties_d2[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_rotor1.dat");
-    Tab_of_properties_d2[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_rotor2.dat");
-    Tab_of_properties_d2[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_rotor3.dat");
-    Tab_of_properties_d2[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_2_front_camera.dat");
+    Tab_of_properties_d2[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_fuselage.dat");
+    Tab_of_properties_d2[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor0.dat");
+    Tab_of_properties_d2[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor1.dat");
+    Tab_of_properties_d2[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor2.dat");
+    Tab_of_properties_d2[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor3.dat");
+    Tab_of_properties_d2[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_front_camera.dat");
 
     for (unsigned int i = 0; i < 6; ++i){
         Tab_of_properties_d1[i] -> ZmienSzerokosc(2);
@@ -67,9 +71,11 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
 */
 
 void Scene::choose_drone(unsigned int active_drone){
-    if(active_drone > Drones.size() || active_drone == 0)
+    
+    
+ /*    if(active_drone > Drones.size() || active_drone == 0)
       throw std::invalid_argument(":/ Podano bledny numer drona ");
-    else    
+    else   */  
         Nbr_of_active_drone = active_drone;
         
     if (active_drone==1){
@@ -91,14 +97,28 @@ void Scene::choose_drone(unsigned int active_drone){
 */
 
 Drone const & Scene::get_active_drone(){
-    return Drone_list[Nbr_of_active_drone-1];
+    return Drones.at(Nbr_of_active_drone-1);
 }
 
 /*!
     \return Instancje aktywnego drona z std::vector dronow. 
 */
-Drone & Scene::use_active_drone(){
-    return Drone_list.at(Nbr_of_active_drone-1);
+std::shared_ptr <Drone> Scene::use_active_drone(){
+    
+    int Number = Nbr_of_active_drone -1 ;
+    
+    auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
+        return (Ptr->get_obj_ID() == Number); 
+    };
+    
+    std::list<std::shared_ptr<Drone>>::iterator IteratorNaDrona =
+      std::find_if(Drone_list.begin(), Drone_list.end(), check_nbr);
+    
+    if (IteratorNaDrona == Drone_list.end()) {
+        throw std::invalid_argument(":/ Podano bledny numer drona ");
+    }
+
+    return *IteratorNaDrona;
 }
 
 /* void add_obstacle_plateau(){
@@ -109,4 +129,5 @@ void Scene::add_new_drone(Vector3D & position){
     std::shared_ptr<Drone> tmp_ptr = std::make_shared<Drone>(position, Number_of_drones++);
     Drone_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
+    Link.Rysuj();
 }

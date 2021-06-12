@@ -6,6 +6,8 @@
 #include <iomanip>
 #include <list>
 #include <memory>
+#include <algorithm>
+
 
 #include "Scene_object.hh"
 #include "Drone.hh"
@@ -74,13 +76,12 @@ class Scene{
         /*! \brief Metoda sluzaca pobraniu informacji o aktywnym dronie */
         Drone const & get_active_drone();
         
-        /*! \brief Metoda sluzaca probranu aktywnego drona aby dokonywac w nim zmian */
-        Drone & use_active_drone();
+        /*! \brief Metoda sluzaca probraniu aktywnego drona aby dokonywac w nim zmian */
+        std::shared_ptr <Drone> use_active_drone();
 
         /************************************************************************/
 
         void add_new_drone(Vector3D & position);
-
 
         void add_obstacle_plateau();
 };

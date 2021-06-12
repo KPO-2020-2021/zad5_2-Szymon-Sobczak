@@ -87,6 +87,8 @@ list
 -
 memory
 -
+algorithm
+-
 Scene_object.hh
 ../inc/Scene_object.hh
 Drone.hh

@@ -3,16 +3,14 @@ cmake_minimum_required(VERSION 3.12)
 # List all files containing tests. (Change as needed)
 set(TESTFILES        # All .cpp files in tests/
     main.cpp
-    test_vector3D.cpp
-    test_vector3D_counters
-    test_matrix3x3.cpp
-    test_Cuboid.cpp
-    test_Drone.cpp
-    test_Geometrical_solid.cpp
-    test_Hexagonal_prism.cpp
-    test_Scene.cpp
-    
-
+    # test_vector3D.cpp
+    # test_vector3D_counters
+    # test_matrix3x3.cpp
+    # test_Cuboid.cpp
+    # test_Drone.cpp
+    # test_Geometrical_solid.cpp
+    # test_Hexagonal_prism.cpp
+    # test_Scene.cpp
 )
 
 set(TEST_MAIN unit_tests)   # Default name for test executable (change if you wish).

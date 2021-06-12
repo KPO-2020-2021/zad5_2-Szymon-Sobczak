@@ -19,7 +19,7 @@
 
 Drone::Drone(Vector3D const & location, unsigned int ID) : Scene_object(ID, "dron"){
     drone_location = location;
-    Drone_ID = 0;
+    Drone_ID = ID;
     Orientation_angle = 0;
 }
 
@@ -34,7 +34,7 @@ void Drone::Calculate_and_save_to_file_fuselage(){
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = fuselage.Get_Name_of_file_global() + "No_" + std::to_string(Drone_ID) + "_fuselage.dat";
+    std::string name_of_file = fuselage.Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_fuselage.dat";
     
     FileStrm.open(name_of_file);
     if (!FileStrm.is_open()){
