@@ -39,6 +39,8 @@ vector3D.hh
 ../inc/vector3D.hh
 Cuboid.hh
 ../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
 Hexagonal_prism.hh
 ../inc/Hexagonal_prism.hh
 lacze_do_gnuplota.hh
@@ -81,10 +83,32 @@ cmath
 -
 iomanip
 -
+list
+-
+memory
+-
+Scene_object.hh
+../inc/Scene_object.hh
 Drone.hh
 ../inc/Drone.hh
 lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
+
+../inc/Scene_object.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+vector3D.hh
+../inc/vector3D.hh
+matrix3x3.hh
+../inc/matrix3x3.hh
+Geometrical_solid.hh
+../inc/Geometrical_solid.hh
 
 ../inc/lacze_do_gnuplota.hh
 string
@@ -149,6 +173,8 @@ Drone.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/app/Drone.hh
 Scene.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/app/Scene.hh
+Scene_object.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/app/Scene_object.hh
 ../inc/lacze_do_gnuplota.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc/lacze_do_gnuplota.hh
 

@@ -20,6 +20,7 @@ users, this can be left out. */
 #include "vector.hh"
 #include "Drone.hh"
 #include "Scene.hh"
+#include "Scene_object.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
 /*! \brief Glowna funkcja programu.*/

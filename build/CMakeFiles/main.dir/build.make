@@ -101,7 +101,11 @@ main_EXTERNAL_OBJECTS = \
 "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Geometrical_solid.cpp.o" \
 "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Hexagonal_prism.cpp.o" \
 "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/matrix3x3.cpp.o" \
-"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Scene.cpp.o"
+"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Scene.cpp.o" \
+"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Scene_object.cpp.o" \
+"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o" \
+"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o" \
+"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_plateau.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
 main: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
@@ -111,6 +115,10 @@ main: CMakeFiles/program.dir/src/Geometrical_solid.cpp.o
 main: CMakeFiles/program.dir/src/Hexagonal_prism.cpp.o
 main: CMakeFiles/program.dir/src/matrix3x3.cpp.o
 main: CMakeFiles/program.dir/src/Scene.cpp.o
+main: CMakeFiles/program.dir/src/Scene_object.cpp.o
+main: CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o
+main: CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o
+main: CMakeFiles/program.dir/src/Obs_plateau.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

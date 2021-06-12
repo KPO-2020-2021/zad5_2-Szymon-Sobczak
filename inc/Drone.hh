@@ -8,6 +8,7 @@
 #include "matrix3x3.hh"
 #include "vector3D.hh"
 #include "Cuboid.hh"
+#include "Scene_object.hh"
 #include "Hexagonal_prism.hh"
 #include "lacze_do_gnuplota.hh"
 
@@ -45,7 +46,7 @@
         - Zapis polaczonej bryly drona do pliku.                                                     
 */
 
-class Drone{
+class Drone: public Scene_object{
     private:
         /*! \brief Wektor3D reprezentujacy srodek graniastoslupa prawidlowego szesciokatnego w przestrzeni globalnej. */
         Vector3D drone_location;
@@ -76,7 +77,9 @@ class Drone{
 
     public:
         /*! \brief Konstrukotr klasy z parametrem. */
-        Drone(Vector3D const & location);
+        Drone(Vector3D const & location, unsigned int ID);
+ 
+        ~Drone() { std::cout << "bwah";}; 
 
         /*! \brief Metoda pozawalajaca nadac ID dronowi. */
         void set_ID(unsigned int const & new_ID);

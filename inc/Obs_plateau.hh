@@ -9,5 +9,10 @@
 
 
 class Plateau: public Cuboid, public Scene_object{
+    private:
 
+    public:
+    Plateau(Vector3D position);
+
+    ~Plateau();
 };

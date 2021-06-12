@@ -167,6 +167,58 @@ CMakeFiles/program.dir/src/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Scene.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.cpp" -o CMakeFiles/program.dir/src/Scene.cpp.s
 
+CMakeFiles/program.dir/src/Scene_object.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/Scene_object.cpp.o: ../src/Scene_object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/program.dir/src/Scene_object.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/Scene_object.cpp.o -c "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp"
+
+CMakeFiles/program.dir/src/Scene_object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/Scene_object.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp" > CMakeFiles/program.dir/src/Scene_object.cpp.i
+
+CMakeFiles/program.dir/src/Scene_object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Scene_object.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp" -o CMakeFiles/program.dir/src/Scene_object.cpp.s
+
+CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o: ../src/Obs_mnt_long.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o -c "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp"
+
+CMakeFiles/program.dir/src/Obs_mnt_long.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/Obs_mnt_long.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp" > CMakeFiles/program.dir/src/Obs_mnt_long.cpp.i
+
+CMakeFiles/program.dir/src/Obs_mnt_long.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Obs_mnt_long.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp" -o CMakeFiles/program.dir/src/Obs_mnt_long.cpp.s
+
+CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o: ../src/Obs_mnt_pointed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o -c "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp"
+
+CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp" > CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.i
+
+CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp" -o CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.s
+
+CMakeFiles/program.dir/src/Obs_plateau.cpp.o: CMakeFiles/program.dir/flags.make
+CMakeFiles/program.dir/src/Obs_plateau.cpp.o: ../src/Obs_plateau.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/program.dir/src/Obs_plateau.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/program.dir/src/Obs_plateau.cpp.o -c "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp"
+
+CMakeFiles/program.dir/src/Obs_plateau.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/program.dir/src/Obs_plateau.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp" > CMakeFiles/program.dir/src/Obs_plateau.cpp.i
+
+CMakeFiles/program.dir/src/Obs_plateau.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/program.dir/src/Obs_plateau.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp" -o CMakeFiles/program.dir/src/Obs_plateau.cpp.s
+
 program: CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o
 program: CMakeFiles/program.dir/src/Cuboid.cpp.o
 program: CMakeFiles/program.dir/src/Drone.cpp.o
@@ -174,6 +226,10 @@ program: CMakeFiles/program.dir/src/Geometrical_solid.cpp.o
 program: CMakeFiles/program.dir/src/Hexagonal_prism.cpp.o
 program: CMakeFiles/program.dir/src/matrix3x3.cpp.o
 program: CMakeFiles/program.dir/src/Scene.cpp.o
+program: CMakeFiles/program.dir/src/Scene_object.cpp.o
+program: CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o
+program: CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o
+program: CMakeFiles/program.dir/src/Obs_plateau.cpp.o
 program: CMakeFiles/program.dir/build.make
 
 .PHONY : program

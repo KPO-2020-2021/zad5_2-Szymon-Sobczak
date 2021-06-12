@@ -7,6 +7,7 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Geometrical_solid.hh
  ../inc/Hexagonal_prism.hh
  ../inc/Scene.hh
+ ../inc/Scene_object.hh
  ../inc/lacze_do_gnuplota.hh
  ../inc/matrix.hh
  ../inc/matrix3x3.hh

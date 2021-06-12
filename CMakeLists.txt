@@ -47,6 +47,10 @@ set(SOURCES          # All .cpp files in src/
     src/Hexagonal_prism.cpp
     src/matrix3x3.cpp
     src/Scene.cpp
+    src/Scene_object.cpp
+    src/Obs_mnt_long.cpp
+    src/Obs_mnt_pointed.cpp
+    src/Obs_plateau.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp

@@ -17,7 +17,7 @@
     \return Drona o srodku w ukladzie globalnym w punkcie, nieobroconego.        
 */
 
-Drone::Drone(Vector3D const & location){
+Drone::Drone(Vector3D const & location, unsigned int ID) : Scene_object(ID, "dron"){
     drone_location = location;
     Drone_ID = 0;
     Orientation_angle = 0;

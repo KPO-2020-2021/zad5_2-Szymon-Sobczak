@@ -50,10 +50,16 @@ std::string const & Geometrical_solid::Get_Name_of_file_global (){
 
 
 
+/*!
+    Metoda zmienia nazwe globalna bryly geometrycznej. 
+    
+    \param[in] new_scale - nowa nazwa globalna bryly geometrycznej.
+*/
 
 
-
-
+void Geometrical_solid::update_Name_of_file_global(std::string const & new_name){
+    Name_of_file_global = new_name;
+}
 
 
 

@@ -22,7 +22,7 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     Nbr_of_active_drone = 1;
     double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3};
     Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2);
-    Drone drone_1(center_of_drone1), drone_2(center_of_drone2); 
+    Drone drone_1(center_of_drone1,1), drone_2(center_of_drone2,2); 
     
     Drones.push_back(drone_1);
     Drones.at(0).set_ID(1);
@@ -91,12 +91,22 @@ void Scene::choose_drone(unsigned int active_drone){
 */
 
 Drone const & Scene::get_active_drone(){
-    return Drones.at(Nbr_of_active_drone-1);
+    return Drone_list[Nbr_of_active_drone-1];
 }
 
 /*!
     \return Instancje aktywnego drona z std::vector dronow. 
 */
 Drone & Scene::use_active_drone(){
-    return Drones.at(Nbr_of_active_drone-1);
+    return Drone_list.at(Nbr_of_active_drone-1);
+}
+
+/* void add_obstacle_plateau(){
+    std::shared_ptr<>
+}  */
+
+void Scene::add_new_drone(Vector3D & position){
+    std::shared_ptr<Drone> tmp_ptr = std::make_shared<Drone>(position, Number_of_drones++);
+    Drone_list.push_back(tmp_ptr);
+    Objects_list.push_back(tmp_ptr);
 }

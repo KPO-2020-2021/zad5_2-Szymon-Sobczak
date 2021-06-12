@@ -19,6 +19,7 @@ tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o
  ../inc/Drone.hh
  ../inc/Geometrical_solid.hh
  ../inc/Hexagonal_prism.hh
+ ../inc/Scene_object.hh
  ../inc/lacze_do_gnuplota.hh
  ../inc/matrix.hh
  ../inc/matrix3x3.hh
@@ -50,6 +51,7 @@ tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o
  ../inc/Geometrical_solid.hh
  ../inc/Hexagonal_prism.hh
  ../inc/Scene.hh
+ ../inc/Scene_object.hh
  ../inc/lacze_do_gnuplota.hh
  ../inc/matrix.hh
  ../inc/matrix3x3.hh

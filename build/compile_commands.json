@@ -40,6 +40,26 @@
   "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.cpp"
 },
 {
+  "directory": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/external/doctest/doctest\" -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Scene_object.cpp.o -c \"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp\"",
+  "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp"
+},
+{
+  "directory": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/external/doctest/doctest\" -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o -c \"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp\"",
+  "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp"
+},
+{
+  "directory": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/external/doctest/doctest\" -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o -c \"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp\"",
+  "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp"
+},
+{
+  "directory": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build",
+  "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/external/doctest/doctest\" -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/program.dir/src/Obs_plateau.cpp.o -c \"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp\"",
+  "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp"
+},
+{
   "directory": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests",
   "command": "/usr/bin/c++ -DENABLE_DOCTEST_IN_LIBRARY -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/inc\" -I\"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/external/doctest/doctest\" -g -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/main.cpp.o -c \"/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/main.cpp\"",
   "file": "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/main.cpp"

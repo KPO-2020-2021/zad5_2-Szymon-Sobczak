@@ -704,6 +704,87 @@ src/Hexagonal_prism.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Hexagonal_prism.cpp.s
 .PHONY : src/Hexagonal_prism.cpp.s
 
+src/Obs_mnt_long.o: src/Obs_mnt_long.cpp.o
+
+.PHONY : src/Obs_mnt_long.o
+
+# target to build an object file
+src/Obs_mnt_long.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o
+.PHONY : src/Obs_mnt_long.cpp.o
+
+src/Obs_mnt_long.i: src/Obs_mnt_long.cpp.i
+
+.PHONY : src/Obs_mnt_long.i
+
+# target to preprocess a source file
+src/Obs_mnt_long.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_long.cpp.i
+.PHONY : src/Obs_mnt_long.cpp.i
+
+src/Obs_mnt_long.s: src/Obs_mnt_long.cpp.s
+
+.PHONY : src/Obs_mnt_long.s
+
+# target to generate assembly for a file
+src/Obs_mnt_long.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_long.cpp.s
+.PHONY : src/Obs_mnt_long.cpp.s
+
+src/Obs_mnt_pointed.o: src/Obs_mnt_pointed.cpp.o
+
+.PHONY : src/Obs_mnt_pointed.o
+
+# target to build an object file
+src/Obs_mnt_pointed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o
+.PHONY : src/Obs_mnt_pointed.cpp.o
+
+src/Obs_mnt_pointed.i: src/Obs_mnt_pointed.cpp.i
+
+.PHONY : src/Obs_mnt_pointed.i
+
+# target to preprocess a source file
+src/Obs_mnt_pointed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.i
+.PHONY : src/Obs_mnt_pointed.cpp.i
+
+src/Obs_mnt_pointed.s: src/Obs_mnt_pointed.cpp.s
+
+.PHONY : src/Obs_mnt_pointed.s
+
+# target to generate assembly for a file
+src/Obs_mnt_pointed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.s
+.PHONY : src/Obs_mnt_pointed.cpp.s
+
+src/Obs_plateau.o: src/Obs_plateau.cpp.o
+
+.PHONY : src/Obs_plateau.o
+
+# target to build an object file
+src/Obs_plateau.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_plateau.cpp.o
+.PHONY : src/Obs_plateau.cpp.o
+
+src/Obs_plateau.i: src/Obs_plateau.cpp.i
+
+.PHONY : src/Obs_plateau.i
+
+# target to preprocess a source file
+src/Obs_plateau.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_plateau.cpp.i
+.PHONY : src/Obs_plateau.cpp.i
+
+src/Obs_plateau.s: src/Obs_plateau.cpp.s
+
+.PHONY : src/Obs_plateau.s
+
+# target to generate assembly for a file
+src/Obs_plateau.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Obs_plateau.cpp.s
+.PHONY : src/Obs_plateau.cpp.s
+
 src/Scene.o: src/Scene.cpp.o
 
 .PHONY : src/Scene.o
@@ -730,6 +811,33 @@ src/Scene.s: src/Scene.cpp.s
 src/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Scene.cpp.s
 .PHONY : src/Scene.cpp.s
+
+src/Scene_object.o: src/Scene_object.cpp.o
+
+.PHONY : src/Scene_object.o
+
+# target to build an object file
+src/Scene_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Scene_object.cpp.o
+.PHONY : src/Scene_object.cpp.o
+
+src/Scene_object.i: src/Scene_object.cpp.i
+
+.PHONY : src/Scene_object.i
+
+# target to preprocess a source file
+src/Scene_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Scene_object.cpp.i
+.PHONY : src/Scene_object.cpp.i
+
+src/Scene_object.s: src/Scene_object.cpp.s
+
+.PHONY : src/Scene_object.s
+
+# target to generate assembly for a file
+src/Scene_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/Scene_object.cpp.s
+.PHONY : src/Scene_object.cpp.s
 
 src/lacze_do_gnuplota.o: src/lacze_do_gnuplota.cpp.o
 
@@ -842,9 +950,21 @@ help:
 	@echo "... src/Hexagonal_prism.o"
 	@echo "... src/Hexagonal_prism.i"
 	@echo "... src/Hexagonal_prism.s"
+	@echo "... src/Obs_mnt_long.o"
+	@echo "... src/Obs_mnt_long.i"
+	@echo "... src/Obs_mnt_long.s"
+	@echo "... src/Obs_mnt_pointed.o"
+	@echo "... src/Obs_mnt_pointed.i"
+	@echo "... src/Obs_mnt_pointed.s"
+	@echo "... src/Obs_plateau.o"
+	@echo "... src/Obs_plateau.i"
+	@echo "... src/Obs_plateau.s"
 	@echo "... src/Scene.o"
 	@echo "... src/Scene.i"
 	@echo "... src/Scene.s"
+	@echo "... src/Scene_object.o"
+	@echo "... src/Scene_object.i"
+	@echo "... src/Scene_object.s"
 	@echo "... src/lacze_do_gnuplota.o"
 	@echo "... src/lacze_do_gnuplota.i"
 	@echo "... src/lacze_do_gnuplota.s"

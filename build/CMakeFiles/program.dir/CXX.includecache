@@ -39,6 +39,8 @@ vector3D.hh
 ../inc/vector3D.hh
 Cuboid.hh
 ../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
 Hexagonal_prism.hh
 ../inc/Hexagonal_prism.hh
 lacze_do_gnuplota.hh
@@ -72,6 +74,48 @@ matrix3x3.hh
 Geometrical_solid.hh
 ../inc/Geometrical_solid.hh
 
+../inc/Obs_mnt_long.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+Cuboid.hh
+../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
+
+../inc/Obs_mnt_pointed.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+Cuboid.hh
+../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
+
+../inc/Obs_plateau.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+Cuboid.hh
+../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
+
 ../inc/Scene.hh
 iostream
 -
@@ -81,10 +125,32 @@ cmath
 -
 iomanip
 -
+list
+-
+memory
+-
+Scene_object.hh
+../inc/Scene_object.hh
 Drone.hh
 ../inc/Drone.hh
 lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
+
+../inc/Scene_object.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+vector3D.hh
+../inc/vector3D.hh
+matrix3x3.hh
+../inc/matrix3x3.hh
+Geometrical_solid.hh
+../inc/Geometrical_solid.hh
 
 ../inc/lacze_do_gnuplota.hh
 string
@@ -130,53 +196,27 @@ cmath
 vector.hh
 ../inc/vector.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Cuboid.cpp
-Cuboid.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Cuboid.hh
-
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Drone.cpp
 Drone.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Drone.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Geometrical_solid.cpp
-Geometrical_solid.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Geometrical_solid.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp
+Obs_mnt_long.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Hexagonal_prism.cpp
-Hexagonal_prism.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Hexagonal_prism.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp
+Obs_mnt_pointed.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.hh
+
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp
+Obs_plateau.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.hh
 
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.cpp
 Scene.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/lacze_do_gnuplota.cpp
-cstdio
--
-cstring
--
-cmath
--
-cstdlib
--
-iostream
--
-sys/stat.h
--
-unistd.h
--
-fcntl.h
--
-sstream
--
-fstream
--
-limits
--
-lacze_do_gnuplota.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/lacze_do_gnuplota.hh
-
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/matrix3x3.cpp
-matrix3x3.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/matrix3x3.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp
+Scene_object.hh
+/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.hh
 

@@ -4,7 +4,10 @@
 #include <fstream>
 #include <cmath>
 #include <iomanip>
+#include <list>
+#include <memory>
 
+#include "Scene_object.hh"
 #include "Drone.hh"
 #include "lacze_do_gnuplota.hh"
 
@@ -49,6 +52,18 @@ class Scene{
         /*! \brief Pole typu unsigned int, opisujace numer obecnie aktywnego drona */
         unsigned int Nbr_of_active_drone;
 
+    /****************************************************************/
+
+        std::list <std::shared_ptr <Drone>> Drone_list;
+
+        std::list <std::shared_ptr <Cuboid>> Obstacle_list;
+
+        std::list <std::shared_ptr <Scene_object>> Objects_list;
+
+        unsigned int Number_of_drones = 0;
+
+        unsigned int Number_of_obstacles = 0;
+
     public:
         /*! \brief Konstrukotr klasy z parametrem */
         Scene(PzG::LaczeDoGNUPlota & Link);
@@ -61,4 +76,11 @@ class Scene{
         
         /*! \brief Metoda sluzaca probranu aktywnego drona aby dokonywac w nim zmian */
         Drone & use_active_drone();
+
+        /************************************************************************/
+
+        void add_new_drone(Vector3D & position);
+
+
+        void add_obstacle_plateau();
 };

@@ -9,5 +9,7 @@
 
 
 class Mnt_pointed: public Cuboid, public Scene_object{
+    private:
 
+    public:
 };

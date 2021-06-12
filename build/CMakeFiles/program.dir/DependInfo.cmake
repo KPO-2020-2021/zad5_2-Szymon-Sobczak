@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Drone.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Drone.cpp.o"
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Geometrical_solid.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Geometrical_solid.cpp.o"
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Hexagonal_prism.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Hexagonal_prism.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_mnt_long.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_mnt_pointed.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Obs_plateau.cpp.o"
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Scene.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/Scene_object.cpp.o"
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/lacze_do_gnuplota.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/lacze_do_gnuplota.cpp.o"
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/matrix3x3.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/CMakeFiles/program.dir/src/matrix3x3.cpp.o"
   )

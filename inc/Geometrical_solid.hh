@@ -42,6 +42,9 @@ class Geometrical_solid{
         /*! \brief Metoda pozwalajaca na pobranie nazwy bryly geometrycznej */
         std::string const & Get_Name_of_file_global(); 
 
+        /*! \brief Metoda pozwalajaca na aktualizacje nazwy bryly geometrycznej */
+        void update_Name_of_file_global(std::string const & new_name);
+
         /*! \brief Metoda pozwalajaca na aktualizacje skali bryly geometrycznej */
         void update_scale(Vector3D const & new_scale);
 

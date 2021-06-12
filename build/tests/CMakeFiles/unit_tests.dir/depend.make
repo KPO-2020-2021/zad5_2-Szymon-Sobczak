@@ -18,6 +18,7 @@ tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/Cuboid.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/Drone.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/Geometrical_solid.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/Hexagonal_prism.hh
+tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/Scene_object.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/lacze_do_gnuplota.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/matrix.hh
 tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o: ../inc/matrix3x3.hh
@@ -49,6 +50,7 @@ tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/Drone.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/Geometrical_solid.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/Hexagonal_prism.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/Scene.hh
+tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/Scene_object.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/lacze_do_gnuplota.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/matrix.hh
 tests/CMakeFiles/unit_tests.dir/test_Scene.cpp.o: ../inc/matrix3x3.hh
