@@ -9,6 +9,7 @@
 #include "Geometrical_solid.hh"
 
 
+
 class Scene_object{
     private:
         int object_ID;

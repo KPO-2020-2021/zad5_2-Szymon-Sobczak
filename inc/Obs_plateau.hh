@@ -9,10 +9,9 @@
 
 
 class Plateau: public Cuboid, public Scene_object{
-    private:
+    private:      
+        void save_to_file(Vector3D const &  position);
 
     public:
-    Plateau(Vector3D position);
-
-    ~Plateau();
+        Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID);
 };

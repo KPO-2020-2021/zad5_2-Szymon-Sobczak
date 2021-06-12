@@ -123,3 +123,4 @@ void Cuboid::update_angleZ(double const & additional_angle){
 double Cuboid::get_angle() const{
     return Roration_angle_Zaxis;
 }
+

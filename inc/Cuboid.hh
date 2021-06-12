@@ -70,4 +70,7 @@ class Cuboid: public Geometrical_solid{
         
         /*! \brief Przeciazenie operatora funkcyjnego */
         Vector3D & operator () (int index);
+
+        /*! \brief Metoda pozwalaja na aktualizowanie pozycji srodka prostopadloscianu */
+        Vector3D const & get_center();
 };

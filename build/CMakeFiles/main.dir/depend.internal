@@ -6,6 +6,7 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Drone.hh
  ../inc/Geometrical_solid.hh
  ../inc/Hexagonal_prism.hh
+ ../inc/Obs_plateau.hh
  ../inc/Scene.hh
  ../inc/Scene_object.hh
  ../inc/lacze_do_gnuplota.hh

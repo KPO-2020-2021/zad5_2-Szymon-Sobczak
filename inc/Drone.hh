@@ -78,8 +78,6 @@ class Drone: public Scene_object{
     public:
         /*! \brief Konstrukotr klasy z parametrem. */
         Drone(Vector3D const & location, unsigned int ID);
- 
-        ~Drone() { std::cout << "bwah";}; 
 
         /*! \brief Metoda pozawalajaca nadac ID dronowi. */
         void set_ID(unsigned int const & new_ID);

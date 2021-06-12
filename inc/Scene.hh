@@ -11,6 +11,9 @@
 
 #include "Scene_object.hh"
 #include "Drone.hh"
+
+#include "Obs_plateau.hh"
+
 #include "lacze_do_gnuplota.hh"
 
 /*!
@@ -74,14 +77,14 @@ class Scene{
         void choose_drone(unsigned int active_drone);
 
         /*! \brief Metoda sluzaca pobraniu informacji o aktywnym dronie */
-        Drone const & get_active_drone();
+        const std::shared_ptr <Drone> get_active_drone();
         
         /*! \brief Metoda sluzaca probraniu aktywnego drona aby dokonywac w nim zmian */
         std::shared_ptr <Drone> use_active_drone();
 
         /************************************************************************/
 
-        void add_new_drone(Vector3D & position);
+        void add_new_drone(Vector3D const & position);
 
-        void add_obstacle_plateau();
+        void add_obstacle_plateau(Vector3D const & position, Vector3D const & scale);
 };
