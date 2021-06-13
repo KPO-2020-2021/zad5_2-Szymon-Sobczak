@@ -74,6 +74,7 @@ int main(){
                std::cout << "Wybor aktywnego drona: "<< std::endl;
                
                Scenery.choose_drone(1);
+               
                std::cout << "Dron 1. Polozenie x: " 
                          << std::fixed << std::setprecision(5) << Scenery.use_active_drone()->get_drone_location()[0] << "\ty: " 
                          << std::fixed << std::setprecision(5) << Scenery.use_active_drone()->get_drone_location()[1] << std::endl;
@@ -275,8 +276,7 @@ int main(){
                         else{
                            Scenery.delete_obstacle(ID_nbr_of_obstacle);
                            break;
-                        }
-                          
+                        }      
                   }
                   catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
                         std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;

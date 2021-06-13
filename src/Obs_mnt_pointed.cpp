@@ -12,7 +12,7 @@ void Mnt_pointed::save_to_file(Vector3D const & position){
     Transform_to_global_coords(position);
 
     std::ofstream  FileStrm;
-    Vector3D P1,P2;
+    Vector3D P1, P2;
 
     std::string name_of_file = this->Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_mnt_pointed.dat";
     
@@ -23,8 +23,8 @@ void Mnt_pointed::save_to_file(Vector3D const & position){
       throw std::runtime_error(":(  Operacja otwarcia pliku do zapisu nie powiodla sie.");
     }
     
-    P1 = ((*this)[0] + (*this)[7])/2;
-    P2 = ((*this)[2] + (*this)[5])/2;
+    P1 = ((*this)[7] + ((*this)[0] + (*this)[1]) / 2) / 2;
+    P2 = ((*this)[7] + ((*this)[2] + (*this)[3]) / 2) / 2;
 
     FileStrm << P1 << std::endl
              << (*this)[6] << std::endl
@@ -61,6 +61,7 @@ void Mnt_pointed::save_to_file(Vector3D const & position){
              << '#' << std::endl
              << std::endl; 
 
+
     FileStrm.close();
 }
 
@@ -73,11 +74,11 @@ Vector3D const & Mnt_pointed::get_position(){
 }
 
 void Mnt_pointed::transform_shape(){
-    double val[3] = {0,0,1};
-    Vector3D apex(val); 
-    std::cout << get_center() << std::endl;
+    Vector3D apex = ((*this)(7)  + (*this)(4)) / 2; 
+    std::cout << (*this)(4) << std::endl;
     (*this)(4) = apex;
     (*this)(5) = apex;
     (*this)(6) = apex;
     (*this)(7) = apex;
+     std::cout << apex << std::endl;
 }

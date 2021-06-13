@@ -35,7 +35,7 @@ Scene::Scene(PzG::LaczeDoGNUPlota *Link){
     
     add_new_drone(center_of_drone2);
 
-    double val_ctr_pla0[3]={150,50,10}, val_scale[3]={60,60,20};
+    double val_ctr_pla0[3]={150,50,15}, val_scale[3]={60,60,30};
     Vector3D center_of_plateau0(val_ctr1),scale_of_plateau0(val_ctr2);
 
     add_obstacle_mnt_pointed(val_ctr_pla0, val_scale);
@@ -116,7 +116,7 @@ void Scene::choose_drone(unsigned int active_drone){
     \return Instancje aktywnego drona z std::vector jako stala. 
 */
 
-std::shared_ptr <Drone> const Scene::get_active_drone(){
+std::shared_ptr <Drone> const Scene::get_active_drone() {
     int Number = Nbr_of_active_drone -1 ;
     
     auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
@@ -137,7 +137,7 @@ std::shared_ptr <Drone> const Scene::get_active_drone(){
 */
 std::shared_ptr <Drone> Scene::use_active_drone(){
     
-    int Number = Nbr_of_active_drone -1 ;
+    int Number = Nbr_of_active_drone - 1;
     
     auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
         return (Ptr->get_obj_ID() == Number); 
@@ -216,7 +216,6 @@ void Scene::delete_obstacle(int obstacle_ID){
 
     if (obs_iterator == Obstacle_list.end()) {
         throw std::invalid_argument(":/ Podano bledny numer ID przeszkody ");
-        return;
     }
 
     std::list<std::shared_ptr<Scene_object>>::iterator obj_iterator = 
@@ -224,7 +223,6 @@ void Scene::delete_obstacle(int obstacle_ID){
     
     if (obj_iterator == Objects_list.end()){
         throw std::invalid_argument(":/ Podano bledny numer drona ");
-        return;
     }
 
     (*Link_to_gnuplot).UsunNazwePliku((*obs_iterator)->get_name_of_file().c_str());
