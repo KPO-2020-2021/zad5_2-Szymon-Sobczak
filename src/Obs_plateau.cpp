@@ -2,7 +2,6 @@
 
  Plateau::Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "plaskowyz") {
     this-> update_scale (scale);
-    std::cout << position << scale;
     save_to_file(position);
 }
 

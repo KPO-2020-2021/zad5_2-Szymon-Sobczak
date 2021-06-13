@@ -28,10 +28,14 @@ users, this can be left out. */
 int main(){
    char Option; /* Inicjalizacja zmiennych tymczasowych */
    
-   double user_angle=0,distance = 0;
+   double user_angle=0,distance = 0, type_of_obstacle = 0;
    unsigned int nbr_of_act_drone=1;
+   Vector3D temp_scale, temp_position; 
    
    PzG::LaczeDoGNUPlota Link; /* Zmienna potrzebna do wizualizacji rysunku sceny*/
+   
+    std::cout << & Link << std::endl;
+
    Scene Scenery(Link); /* Inicjalizacja sceny */
 
    Link.Rysuj();
@@ -52,6 +56,8 @@ int main(){
       std::cout << "Menu wyboru opcji:" << std::endl
                << "\ta - wybierz aktywnego drona" << std::endl
                << "\tp - zadaj parametry przelotu" << std::endl
+               << "\td - dodaj element powierzchni" << std::endl
+               << "\tu - usun element powierzchni" << std::endl
                << "\tm - wyswietl menu" << std::endl 
                << "\tz - wykonaj zwiad" << std::endl << std::endl
                << "\tk - koniec dzialania programu" << std::endl << std::endl;
@@ -149,6 +155,8 @@ int main(){
                std::cout << "Menu wyboru opcji:" << std::endl
                << "\ta - wybierz aktywnego drona" << std::endl
                << "\tp - zadaj parametry przelotu" << std::endl
+               << "\td - dodaj element powierzchni" << std::endl
+               << "\tu - usun element powierzchni" << std::endl
                << "\tm - wyswietl menu" << std::endl 
                << "\tz - wykonaj zwiad" << std::endl << std::endl
                << "\tk - koniec dzialania programu" << std::endl << std::endl;
@@ -204,6 +212,59 @@ int main(){
 
                Link.UsunNazwePliku("../datasets/path_reacon.dat");
                Link.Rysuj();
+            break;
+
+
+            case 'd':
+               while (true){
+                  try{
+                        std::cout << "Wybierz rodzaj powierzchniowego elementu" << std::endl
+                                  << "\t1 - Gora z ostrym szczytem " << std::endl
+                                  << "\t2 - Gora z grania " << std::endl
+                                  << "\t3 - Plaskowyz " << std::endl;
+
+                        std::cout << "Wprowadz numer typu elementu > ";
+                        std::cin >> type_of_obstacle;
+                        if (std::cin.fail() || type_of_obstacle < 0 || type_of_obstacle > 3)
+                           throw std::invalid_argument(":/ Podano bledna wartosc typu przeszkody ");
+                              
+                        std::cout << "Podaj skale wzdluz kolejnych osi OX, OY, OZ." << std::endl
+                                  << "Wprowadz skale: OX OY OZ > ";
+                        std::cin >> temp_scale;
+
+                        if(temp_scale[2] > ALTITUDE/2 - 10)
+                           throw std::invalid_argument(":/ Podano zbyt duza wartosc skali w osi OZ ");
+
+                        std::cout << "Podaj wspolrzedne srodka podstawy x, y. " << std::endl
+                                  << "Wprowadz wspolrzedne: x y > ";
+                        std::cin >> temp_position[0]  >> temp_position[1];
+                        temp_position[2] = temp_scale[2]/2;
+                        if(std::cin.fail())
+                           throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
+                        else   {
+                           if(type_of_obstacle == 1)
+                              std::cout << "bwah " << std::endl;
+                           if(type_of_obstacle == 2)
+                              std::cout << "bwah " << std::endl;
+                           if(type_of_obstacle == 3)
+                              Scenery.add_obstacle_plateau(temp_position, temp_scale,Link);
+                           break;
+
+                           std::cout << "Element zostal dodany do sceny" << std::endl;
+                        }
+                  }
+                  catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
+                        std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(10000,'\n');   
+                  }
+               }
+
+            break;
+
+            case 'u':
+      
+
             break;
 
             default: /* dzialanie, gdy podana opcja nie bedzie uprzednio zdefiniowana */

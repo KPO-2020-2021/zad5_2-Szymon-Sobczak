@@ -52,7 +52,7 @@ class Scene{
         PzG::InfoPlikuDoRysowania *Tab_of_properties_d2[6];
 
         /*! \brief Pole typu PzG::LaczeDoGNUPlota lacze do Gnuplot */
-        PzG::LaczeDoGNUPlota Link;
+        PzG::LaczeDoGNUPlota Link_to_gnuplot;
 
         /*! \brief Pole typu unsigned int, opisujace numer obecnie aktywnego drona */
         unsigned int Nbr_of_active_drone;
@@ -86,5 +86,5 @@ class Scene{
 
         void add_new_drone(Vector3D const & position);
 
-        void add_obstacle_plateau(Vector3D const & position, Vector3D const & scale);
+        void add_obstacle_plateau(Vector3D const & position, Vector3D const & scale, PzG::LaczeDoGNUPlota & Link);
 };

@@ -19,10 +19,19 @@
 */
 
 Scene::Scene(PzG::LaczeDoGNUPlota & Link){
+    
+    std::cout << & Link << std::endl;
+
+    Link_to_gnuplot = Link;
+
+    std::cout << & Link_to_gnuplot << std::endl;
+
     Nbr_of_active_drone = 1;
     double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3},val_ctr3[3]={30,30,3}, val_ctr4[3]={150,150,3};
     Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2),center_of_drone3(val_ctr3),center_of_drone4(val_ctr4);
     Drone drone_1(center_of_drone1,1), drone_2(center_of_drone2,2); 
+    
+   
     
     Drones.push_back(drone_1);
     Drones.at(0).set_ID(1);
@@ -33,14 +42,14 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     add_new_drone(center_of_drone3);
 
     add_new_drone(center_of_drone4);
-
+/* 
     double trans_test[3] = {100,100,20}, scale_test[3] = {20,20,40};
-    Vector3D translation(trans_test), scale(scale_test);
+    Vector3D translation(trans_tes), scale(scale_test);
 
     add_obstacle_plateau(trans_test,scale_test);
+ */
 
-
-    Tab_of_properties_d1[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_plateau.dat");
+    
 
     Link.ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
     Link.UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
@@ -140,8 +149,12 @@ std::shared_ptr <Drone> Scene::use_active_drone(){
     return *Drone_iterator;
 }
 
-void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & scale){
+void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & scale, PzG::LaczeDoGNUPlota & Link){
     std::shared_ptr<Plateau> tmp_ptr = std::make_shared<Plateau>(position, scale, Number_of_obstacles++);
+
+    PzG::InfoPlikuDoRysowania *Temp_property = & Link.DodajNazwePliku(tmp_ptr->Get_Name_of_file_global().c_str());
+    Temp_property-> ZmienSzerokosc(2);
+
     Obstacle_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
     Link.Rysuj();
@@ -151,5 +164,5 @@ void Scene::add_new_drone(Vector3D const & position){
     std::shared_ptr<Drone> tmp_ptr = std::make_shared<Drone>(position, Number_of_drones++);
     Drone_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
-    Link.Rysuj();
+    Link_to_gnuplot.Rysuj();
 }
