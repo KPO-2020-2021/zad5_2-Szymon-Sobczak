@@ -19,32 +19,32 @@
 */
 
 Scene::Scene(PzG::LaczeDoGNUPlota *Link){
-    
-    std::cout << &Link << std::endl;
-
     Link_to_gnuplot = Link;
-
-    std::cout << &Link_to_gnuplot << std::endl;
-
     Nbr_of_active_drone = 1;
 
     double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3};
-    Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2);
+    Vector3D center_of_drone1(val_ctr1), center_of_drone2(val_ctr2);
 
     add_new_drone(center_of_drone1);
-    
     add_new_drone(center_of_drone2);
 
-    double val_ctr_pla0[3]={150,50,15}, val_scale[3]={60,60,30};
-    Vector3D center_of_plateau0(val_ctr1),scale_of_plateau0(val_ctr2);
+    double  val_ctr_pla0[3]={170,170,5}, val_scale0[3]={30,40,10},
+            val_ctr_pla1[3]={130,30,10}, val_scale1[3]={60,40,20},
+            val_ctr_pointed2[3]={70,160,45}, val_scale2[3]={60,40,90},
+            val_ctr_pointed3[3]={40,100,25}, val_scale3[3]={60,60,50},
+            val_ctr_long4[3]={150,100,15}, val_scale4[3]={60,40,30};
+    
+    Vector3D center_of_plateau0(val_ctr_pla0), scale_of_plateau0(val_scale0),
+             center_of_plateau1(val_ctr_pla1), scale_of_plateau1(val_scale1),
+             center_of_mnt_ptd2(val_ctr_pointed2), scale_of_mnt_ptd2(val_scale2),
+             center_of_mnt_ptd3(val_ctr_pointed3), scale_of_mnt_ptd3(val_scale3),
+             center_of_mnt_lng4(val_ctr_long4), scale_of_mnt_lng4(val_scale4);
 
-    add_obstacle_mnt_pointed(val_ctr_pla0, val_scale);
-    /* 
-    double trans_test[3] = {100,100,20}, scale_test[3] = {20,20,40};
-    Vector3D translation(trans_tes), scale(scale_test);
-
-    add_obstacle_plateau(trans_test,scale_test);
-    */
+    add_obstacle_plateau(center_of_plateau0, scale_of_plateau0);
+    add_obstacle_plateau(center_of_plateau1, scale_of_plateau1);
+    add_obstacle_mnt_pointed(center_of_mnt_ptd2, scale_of_mnt_ptd2);
+    add_obstacle_mnt_pointed(center_of_mnt_ptd3, scale_of_mnt_ptd3);
+    add_obstacle_mnt_long(center_of_mnt_lng4, scale_of_mnt_lng4);
 
     (*Link_to_gnuplot).ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
     (*Link_to_gnuplot).UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
@@ -76,12 +76,13 @@ Scene::Scene(PzG::LaczeDoGNUPlota *Link){
     (*Link_to_gnuplot).Rysuj();
 }
 
+
+
 Scene::~Scene(){
     for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
        remove (Obstacle->get_name_of_file().c_str());
     }
 }
-
 
 /*!
     Metoda pozwala ustawic, ktory z dron na scenie jest dronem aktywnym. 
@@ -90,13 +91,20 @@ Scene::~Scene(){
     \param [in] active_drone - numer drona do aktywacji.
 */
 
-void Scene::choose_drone(unsigned int active_drone){
+void Scene::choose_drone(int active_drone){
+    int Number = active_drone - 1;
     
+    auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
+        return (Ptr->get_obj_ID() == Number); 
+    };
     
- /*    if(active_drone > Drones.size() || active_drone == 0)
-      throw std::invalid_argument(":/ Podano bledny numer drona ");
-    else   */  
-        Nbr_of_active_drone = active_drone;
+    std::list<std::shared_ptr<Drone>>::iterator Drone_iterator = std::find_if(Drone_list.begin(), Drone_list.end(), check_nbr);
+    
+    if (Drone_iterator == Drone_list.end()){
+        throw std::invalid_argument(":/ Podano bledny numer drona ");
+    }
+
+    Nbr_of_active_drone = active_drone;
         
     if (active_drone==1){
         for (unsigned int i = 0; i < 6; ++i){
@@ -104,6 +112,7 @@ void Scene::choose_drone(unsigned int active_drone){
             Tab_of_properties_d2[i] -> ZmienKolor(8);
         }  
     }
+
     if (active_drone==2){
         for (unsigned int i = 0; i < 6; ++i){
             Tab_of_properties_d1[i] -> ZmienKolor(8);
@@ -117,7 +126,7 @@ void Scene::choose_drone(unsigned int active_drone){
 */
 
 std::shared_ptr <Drone> const Scene::get_active_drone() {
-    int Number = Nbr_of_active_drone -1 ;
+    int Number = Nbr_of_active_drone - 1;
     
     auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
         return (Ptr->get_obj_ID() == Number); 
@@ -135,6 +144,7 @@ std::shared_ptr <Drone> const Scene::get_active_drone() {
 /*!
     \return Instancje aktywnego drona z std::vector dronow. 
 */
+
 std::shared_ptr <Drone> Scene::use_active_drone(){
     
     int Number = Nbr_of_active_drone - 1;
@@ -203,7 +213,6 @@ void Scene::list_obstacles(){
       std::cout << "ID: " <<  Obstacle->get_obj_ID() << " "  << std::fixed << std::setprecision(2) << "(" << Obstacle->get_position()[0] << " " << Obstacle->get_position()[1] <<") - "<< Obstacle->get_type() << std::endl; 
     }
 }
-
 
 void Scene::delete_obstacle(int obstacle_ID){
 

@@ -79,7 +79,7 @@ class Scene{
         ~Scene();
 
         /*! \brief Metoda sluzaca zmianie numeru aktywnego drona */
-        void choose_drone(unsigned int active_drone);
+        void choose_drone(int active_drone);
 
         /*! \brief Metoda sluzaca pobraniu informacji o aktywnym dronie */
         const std::shared_ptr <Drone> get_active_drone();

@@ -33,8 +33,6 @@ int main(){
    Vector3D temp_scale, temp_position; 
    
    PzG::LaczeDoGNUPlota Link; /* Zmienna potrzebna do wizualizacji rysunku sceny*/
-   
-    std::cout << & Link << std::endl;
 
    Scene Scenery(&Link); /* Inicjalizacja sceny */
 
@@ -74,7 +72,7 @@ int main(){
                std::cout << "Wybor aktywnego drona: "<< std::endl;
                
                Scenery.choose_drone(1);
-               
+
                std::cout << "Dron 1. Polozenie x: " 
                          << std::fixed << std::setprecision(5) << Scenery.use_active_drone()->get_drone_location()[0] << "\ty: " 
                          << std::fixed << std::setprecision(5) << Scenery.use_active_drone()->get_drone_location()[1] << std::endl;
@@ -89,7 +87,7 @@ int main(){
                   try{
                         std::cout << "Podaj numer drona, ktory ma byc aktywny: "<< std::endl;
                         std::cin >> nbr_of_act_drone;
-                        if(std::cin.fail() || nbr_of_act_drone > 2)
+                        if(std::cin.fail() || nbr_of_act_drone == 0)
                            throw std::invalid_argument(":/ Podano bledny numer prostopadloscianu ");
                         else{
                            Scenery.choose_drone(nbr_of_act_drone);
@@ -230,10 +228,11 @@ int main(){
                            throw std::invalid_argument(":/ Podano bledna wartosc typu przeszkody ");
                               
                         std::cout << "Podaj skale wzdluz kolejnych osi OX, OY, OZ." << std::endl
+                                  << "Skala w osi OZ nie moze przekroczyc: " << ALTITUDE - 10 << std::endl
                                   << "Wprowadz skale: OX OY OZ > ";
                         std::cin >> temp_scale;
 
-                        if(temp_scale[2] > ALTITUDE/2 - 10)
+                        if(temp_scale[2] > ALTITUDE - 10)
                            throw std::invalid_argument(":/ Podano zbyt duza wartosc skali w osi OZ ");
 
                         std::cout << "Podaj wspolrzedne srodka podstawy x, y. " << std::endl
