@@ -28,8 +28,8 @@ users, this can be left out. */
 int main(){
    char Option; /* Inicjalizacja zmiennych tymczasowych */
    
-   double user_angle=0,distance = 0, type_of_obstacle = 0;
-   unsigned int nbr_of_act_drone=1;
+   double user_angle=0,distance = 0;
+   unsigned int nbr_of_act_drone=1, type_of_obstacle = 0, ID_nbr_of_obstacle=0;
    Vector3D temp_scale, temp_position; 
    
    PzG::LaczeDoGNUPlota Link; /* Zmienna potrzebna do wizualizacji rysunku sceny*/
@@ -225,7 +225,7 @@ int main(){
 
                         std::cout << "Wprowadz numer typu elementu > ";
                         std::cin >> type_of_obstacle;
-                        if (std::cin.fail() || type_of_obstacle < 0 || type_of_obstacle > 3)
+                        if (std::cin.fail() || type_of_obstacle > 3)
                            throw std::invalid_argument(":/ Podano bledna wartosc typu przeszkody ");
                               
                         std::cout << "Podaj skale wzdluz kolejnych osi OX, OY, OZ." << std::endl
@@ -263,8 +263,26 @@ int main(){
             break;
 
             case 'u':
-      
-
+               while (true){
+                  try{
+                        std::cout << "Wybierz element powierzchni do usuniecia: " << std::endl;
+                        Scenery.list_obstacles();
+                        std::cout << "Podaj numer elementu > ";
+                        std::cin >> ID_nbr_of_obstacle;
+                        if(std::cin.fail())
+                           throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
+                        else   
+                           break;
+                  }
+                  catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
+                        std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;
+                        std::cin.clear();
+                        std::cin.ignore(10000,'\n');   
+                  }
+               }
+               Scenery.delete_obstacle(ID_nbr_of_obstacle,Link);
+               Link.Rysuj();
+               std::cout << "Element zostal usuniety ze sceny" << std::endl;
             break;
 
             default: /* dzialanie, gdy podana opcja nie bedzie uprzednio zdefiniowana */

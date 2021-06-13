@@ -24,4 +24,8 @@ class Scene_object{
         std::string get_type() const;
 
         int get_obj_ID();
+
+        virtual std::string const & get_name_of_file() = 0;
+
+        virtual Vector3D const & get_position() = 0;
 };

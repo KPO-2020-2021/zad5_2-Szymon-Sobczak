@@ -49,7 +49,6 @@ std::string const & Geometrical_solid::Get_Name_of_file_global (){
 }
 
 
-
 /*!
     Metoda zmienia nazwe globalna bryly geometrycznej. 
     

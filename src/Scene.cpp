@@ -27,29 +27,24 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     std::cout << & Link_to_gnuplot << std::endl;
 
     Nbr_of_active_drone = 1;
-    double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3},val_ctr3[3]={30,30,3}, val_ctr4[3]={150,150,3};
-    Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2),center_of_drone3(val_ctr3),center_of_drone4(val_ctr4);
-    Drone drone_1(center_of_drone1,1), drone_2(center_of_drone2,2); 
+
+    double val_ctr1[3]={100,100,3}, val_ctr2[3]={50,50,3};
+    Vector3D center_of_drone1(val_ctr1),center_of_drone2(val_ctr2);
+
+    add_new_drone(center_of_drone1);
     
-   
-    
-    Drones.push_back(drone_1);
-    Drones.at(0).set_ID(1);
+    add_new_drone(center_of_drone2);
 
-    Drones.push_back(drone_2);
-    Drones.at(1).set_ID(2);
+    double val_ctr_pla0[3]={150,50,10}, val_scale[3]={60,60,20};
+    Vector3D center_of_plateau0(val_ctr1),scale_of_plateau0(val_ctr2);
 
-    add_new_drone(center_of_drone3);
-
-    add_new_drone(center_of_drone4);
-/* 
+    add_obstacle_plateau(val_ctr_pla0,val_scale, Link);
+    /* 
     double trans_test[3] = {100,100,20}, scale_test[3] = {20,20,40};
     Vector3D translation(trans_tes), scale(scale_test);
 
     add_obstacle_plateau(trans_test,scale_test);
- */
-
-    
+    */
 
     Link.ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
     Link.UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
@@ -78,6 +73,7 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
         Tab_of_properties_d1[i] -> ZmienSzerokosc(2);
         Tab_of_properties_d2[i] -> ZmienSzerokosc(2);
     } 
+    Link.Rysuj();
 }
 
 /*!
@@ -157,6 +153,7 @@ void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & sca
 
     Obstacle_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
+
     Link.Rysuj();
 }  
 
@@ -164,5 +161,39 @@ void Scene::add_new_drone(Vector3D const & position){
     std::shared_ptr<Drone> tmp_ptr = std::make_shared<Drone>(position, Number_of_drones++);
     Drone_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
-    Link_to_gnuplot.Rysuj();
+}
+
+void Scene::list_obstacles(){
+    for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
+      std::cout << "ID: " <<  Obstacle->get_obj_ID() << " "  << std::fixed << std::setprecision(2) << "(" << Obstacle->get_position()[0] << " " << Obstacle->get_position()[1] <<") - "<< Obstacle->get_type() << std::endl; 
+    }
+}
+
+
+void Scene::delete_obstacle(int obstacle_ID, PzG::LaczeDoGNUPlota & Link){
+
+    auto check_obstacle = [obstacle_ID](std::shared_ptr<Scene_object> Ptr) -> bool{ 
+        return (Ptr->get_obj_ID() == obstacle_ID && Ptr->get_type() != "dron" ); 
+    };
+
+    std::list<std::shared_ptr<Scene_object>>::iterator obs_iterator = 
+    std::find_if(Obstacle_list.begin(),Obstacle_list.end(), check_obstacle);
+
+    if (obs_iterator == Obstacle_list.end()) {
+        throw std::invalid_argument(":/ Podano bledny numer ID przeszkody ");
+        return;
+    }
+
+    std::list<std::shared_ptr<Scene_object>>::iterator obj_iterator = 
+    std::find(Objects_list.begin(),Objects_list.end(), (*obs_iterator));
+    
+    if (obj_iterator == Objects_list.end()){
+        throw std::invalid_argument(":/ Podano bledny numer drona ");
+        return;
+    }
+
+    Link.UsunNazwePliku((*obs_iterator)->get_name_of_file().c_str());
+    
+    Obstacle_list.erase(obs_iterator);
+    Objects_list.erase(obj_iterator);
 }

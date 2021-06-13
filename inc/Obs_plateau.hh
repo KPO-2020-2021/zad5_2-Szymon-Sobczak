@@ -14,4 +14,8 @@ class Plateau: public Cuboid, public Scene_object{
 
     public:
         Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID);
+
+        std::string const & get_name_of_file() override final;
+
+        Vector3D const & get_position() override final;
 };

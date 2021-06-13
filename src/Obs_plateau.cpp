@@ -62,3 +62,11 @@ void Plateau::save_to_file(Vector3D const & position){
 
     FileStrm.close();
 }
+
+std::string const & Plateau::get_name_of_file(){
+  return Get_Name_of_file_global();
+}
+
+Vector3D const & Plateau::get_position(){
+  return get_center();
+}

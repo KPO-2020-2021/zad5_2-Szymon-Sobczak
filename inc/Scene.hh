@@ -43,7 +43,7 @@
 class Scene{
     private:
         /*! \brief Pole typu std::vector reprezentujace zbior dronow na scenie */
-        std::vector <Drone> Drones;
+   
 
         /*! \brief Pole typu PzG::InfoPlikuDoRysowania reprezentujace zbior ustawien rysowania drona nr 1 w Gnuplot */
         PzG::InfoPlikuDoRysowania *Tab_of_properties_d1[6];
@@ -61,7 +61,7 @@ class Scene{
 
         std::list <std::shared_ptr <Drone>> Drone_list;
 
-        std::list <std::shared_ptr <Cuboid>> Obstacle_list;
+        std::list <std::shared_ptr <Scene_object>> Obstacle_list;
 
         std::list <std::shared_ptr <Scene_object>> Objects_list;
 
@@ -87,4 +87,10 @@ class Scene{
         void add_new_drone(Vector3D const & position);
 
         void add_obstacle_plateau(Vector3D const & position, Vector3D const & scale, PzG::LaczeDoGNUPlota & Link);
+
+        void list_obstacles();
+
+        void delete_obstacle(int obstacle_ID, PzG::LaczeDoGNUPlota & Link); 
+
+        
 };

@@ -108,4 +108,9 @@ class Drone: public Scene_object{
 
         /*! \brief Metoda realizujaca zapis calego drona do pliku. */
         void Calculate_and_save_to_file_drone();
-};
+
+
+        std::string const & get_name_of_file() override final;
+
+        Vector3D const & get_position() override final;
+};  

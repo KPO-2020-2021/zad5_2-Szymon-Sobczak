@@ -124,3 +124,6 @@ double Cuboid::get_angle() const{
     return Roration_angle_Zaxis;
 }
 
+Vector3D const & Cuboid::get_center(){
+    return Center_of_cuboid;
+}

@@ -8,3 +8,7 @@ Scene_object::Scene_object(unsigned int ID, std::string type){
 int Scene_object::get_obj_ID(){
     return object_ID;
 }
+
+std::string Scene_object::get_type() const{
+    return type_of_obj;
+}

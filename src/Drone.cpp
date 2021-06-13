@@ -488,3 +488,12 @@ void Drone::update_angle(double const & additional_angle){
 double Drone::get_angle() const{
     return Orientation_angle;
 }
+
+ std::string const & Drone::get_name_of_file(){
+   return fuselage.Get_Name_of_file_global();
+ }
+
+
+  Vector3D const & Drone::get_position(){
+      return fuselage.get_center();
+  } 
