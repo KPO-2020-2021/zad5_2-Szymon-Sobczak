@@ -43,7 +43,8 @@
         - Zaplanowanie sciezki pojedynczego przelotu oraz zwiadu i zapisanie jej do pliku.
         - Poruszanie sie dronem w ukladzie globalnym, sceny w gore, dol, boki oraz obrot.
         - Aktualizacje kata obrotu drona w osi Z. 
-        - Zapis polaczonej bryly drona do pliku.                                                     
+        - Zapis polaczonej bryly drona do pliku.     
+        - Pobranie nazwy pliku zawierajacego dane o kadlubie.                                                
 */
 
 class Drone: public Scene_object{
@@ -109,8 +110,9 @@ class Drone: public Scene_object{
         /*! \brief Metoda realizujaca zapis calego drona do pliku. */
         void Calculate_and_save_to_file_drone();
 
-
+        /*! \brief Metoda pozwalajca pobrac nazwe obiektu sceny - drona */
         std::string const & get_name_of_file() override final;
 
+        /*! \brief Metoda pozwalajca pobrac pozycje obiektu sceny - drona */
         Vector3D const & get_position() override final;
 };  

@@ -17,7 +17,6 @@ Geometrical_solid::Geometrical_solid(){
     Name_of_file_global = "../datasets/Glb_crd_";
 }
 
-
 /*!
     Metoda zmienia skale bryly geometrycznej, czyli to jakie dlugosci bokow bedzie posiadala bryla. 
     
@@ -48,13 +47,11 @@ std::string const & Geometrical_solid::Get_Name_of_file_global (){
     return Name_of_file_global;
 }
 
-
 /*!
-    Metoda zmienia nazwe globalna bryly geometrycznej. 
+    Metoda zmienia nazwe globalna pliku bryly geometrycznej. 
     
     \param[in] new_scale - nowa nazwa globalna bryly geometrycznej.
 */
-
 
 void Geometrical_solid::update_Name_of_file_global(std::string const & new_name){
     Name_of_file_global = new_name;

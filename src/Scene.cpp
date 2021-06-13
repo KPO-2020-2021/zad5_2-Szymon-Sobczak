@@ -18,13 +18,13 @@
     \return Scene zawierajaca dwa drony.        
 */
 
-Scene::Scene(PzG::LaczeDoGNUPlota & Link){
+Scene::Scene(PzG::LaczeDoGNUPlota *Link){
     
-    std::cout << & Link << std::endl;
+    std::cout << &Link << std::endl;
 
     Link_to_gnuplot = Link;
 
-    std::cout << & Link_to_gnuplot << std::endl;
+    std::cout << &Link_to_gnuplot << std::endl;
 
     Nbr_of_active_drone = 1;
 
@@ -38,7 +38,7 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     double val_ctr_pla0[3]={150,50,10}, val_scale[3]={60,60,20};
     Vector3D center_of_plateau0(val_ctr1),scale_of_plateau0(val_ctr2);
 
-    add_obstacle_plateau(val_ctr_pla0,val_scale, Link);
+    add_obstacle_mnt_pointed(val_ctr_pla0, val_scale);
     /* 
     double trans_test[3] = {100,100,20}, scale_test[3] = {20,20,40};
     Vector3D translation(trans_tes), scale(scale_test);
@@ -46,35 +46,42 @@ Scene::Scene(PzG::LaczeDoGNUPlota & Link){
     add_obstacle_plateau(trans_test,scale_test);
     */
 
-    Link.ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
-    Link.UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
-    Link.UstawZakresX(0,200);
-    Link.UstawZakresZ(0,150); 
+    (*Link_to_gnuplot).ZmienTrybRys(PzG::TR_3D); /* Ustawienie trybu rysowania w gnuplot na 3D. */
+    (*Link_to_gnuplot).UstawZakresY(0,200);      /* Uwstawienie zakresu osi OX, OY i OZ w Gnuplot */ 
+    (*Link_to_gnuplot).UstawZakresX(0,200);
+    (*Link_to_gnuplot).UstawZakresZ(0,150); 
 
-    PzG::InfoPlikuDoRysowania *File_info_bed = & Link.DodajNazwePliku("../datasets/bed.dat");
+    PzG::InfoPlikuDoRysowania *File_info_bed = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/bed.dat");
     File_info_bed -> ZmienKolor(4);
     File_info_bed -> ZmienSzerokosc(2); 
     
-    Tab_of_properties_d1[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_fuselage.dat");
-    Tab_of_properties_d1[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor0.dat");
-    Tab_of_properties_d1[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor1.dat");
-    Tab_of_properties_d1[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor2.dat");
-    Tab_of_properties_d1[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_rotor3.dat");
-    Tab_of_properties_d1[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_0_front_camera.dat");
+    Tab_of_properties_d1[0] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_fuselage.dat");
+    Tab_of_properties_d1[1] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_rotor0.dat");
+    Tab_of_properties_d1[2] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_rotor1.dat");
+    Tab_of_properties_d1[3] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_rotor2.dat");
+    Tab_of_properties_d1[4] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_rotor3.dat");
+    Tab_of_properties_d1[5] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_0_front_camera.dat");
 
-    Tab_of_properties_d2[0] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_fuselage.dat");
-    Tab_of_properties_d2[1] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor0.dat");
-    Tab_of_properties_d2[2] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor1.dat");
-    Tab_of_properties_d2[3] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor2.dat");
-    Tab_of_properties_d2[4] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_rotor3.dat");
-    Tab_of_properties_d2[5] = & Link.DodajNazwePliku("../datasets/Glb_crd_No_1_front_camera.dat");
+    Tab_of_properties_d2[0] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_fuselage.dat");
+    Tab_of_properties_d2[1] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_rotor0.dat");
+    Tab_of_properties_d2[2] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_rotor1.dat");
+    Tab_of_properties_d2[3] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_rotor2.dat");
+    Tab_of_properties_d2[4] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_rotor3.dat");
+    Tab_of_properties_d2[5] = & (*Link_to_gnuplot).DodajNazwePliku("../datasets/Glb_crd_No_1_front_camera.dat");
 
     for (unsigned int i = 0; i < 6; ++i){
         Tab_of_properties_d1[i] -> ZmienSzerokosc(2);
         Tab_of_properties_d2[i] -> ZmienSzerokosc(2);
     } 
-    Link.Rysuj();
+    (*Link_to_gnuplot).Rysuj();
 }
+
+Scene::~Scene(){
+    for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
+       remove (Obstacle->get_name_of_file().c_str());
+    }
+}
+
 
 /*!
     Metoda pozwala ustawic, ktory z dron na scenie jest dronem aktywnym. 
@@ -145,16 +152,44 @@ std::shared_ptr <Drone> Scene::use_active_drone(){
     return *Drone_iterator;
 }
 
-void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & scale, PzG::LaczeDoGNUPlota & Link){
+void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & scale){
     std::shared_ptr<Plateau> tmp_ptr = std::make_shared<Plateau>(position, scale, Number_of_obstacles++);
 
-    PzG::InfoPlikuDoRysowania *Temp_property = & Link.DodajNazwePliku(tmp_ptr->Get_Name_of_file_global().c_str());
-    Temp_property-> ZmienSzerokosc(2);
+    PzG::InfoPlikuDoRysowania *Temp_property = & (*Link_to_gnuplot).DodajNazwePliku(tmp_ptr->Get_Name_of_file_global().c_str());
+    
+    Temp_property-> ZmienSzerokosc(2); 
+    Temp_property-> ZmienKolor(4);
 
     Obstacle_list.push_back(tmp_ptr);
     Objects_list.push_back(tmp_ptr);
 
-    Link.Rysuj();
+    (*Link_to_gnuplot).Rysuj();
+}  
+
+void Scene::add_obstacle_mnt_long(Vector3D const & position, Vector3D const & scale){
+    std::shared_ptr<Mnt_long> tmp_ptr = std::make_shared<Mnt_long>(position, scale, Number_of_obstacles++);
+
+    PzG::InfoPlikuDoRysowania *Temp_property = & (*Link_to_gnuplot).DodajNazwePliku(tmp_ptr->Get_Name_of_file_global().c_str());
+    Temp_property-> ZmienSzerokosc(2); 
+    Temp_property-> ZmienKolor(4);
+
+    Obstacle_list.push_back(tmp_ptr);
+    Objects_list.push_back(tmp_ptr);
+
+    (*Link_to_gnuplot).Rysuj();
+}  
+
+void Scene::add_obstacle_mnt_pointed(Vector3D const & position, Vector3D const & scale){
+    std::shared_ptr<Mnt_pointed> tmp_ptr = std::make_shared<Mnt_pointed>(position, scale, Number_of_obstacles++);
+
+    PzG::InfoPlikuDoRysowania *Temp_property = & (*Link_to_gnuplot).DodajNazwePliku(tmp_ptr->Get_Name_of_file_global().c_str());
+    Temp_property-> ZmienSzerokosc(2); 
+    Temp_property-> ZmienKolor(4);
+
+    Obstacle_list.push_back(tmp_ptr);
+    Objects_list.push_back(tmp_ptr);
+
+    (*Link_to_gnuplot).Rysuj();
 }  
 
 void Scene::add_new_drone(Vector3D const & position){
@@ -170,7 +205,7 @@ void Scene::list_obstacles(){
 }
 
 
-void Scene::delete_obstacle(int obstacle_ID, PzG::LaczeDoGNUPlota & Link){
+void Scene::delete_obstacle(int obstacle_ID){
 
     auto check_obstacle = [obstacle_ID](std::shared_ptr<Scene_object> Ptr) -> bool{ 
         return (Ptr->get_obj_ID() == obstacle_ID && Ptr->get_type() != "dron" ); 
@@ -192,8 +227,8 @@ void Scene::delete_obstacle(int obstacle_ID, PzG::LaczeDoGNUPlota & Link){
         return;
     }
 
-    Link.UsunNazwePliku((*obs_iterator)->get_name_of_file().c_str());
-    
+    (*Link_to_gnuplot).UsunNazwePliku((*obs_iterator)->get_name_of_file().c_str());
+    remove ((*obs_iterator)->get_name_of_file().c_str());
     Obstacle_list.erase(obs_iterator);
     Objects_list.erase(obj_iterator);
 }

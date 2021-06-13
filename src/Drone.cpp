@@ -423,24 +423,24 @@ void Drone::plan_reacon(PzG::LaczeDoGNUPlota & Link){
     
     Matrix3x3 Rotation_matrix = Fill_matrix_OZ(Orientation_angle);
     unit_vector = Rotation_matrix * unit_vector;
-    path_point_location = path_point_location + (unit_vector*REACON_RADIUS);
+    path_point_location = path_point_location + (unit_vector * REACON_RADIUS);
     FileStrm << path_point_location << std::endl;
    
     Rotation_matrix = Fill_matrix_OZ(112.5);
     unit_vector = Rotation_matrix * unit_vector;
-    path_point_location = path_point_location + (unit_vector*REACON_RADIUS/sqrt((2+sqrt(2))/2));
+    path_point_location = path_point_location + (unit_vector * REACON_RADIUS/sqrt((2+sqrt(2))/2));
     FileStrm << path_point_location << std::endl;
    
     for (unsigned int i = 0;i < 7 ; ++i){
         Rotation_matrix = Fill_matrix_OZ(45);
         unit_vector = Rotation_matrix * unit_vector;
-        path_point_location = path_point_location + (unit_vector*REACON_RADIUS/sqrt((2+sqrt(2))/2));
+        path_point_location = path_point_location + (unit_vector * REACON_RADIUS/sqrt((2+sqrt(2))/2));
         FileStrm << path_point_location << std::endl;
     }
    
     Rotation_matrix = Fill_matrix_OZ(112.5);
     unit_vector = Rotation_matrix * unit_vector;
-    path_point_location = path_point_location + (unit_vector*REACON_RADIUS);
+    path_point_location = path_point_location + (unit_vector * REACON_RADIUS);
     FileStrm << path_point_location << std::endl;
    
     path_point_location[2] -= ALTITUDE; 
@@ -489,11 +489,24 @@ double Drone::get_angle() const{
     return Orientation_angle;
 }
 
+/*! 
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    Pozwala pobrac nazwe pliku kadluba drona.
+
+    \return Nazwe pliku zawierajacego dane o wierzcholkach kadluba.
+*/
+
  std::string const & Drone::get_name_of_file(){
    return fuselage.Get_Name_of_file_global();
  }
 
+/*! 
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    Pozwala pobrac pozycje srodka kadluba drona.
 
-  Vector3D const & Drone::get_position(){
+    \return Wektor polozenia srodka kadluba drona.
+*/
+
+ Vector3D const & Drone::get_position(){
       return fuselage.get_center();
-  } 
+} 

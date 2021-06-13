@@ -124,6 +124,12 @@ double Cuboid::get_angle() const{
     return Roration_angle_Zaxis;
 }
 
+/*! 
+    Metoda zwraca aktualne polozenie sodka postopadloscianu.
+
+    \return Wspolrzedne polozenia srodka prostopadloscianu, jako wartosc typu Vector3D.
+*/
+
 Vector3D const & Cuboid::get_center(){
     return Center_of_cuboid;
 }

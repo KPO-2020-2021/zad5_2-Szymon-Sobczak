@@ -36,7 +36,7 @@ int main(){
    
     std::cout << & Link << std::endl;
 
-   Scene Scenery(Link); /* Inicjalizacja sceny */
+   Scene Scenery(&Link); /* Inicjalizacja sceny */
 
    Link.Rysuj();
    try{
@@ -243,11 +243,11 @@ int main(){
                            throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
                         else   {
                            if(type_of_obstacle == 1)
-                              std::cout << "bwah " << std::endl;
+                              Scenery.add_obstacle_mnt_pointed(temp_position, temp_scale);
                            if(type_of_obstacle == 2)
-                              std::cout << "bwah " << std::endl;
+                              Scenery.add_obstacle_mnt_long(temp_position, temp_scale);
                            if(type_of_obstacle == 3)
-                              Scenery.add_obstacle_plateau(temp_position, temp_scale,Link);
+                              Scenery.add_obstacle_plateau(temp_position, temp_scale);
                            break;
 
                            std::cout << "Element zostal dodany do sceny" << std::endl;
@@ -269,10 +269,14 @@ int main(){
                         Scenery.list_obstacles();
                         std::cout << "Podaj numer elementu > ";
                         std::cin >> ID_nbr_of_obstacle;
+                        
                         if(std::cin.fail())
                            throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
-                        else   
+                        else{
+                           Scenery.delete_obstacle(ID_nbr_of_obstacle);
                            break;
+                        }
+                          
                   }
                   catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
                         std::cerr << f.what() << std::endl << ":/ Sprobuj jeszcze raz"  << std::endl;
@@ -280,7 +284,6 @@ int main(){
                         std::cin.ignore(10000,'\n');   
                   }
                }
-               Scenery.delete_obstacle(ID_nbr_of_obstacle,Link);
                Link.Rysuj();
                std::cout << "Element zostal usuniety ze sceny" << std::endl;
             break;

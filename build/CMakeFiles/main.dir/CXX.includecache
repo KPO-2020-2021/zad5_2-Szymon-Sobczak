@@ -74,6 +74,34 @@ matrix3x3.hh
 Geometrical_solid.hh
 ../inc/Geometrical_solid.hh
 
+../inc/Obs_mnt_long.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+Cuboid.hh
+../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
+
+../inc/Obs_mnt_pointed.hh
+iostream
+-
+fstream
+-
+cmath
+-
+iomanip
+-
+Cuboid.hh
+../inc/Cuboid.hh
+Scene_object.hh
+../inc/Scene_object.hh
+
 ../inc/Obs_plateau.hh
 iostream
 -
@@ -109,6 +137,10 @@ Drone.hh
 ../inc/Drone.hh
 Obs_plateau.hh
 ../inc/Obs_plateau.hh
+Obs_mnt_long.hh
+../inc/Obs_mnt_long.hh
+Obs_mnt_pointed.hh
+../inc/Obs_mnt_pointed.hh
 lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
 

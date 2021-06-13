@@ -6,6 +6,8 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Drone.hh
  ../inc/Geometrical_solid.hh
  ../inc/Hexagonal_prism.hh
+ ../inc/Obs_mnt_long.hh
+ ../inc/Obs_mnt_pointed.hh
  ../inc/Obs_plateau.hh
  ../inc/Scene.hh
  ../inc/Scene_object.hh

@@ -29,7 +29,8 @@
         - Transformacje prostopadlosiacnu z ukladu lokalnego do ukladu globalnego.
         - Aktualizajce kata obrotu prostopadloscianu.
         - Przeciazenie operatorow indeksujacych, umozliwajacych odczytywanie i zmiane wartosci reprezentujacych wierzcholki prostopadloscianu w ukladzie globalnym.   
-        - Pobranie aktualngo kata obrotu prostopadloscianu.                                                        
+        - Pobranie aktualngo kata obrotu prostopadloscianu.     
+        - Pobranie aktualngo polozenia srodka prostopadloscianu.                                                    
 */
 
 class Cuboid: public Geometrical_solid{
@@ -58,6 +59,9 @@ class Cuboid: public Geometrical_solid{
 
         /*! \brief Metoda pozwaljaca pobrac aktualny kat obrotu prostopadloscianu */
         double get_angle() const;
+
+        /*! \brief Metoda pozwalaja na pobranie pozycji srodka prostopadloscianu */
+        Vector3D const & get_center();
         
         /*! \brief Przeciazenie operatora indeksujacego */
         const Vector3D & operator [] (int index) const;         
@@ -70,7 +74,4 @@ class Cuboid: public Geometrical_solid{
         
         /*! \brief Przeciazenie operatora funkcyjnego */
         Vector3D & operator () (int index);
-
-        /*! \brief Metoda pozwalaja na aktualizowanie pozycji srodka prostopadloscianu */
-        Vector3D const & get_center();
 };

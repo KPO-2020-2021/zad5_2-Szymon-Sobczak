@@ -1,7 +1,7 @@
 #include "Obs_plateau.hh"
 
  Plateau::Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "plaskowyz") {
-    this-> update_scale (scale);
+    update_scale (scale);
     save_to_file(position);
 }
 

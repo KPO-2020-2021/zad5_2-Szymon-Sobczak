@@ -75,6 +75,8 @@ CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Cuboid.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Drone.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Geometrical_solid.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Hexagonal_prism.hh
+CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Obs_mnt_long.hh
+CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Obs_mnt_pointed.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Obs_plateau.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Scene.hh
 CMakeFiles/program.dir/src/Scene.cpp.o: ../inc/Scene_object.hh

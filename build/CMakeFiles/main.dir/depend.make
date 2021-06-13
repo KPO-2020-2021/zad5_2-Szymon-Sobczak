@@ -5,6 +5,8 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/Cuboid.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Drone.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Geometrical_solid.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Hexagonal_prism.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/Obs_mnt_long.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/Obs_mnt_pointed.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Obs_plateau.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Scene.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Scene_object.hh
