@@ -1,7 +1,7 @@
 #include "Geometrical_solid.hh"
 
 /*!
-    \file
+    \file Geometrical_solid.cpp
         \brief Definicje metod klasy Geometrical_solid
 
     Zawiera definicje funkcji i metod klasy Geometrical_solid.

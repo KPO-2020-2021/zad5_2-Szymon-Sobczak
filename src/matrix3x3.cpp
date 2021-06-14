@@ -2,7 +2,7 @@
 #include "matrix3x3.hh"
 
 /*!
-    \file  
+    \file matrix3x3.cpp
         \brief definicje funkcji wypelniajacej Matrix3x3 wartosciaciami macierzy obrotu 3D w osi OX, OY i OZ, dla zadanego kata..
 */
 

@@ -1,7 +1,7 @@
 #pragma once
 
 /*!
-    \file  
+    \file size.hh
         \brief definicje stalych wystepujacych w programie.
 */
 

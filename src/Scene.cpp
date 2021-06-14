@@ -1,7 +1,7 @@
 #include "Scene.hh"
 
 /*!
-    \file
+    \file Scene.cpp
         \brief Definicje metod klasy Drone.
 
     Zawiera definicje metod klasy Drone.

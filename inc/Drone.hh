@@ -12,7 +12,7 @@
 #include "Hexagonal_prism.hh"
 
 /*!
-    \file
+    \file Drone.hh
         \brief  Definicja klasy Drone.
 
     Prototypy funkcji i metod klasy Drone.

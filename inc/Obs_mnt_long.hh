@@ -9,7 +9,7 @@
 #include "Scene_object.hh"
 
 /*!
-    \file
+    \file Obs_mnt_long.hh
         \brief  Definicja klasy Mnt_long.
 
     Prototypy metod klasy Mnt_long.
@@ -22,7 +22,7 @@
         - Publiczny konstuktor wieloparametryczny pozwalajacy stworzyc gore ze zboczem w okreslonym miejscu na scenie, o okreslonej skali i numerze ID.
         - Metode pozwalajaca na transformacje bryly prostopadloscianu do postaci gory ze zboczem. 
 
-    Utworzona klasa zawiera prywatna metode pozwalajaca na zapis odpowiednio zmodyfikowanej gory ze zboczem do pliku.
+    Utworzona klasa zawiera pulbiczna metode pozwalajaca na zapis odpowiednio zmodyfikowanej gory ze zboczem do pliku.
 
     Utworzona klasa zawiera metody przeslaniajace czysto wirtualne metody z klasy Scene_object pozwalajace na:
         - Pobranie nazwy pliku zawierajacego dane o wierzcholkach gory ze zboczem.
@@ -31,16 +31,16 @@
 
 class Mnt_long: public Cuboid, public Scene_object{
     private:
-        /*! \brief Metoda pozwalajaca zapisac gore ze zboczem do pliku */
-        void save_to_file(Vector3D const & position);
+        /*! \brief Metoda pozwalajaca na modyfikacje rozkladu wierzcholkow loklanych */
+        void transform_shape();
 
     public:
         /*! \brief Konstruktor wieloparametryczny klasy */
         Mnt_long(Vector3D const & position, Vector3D const & scale, unsigned int ID);
 
-        /*! \brief Metoda pozwalajaca na modyfikacje rozkladu wierzcholkow loklanych */
-        void transform_shape();
-
+        /*! \brief Metoda pozwalajaca zapisac gore ze zboczem do pliku */
+        void save_to_file(Vector3D const & position);
+        
         /*! \brief Metoda sluzy do pobrania nazwy pliku zawierajacego dane o wierzcholkach gory ze zboczem. */
         std::string const & get_name_of_file() override final;
 

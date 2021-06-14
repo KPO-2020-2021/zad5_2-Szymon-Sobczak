@@ -9,7 +9,7 @@
 #include "Geometrical_solid.hh"
 
 /*!
-    \file
+    \file Cuboid.hh
         \brief  Definicja klasy Cuboid.
 
     Prototypy funkcji i metod klasy Cuboid, dziedziczacej z klasy Geometrical_solid.
@@ -21,7 +21,7 @@
     Klasa posiada:
         - prywatne pole "Local_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow lokalnych prostopadloscianu.
         - prywatne pole "Global_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow globalnych prostopadloscianu.
-        - prywatne pole "Center_of_cuboid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka prostopadloscianu.
+        - prywatne pole "Center_of_solid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka prostopadloscianu.
         - prywatne pole "Roration_angle_Zaxis" opisujace obrot prostopadloscianu w osi Z. 
         - publiczny konstruktor domyśly, nadajacy prostopadloscianowi wartosci wierzcholkow lokalnych.
     
@@ -36,7 +36,7 @@
 class Cuboid: public Geometrical_solid{
     private:
         /*! \brief Wektor3D reprezentujacy srodek prostopadloscianu w przestrzeni globalnej */
-        Vector3D Center_of_cuboid;
+        Vector3D Center_of_solid;
 
         /*! \brief Tablica wektorow3D reprezentujacych rozklad wierzcholkow prostopadloscianu w ukladzie lokalnym */
         Vector3D Local_corners[8]; 

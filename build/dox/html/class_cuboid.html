@@ -114,7 +114,7 @@ Diagram współpracy dla Cuboid:</div>
 <div class="center"><img src="class_cuboid__coll__graph.png" border="0" usemap="#a_cuboid_coll__map" alt="Collaboration graph"/></div>
 <map name="a_cuboid_coll__map" id="a_cuboid_coll__map">
 <area shape="rect" title="Klasa modelujaca w programie pojecie prostopadloscianu, ktorego wierzcholki i centrum sa wyrazone za ..." alt="" coords="27,277,93,304"/>
-<area shape="rect" href="class_geometrical__solid.html" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="186,193,326,219"/>
+<area shape="rect" href="class_geometrical__solid.html" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="174,193,314,219"/>
 <area shape="rect" href="class_vector.html" title=" " alt="" coords="15,95,116,121"/>
 <area shape="rect" href="class_vector.html" title="Szablon klasy modelujacej w programie pojecie wektora." alt="" coords="5,5,125,32"/>
 </map>
@@ -168,9 +168,9 @@ Metody publiczne</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
-<tr class="memitem:a80cb095d61312a85ae134e8bb9b3698e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a80cb095d61312a85ae134e8bb9b3698e">Center_of_cuboid</a></td></tr>
-<tr class="memdesc:a80cb095d61312a85ae134e8bb9b3698e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor3D reprezentujacy srodek prostopadloscianu w przestrzeni globalnej.  <a href="class_cuboid.html#a80cb095d61312a85ae134e8bb9b3698e">Więcej...</a><br /></td></tr>
-<tr class="separator:a80cb095d61312a85ae134e8bb9b3698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d041761c3bcacdef76d36f3cb0e2dae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a0d041761c3bcacdef76d36f3cb0e2dae">Center_of_solid</a></td></tr>
+<tr class="memdesc:a0d041761c3bcacdef76d36f3cb0e2dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor3D reprezentujacy srodek prostopadloscianu w przestrzeni globalnej.  <a href="class_cuboid.html#a0d041761c3bcacdef76d36f3cb0e2dae">Więcej...</a><br /></td></tr>
+<tr class="separator:a0d041761c3bcacdef76d36f3cb0e2dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ded353cde79ecfe74c22b87ef6802c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cuboid.html#a89ded353cde79ecfe74c22b87ef6802c">Local_corners</a> [8]</td></tr>
 <tr class="memdesc:a89ded353cde79ecfe74c22b87ef6802c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica wektorow3D reprezentujacych rozklad wierzcholkow prostopadloscianu w ukladzie lokalnym.  <a href="class_cuboid.html#a89ded353cde79ecfe74c22b87ef6802c">Więcej...</a><br /></td></tr>
 <tr class="separator:a89ded353cde79ecfe74c22b87ef6802c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +186,7 @@ Atrybuty prywatne</h2></td></tr>
 <p>Klasa posiada:</p><ul>
 <li>prywatne pole "Local_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow lokalnych prostopadloscianu.</li>
 <li>prywatne pole "Global_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow globalnych prostopadloscianu.</li>
-<li>prywatne pole "Center_of_cuboid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka prostopadloscianu.</li>
+<li>prywatne pole "Center_of_solid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka prostopadloscianu.</li>
 <li>prywatne pole "Roration_angle_Zaxis" opisujace obrot prostopadloscianu w osi Z.</li>
 <li>publiczny konstruktor domyśly, nadajacy prostopadloscianowi wartosci wierzcholkow lokalnych.</li>
 </ul>
@@ -301,12 +301,11 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cuboid_a1e9cb9b3a754247d602b51d501537888_icgraph.png" border="0" usemap="#aclass_cuboid_a1e9cb9b3a754247d602b51d501537888_icgraph" alt=""/></div>
 <map name="aclass_cuboid_a1e9cb9b3a754247d602b51d501537888_icgraph" id="aclass_cuboid_a1e9cb9b3a754247d602b51d501537888_icgraph">
-<area shape="rect" title="Metoda pozwalaja na pobranie pozycji srodka prostopadloscianu." alt="" coords="245,107,389,133"/>
-<area shape="rect" href="class_drone.html#ab706f7738284de4760264ce9dd8d469a" title="Metoda pozwalajca pobrac pozycje obiektu sceny &#45; drona." alt="" coords="27,5,176,32"/>
-<area shape="rect" href="class_mnt__long.html#a0004eda65d853a0d4bb14e67a8186ff9" title="Metoda sluzy do pobrania pozycji srodka gory ze zboczem." alt="" coords="16,56,187,83"/>
-<area shape="rect" href="class_mnt__pointed.html#a163000d39030a8a1ccd3f20e9d9de23a" title="Metoda sluzy do pobrania pozycji srodka gory ze szczytem." alt="" coords="6,107,197,133"/>
-<area shape="rect" href="class_plateau.html#abdf10c504ab7b86f1750986d261a0499" title="Metoda sluzy do pobrania pozycji srodka plaskowyzu." alt="" coords="22,157,181,184"/>
-<area shape="rect" href="class_mnt__pointed.html#a760962397628cae67064bd4448cb6fc9" title="Konstruktor wieloparametryczny klasy." alt="" coords="5,208,197,235"/>
+<area shape="rect" title="Metoda pozwalaja na pobranie pozycji srodka prostopadloscianu." alt="" coords="244,81,388,108"/>
+<area shape="rect" href="class_drone.html#ab706f7738284de4760264ce9dd8d469a" title="Metoda pozwalajca pobrac pozycje obiektu sceny &#45; drona." alt="" coords="26,5,175,32"/>
+<area shape="rect" href="class_mnt__long.html#a0004eda65d853a0d4bb14e67a8186ff9" title="Metoda sluzy do pobrania pozycji srodka gory ze zboczem." alt="" coords="15,56,186,83"/>
+<area shape="rect" href="class_mnt__pointed.html#a163000d39030a8a1ccd3f20e9d9de23a" title="Metoda sluzy do pobrania pozycji srodka gory ze szczytem." alt="" coords="5,107,196,133"/>
+<area shape="rect" href="class_plateau.html#abdf10c504ab7b86f1750986d261a0499" title="Metoda sluzy do pobrania pozycji srodka plaskowyzu." alt="" coords="21,157,180,184"/>
 </map>
 </div>
 
@@ -534,8 +533,8 @@ Oto graf wywoływań tej funkcji:</div>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
-<a id="a80cb095d61312a85ae134e8bb9b3698e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80cb095d61312a85ae134e8bb9b3698e">&#9670;&nbsp;</a></span>Center_of_cuboid</h2>
+<a id="a0d041761c3bcacdef76d36f3cb0e2dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d041761c3bcacdef76d36f3cb0e2dae">&#9670;&nbsp;</a></span>Center_of_solid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +543,7 @@ Oto graf wywoływań tej funkcji:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> Cuboid::Center_of_cuboid</td>
+          <td class="memname"><a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> Cuboid::Center_of_solid</td>
         </tr>
       </table>
   </td>

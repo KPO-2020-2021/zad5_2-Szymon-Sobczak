@@ -1,7 +1,7 @@
 #include "Scene_object.hh"
 
 /*!
-    \file
+    \file Scene_object.cpp
         \brief Definicje metod klasy Scene_object
 
     Zawiera definicje metod klasy Scene_object.

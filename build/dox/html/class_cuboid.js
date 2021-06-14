@@ -9,7 +9,7 @@ var class_cuboid =
     [ "operator[]", "class_cuboid.html#a07a687d9ca38998c19d8258bcb6eb4df", null ],
     [ "Transform_to_global_coords", "class_cuboid.html#a940aebd7222c87874c7e780f0d9376d5", null ],
     [ "update_angleZ", "class_cuboid.html#aa7e28082277e96871e189ff01e12b825", null ],
-    [ "Center_of_cuboid", "class_cuboid.html#a80cb095d61312a85ae134e8bb9b3698e", null ],
+    [ "Center_of_solid", "class_cuboid.html#a0d041761c3bcacdef76d36f3cb0e2dae", null ],
     [ "Global_corners", "class_cuboid.html#af2aafeda12722dfcc866347973d5e01b", null ],
     [ "Local_corners", "class_cuboid.html#a89ded353cde79ecfe74c22b87ef6802c", null ],
     [ "Roration_angle_Zaxis", "class_cuboid.html#a4f4bce99caa1af15c3a5c108e9ead271", null ]

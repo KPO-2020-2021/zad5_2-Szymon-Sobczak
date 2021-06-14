@@ -1,7 +1,7 @@
 #include "Cuboid.hh"
 
 /*!
-    \file
+    \file Cuboid.cpp
         \brief Definicje metod klasy Cuboid.
 
     Zawiera definicje funkcji i metod klasy Cuboid.
@@ -45,11 +45,11 @@ Cuboid::Cuboid(){
 */
 
 void Cuboid::Transform_to_global_coords(Vector3D const & vec){
-    Center_of_cuboid = vec;
+    Center_of_solid = vec;
 
     Matrix3x3 Rotation_matrixZ = Fill_matrix_OZ(Roration_angle_Zaxis);
     for (unsigned int i=0; i < 8; ++i)
-        Global_corners [i] = Rotation_matrixZ * (Local_corners[i] * get_scale()) + Center_of_cuboid;
+        Global_corners [i] = Rotation_matrixZ * (Local_corners[i] * get_scale()) + Center_of_solid;
 }
 
 /*!                                                                                                         
@@ -131,5 +131,5 @@ double Cuboid::get_angle() const{
 */
 
 Vector3D const & Cuboid::get_center(){
-    return Center_of_cuboid;
+    return Center_of_solid;
 }

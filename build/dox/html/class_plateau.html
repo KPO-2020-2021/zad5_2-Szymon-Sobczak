@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('class_plateau.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="class_plateau-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy Plateau</div>  </div>
@@ -115,7 +114,7 @@ Diagram współpracy dla Plateau:</div>
 <map name="a_plateau_coll__map" id="a_plateau_coll__map">
 <area shape="rect" title="Klasa modelujaca w programie pojecie plaskowyzu. Klasa dziedziczy po klasie Cuboid i Scene_object." alt="" coords="81,353,151,380"/>
 <area shape="rect" href="class_cuboid.html" title="Klasa modelujaca w programie pojecie prostopadloscianu, ktorego wierzcholki i centrum sa wyrazone za ..." alt="" coords="27,277,93,304"/>
-<area shape="rect" href="class_geometrical__solid.html" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="186,193,326,219"/>
+<area shape="rect" href="class_geometrical__solid.html" title="Klasa modelujaca w programie pojecie bryły geometrycznej." alt="" coords="174,193,314,219"/>
 <area shape="rect" href="class_vector.html" title=" " alt="" coords="15,95,116,121"/>
 <area shape="rect" href="class_vector.html" title="Szablon klasy modelujacej w programie pojecie wektora." alt="" coords="5,5,125,32"/>
 <area shape="rect" href="class_scene__object.html" title="Klasa modelujaca w programie pojecie obiektu sceny." alt="" coords="118,277,226,304"/>
@@ -127,6 +126,9 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:aea5be59e1435d22107b0f6d40dae69a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#aea5be59e1435d22107b0f6d40dae69a2">Plateau</a> (<a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> const &amp;position, <a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> const &amp;scale, unsigned int ID)</td></tr>
 <tr class="memdesc:aea5be59e1435d22107b0f6d40dae69a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor wieloparametryczny klasy.  <a href="class_plateau.html#aea5be59e1435d22107b0f6d40dae69a2">Więcej...</a><br /></td></tr>
 <tr class="separator:aea5be59e1435d22107b0f6d40dae69a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a856b51e1fe86e60ed79eec7fea0b6b0c">save_to_file</a> (<a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> const &amp;position)</td></tr>
+<tr class="memdesc:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca zapisac plaskowyz do pliku.  <a href="class_plateau.html#a856b51e1fe86e60ed79eec7fea0b6b0c">Więcej...</a><br /></td></tr>
+<tr class="separator:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b8a17600f20acf33d74701fd94f9834"><td class="memItemLeft" align="right" valign="top">std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a9b8a17600f20acf33d74701fd94f9834">get_name_of_file</a> () override final</td></tr>
 <tr class="memdesc:a9b8a17600f20acf33d74701fd94f9834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sluzy do pobrania nazwy pliku zawierajacego dane o wierzcholkach plaskowyzu.  <a href="class_plateau.html#a9b8a17600f20acf33d74701fd94f9834">Więcej...</a><br /></td></tr>
 <tr class="separator:a9b8a17600f20acf33d74701fd94f9834"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,12 +192,6 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a247d8bce7dc93d1db0929652e5f4afc2 inherit pub_methods_class_scene__object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene__object.html#a247d8bce7dc93d1db0929652e5f4afc2">get_obj_ID</a> ()</td></tr>
 <tr class="memdesc:a247d8bce7dc93d1db0929652e5f4afc2 inherit pub_methods_class_scene__object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca pobrac numer ID obiektu sceny.  <a href="class_scene__object.html#a247d8bce7dc93d1db0929652e5f4afc2">Więcej...</a><br /></td></tr>
 <tr class="separator:a247d8bce7dc93d1db0929652e5f4afc2 inherit pub_methods_class_scene__object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Metody prywatne</h2></td></tr>
-<tr class="memitem:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a856b51e1fe86e60ed79eec7fea0b6b0c">save_to_file</a> (<a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> const &amp;position)</td></tr>
-<tr class="memdesc:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca zapisac plaskowyz do pliku.  <a href="class_plateau.html#a856b51e1fe86e60ed79eec7fea0b6b0c">Więcej...</a><br /></td></tr>
-<tr class="separator:a856b51e1fe86e60ed79eec7fea0b6b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa modelujaca w programie pojecie plaskowyzu. Klasa dziedziczy po klasie <a class="el" href="class_cuboid.html" title="Klasa modelujaca w programie pojecie prostopadloscianu, ktorego wierzcholki i centrum sa wyrazone za ...">Cuboid</a> i <a class="el" href="class_scene__object.html" title="Klasa modelujaca w programie pojecie obiektu sceny.">Scene_object</a>. <br  />
@@ -203,7 +199,7 @@ Metody prywatne</h2></td></tr>
 <p>Klasa posiada:</p><ul>
 <li>Publiczny konstuktor wieloparametryczny pozwalajacy stworzyc plaskowyz w okreslonym miejscu na scenie, o okreslonej skali i numerze ID.</li>
 </ul>
-<p>Utworzona klasa zawiera prywatna metode pozwalajaca na zapis odpowiednio zmodyfikowanego plaskowyzu do pliku.</p>
+<p>Utworzona klasa zawiera publiczna metode pozwalajaca na zapis odpowiednio zmodyfikowanego plaskowyzu do pliku.</p>
 <p>Utworzona klasa zawiera metody przeslaniajace czysto wirtualne metody z klasy <a class="el" href="class_scene__object.html" title="Klasa modelujaca w programie pojecie obiektu sceny.">Scene_object</a> pozwalajace na:</p><ul>
 <li>Pobranie nazwy pliku zawierajacego dane o wierzcholkach plaskowyzu.</li>
 <li>Pobranie wektora reprezentujacego srodek plaskowyzu. </li>
@@ -363,9 +359,6 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Plateau::save_to_file </td>
@@ -375,11 +368,6 @@ Oto graf wywołań dla tej funkcji:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Metoda pozwalajaca zapisac plaskowyz do pliku. </p>

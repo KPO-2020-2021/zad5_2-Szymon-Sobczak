@@ -7,7 +7,7 @@
 #include <cmath>
 
 /*!
-    \file 
+    \file matrix.hh
         \brief Prototyp i definicja szablonu klasy Matrix<Size>.
 
     Prototypy i definicje metod szablonu klasy Matrix<Size>.

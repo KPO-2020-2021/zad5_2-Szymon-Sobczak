@@ -1,7 +1,7 @@
 #include "Hexagonal_prism.hh"
 
 /*!
-    \file
+    \file Hexagonal_prism.cpp
         \brief Definicje metod klasy Cuboid
 
     Zawiera definicje funkcji i metod klasy Cuboid.

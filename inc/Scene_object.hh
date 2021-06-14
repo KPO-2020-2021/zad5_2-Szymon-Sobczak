@@ -8,7 +8,7 @@
 #include "Geometrical_solid.hh"
 
 /*!
-    \file
+    \file Scene_object.hh
         \brief  Definicja klasy Scene_object.
 
     Prototypy metod klasy Scene_object.

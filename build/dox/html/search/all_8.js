@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['hexagonal_5fprism_103',['Hexagonal_prism',['../class_hexagonal__prism.html',1,'Hexagonal_prism'],['../class_hexagonal__prism.html#a0a4a4742c43235703c3968db146b2f9d',1,'Hexagonal_prism::Hexagonal_prism()']]],
-  ['hexagonal_5fprism_2ecpp_104',['Hexagonal_prism.cpp',['../_hexagonal__prism_8cpp.html',1,'']]],
-  ['hexagonal_5fprism_2ehh_105',['Hexagonal_prism.hh',['../_hexagonal__prism_8hh.html',1,'']]],
-  ['home_5fpage_2edox_106',['home_page.dox',['../home__page_8dox.html',1,'']]]
+  ['infoplikudorysowania_106',['InfoPlikuDoRysowania',['../class_pz_g_1_1_info_pliku_do_rysowania.html#a42f5a6ba16403a4364158fa46176ff7a',1,'PzG::InfoPlikuDoRysowania::InfoPlikuDoRysowania()'],['../class_pz_g_1_1_info_pliku_do_rysowania.html',1,'PzG::InfoPlikuDoRysowania']]],
+  ['infopunktydorysowania_107',['InfoPunktyDoRysowania',['../class_pz_g_1_1_info_punkty_do_rysowania.html#aed0725576cd5cf0ac01fc2e528e2c85b',1,'PzG::InfoPunktyDoRysowania::InfoPunktyDoRysowania()'],['../class_pz_g_1_1_info_punkty_do_rysowania.html',1,'PzG::InfoPunktyDoRysowania']]],
+  ['inicjalizuj_108',['Inicjalizuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a200ce6bdb980c314a9eafe49e8f2dd5e',1,'PzG::LaczeDoGNUPlota']]]
 ];

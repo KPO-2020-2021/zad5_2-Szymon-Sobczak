@@ -1,7 +1,7 @@
 #include "Obs_plateau.hh"
 
 /*!
-    \file
+    \file Obs_plateau.cpp
         \brief Definicje metod klasy Plateau
 
     Zawiera definicje metod klasy Plateau.

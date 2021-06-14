@@ -9,7 +9,7 @@
 #include "Geometrical_solid.hh"
 
 /*!
-    \file
+    \file Hexagonal_prism.hh
         \brief  Definicja klasy Cuboid.
 
     Prototypy funkcji i metod klasy Hexagonal_prism, dziedziczacej z klasy Geometrical_solid.
@@ -21,7 +21,7 @@
     Klasa posiada:
         - Prywatne pole "Local_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow lokalnych graniastoslupa prawidlowego szesciokatnego.
         - Prywatne pole "Global_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow globalnych graniastoslupa prawidlowego szesciokatnego.
-        - Prywatne pole "Center_of_cuboid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka graniastoslupa prawidlowego szesciokatnego.
+        - Prywatne pole "center_of_prism" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka graniastoslupa prawidlowego szesciokatnego.
         - Prywatne pole "Roration_angle_Zaxis" opisujace obrot rotora w osi Z. 
         - Publiczny konstruktor domyśly, nadajacy graniastoslupowi wartosci wierzcholkow lokalnych.
     

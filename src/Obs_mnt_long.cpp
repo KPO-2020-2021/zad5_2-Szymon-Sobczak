@@ -1,7 +1,7 @@
 #include "Obs_mnt_long.hh"
 
 /*!
-    \file
+    \file Obs_mnt_long.cpp
         \brief Definicje metod klasy Mnt_long
 
     Zawiera definicje metod klasy Mnt_long.

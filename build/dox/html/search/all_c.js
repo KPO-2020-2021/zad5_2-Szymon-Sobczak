@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['main_117',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['main_2ecpp_118',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['matrix_119',['Matrix',['../class_matrix.html',1,'Matrix&lt; Size &gt;'],['../class_matrix.html#a80c1366959dd6b71f6da4b1a04178b24',1,'Matrix::Matrix()'],['../class_matrix.html#ae600de101da25f1071409e1afe02834b',1,'Matrix::Matrix(double tmp[Size][Size])']]],
-  ['matrix_2ehh_120',['matrix.hh',['../matrix_8hh.html',1,'']]],
-  ['matrix3x3_121',['Matrix3x3',['../matrix3x3_8hh.html#ac0b1a54ceafb28519afcbd8939668a70',1,'matrix3x3.hh']]],
-  ['matrix3x3_2ecpp_122',['matrix3x3.cpp',['../matrix3x3_8cpp.html',1,'']]],
-  ['matrix3x3_2ehh_123',['matrix3x3.hh',['../matrix3x3_8hh.html',1,'']]],
-  ['max_5fvalue_5fdiff_124',['MAX_VALUE_DIFF',['../size_8hh.html#a14964ebd7b58743d65afbdbf901ef699',1,'size.hh']]],
-  ['mnt_5flong_125',['Mnt_long',['../class_mnt__long.html',1,'Mnt_long'],['../class_mnt__long.html#ab0659884d54f799b6475869481290b63',1,'Mnt_long::Mnt_long()']]],
-  ['mnt_5fpointed_126',['Mnt_pointed',['../class_mnt__pointed.html',1,'Mnt_pointed'],['../class_mnt__pointed.html#a760962397628cae67064bd4448cb6fc9',1,'Mnt_pointed::Mnt_pointed()']]]
+  ['name_5fof_5ffile_5fglobal_126',['Name_of_file_global',['../class_geometrical__solid.html#a84eee8c55db57e04bde5c5711f225b3c',1,'Geometrical_solid']]],
+  ['nbr_5fof_5factive_5fdrone_127',['Nbr_of_active_drone',['../class_scene.html#a6f64913676678f695c3ff7f7cb84f138',1,'Scene']]],
+  ['number_5fof_5fdrones_128',['Number_of_drones',['../class_scene.html#a0a4ce6ba96b842f40de7267826a5d7df',1,'Scene']]],
+  ['number_5fof_5fobstacles_129',['Number_of_obstacles',['../class_scene.html#a23400da256e7fa6fa4e143867f28ade9',1,'Scene']]]
 ];

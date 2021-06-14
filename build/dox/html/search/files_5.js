@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['lacze_5fdo_5fgnuplota_2ecpp_301',['lacze_do_gnuplota.cpp',['../lacze__do__gnuplota_8cpp.html',1,'']]],
-  ['lacze_5fdo_5fgnuplota_2ehh_302',['lacze_do_gnuplota.hh',['../lacze__do__gnuplota_8hh.html',1,'']]]
+  ['main_2ecpp_301',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['matrix_2ehh_302',['matrix.hh',['../matrix_8hh.html',1,'']]],
+  ['matrix3x3_2ecpp_303',['matrix3x3.cpp',['../matrix3x3_8cpp.html',1,'']]],
+  ['matrix3x3_2ehh_304',['matrix3x3.hh',['../matrix3x3_8hh.html',1,'']]]
 ];

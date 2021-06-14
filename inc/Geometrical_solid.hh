@@ -7,7 +7,7 @@
 #include "vector3D.hh"
 
 /*!
-    \file
+    \file Geometrical_solid.hh
         \brief  Definicja klasy Geometrical_solid.
 
     Prototypy funkcji i metod klasy Geometrical_solid.

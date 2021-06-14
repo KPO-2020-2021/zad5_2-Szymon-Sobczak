@@ -8,7 +8,6 @@ var files_dup =
     [ "Drone.hh", "_drone_8hh.html", [
       [ "Drone", "class_drone.html", "class_drone" ]
     ] ],
-    [ "example.cpp", "example_8cpp.html", null ],
     [ "Geometrical_solid.cpp", "_geometrical__solid_8cpp.html", null ],
     [ "Geometrical_solid.hh", "_geometrical__solid_8hh.html", [
       [ "Geometrical_solid", "class_geometrical__solid.html", "class_geometrical__solid" ]

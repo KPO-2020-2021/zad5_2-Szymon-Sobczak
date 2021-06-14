@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['plan_5fpath_156',['plan_path',['../class_drone.html#ab7c2b727392f63b2783ebb9bbbf72085',1,'Drone']]],
-  ['plan_5freacon_157',['plan_reacon',['../class_drone.html#a97fe0330e4a247df2be8d8b1dbff8773',1,'Drone']]],
-  ['plateau_158',['Plateau',['../class_plateau.html',1,'Plateau'],['../class_plateau.html#aea5be59e1435d22107b0f6d40dae69a2',1,'Plateau::Plateau()']]],
-  ['pokazos_5fox_159',['PokazOs_OX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a11421d7c67deab6b7524cc492407e897',1,'PzG::LaczeDoGNUPlota::PokazOs_OX(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ae112972af57167c3b053bf922bce6bbf',1,'PzG::LaczeDoGNUPlota::PokazOs_OX() const']]],
-  ['pokazos_5foy_160',['PokazOs_OY',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7c3db909b266fc30808e86406c04b516',1,'PzG::LaczeDoGNUPlota::PokazOs_OY(bool Pokaz)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7298f469f6932f5c808dcf620650b4b8',1,'PzG::LaczeDoGNUPlota::PokazOs_OY() const']]],
-  ['przeslijdognuplota_161',['PrzeslijDoGNUPlota',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a5063854b7232a7951d120a21df63f2b7',1,'PzG::LaczeDoGNUPlota']]],
-  ['pzg_162',['PzG',['../namespace_pz_g.html',1,'']]]
+  ['reacon_5fradius_162',['REACON_RADIUS',['../size_8hh.html#aa2fc9d01d8c980e9383e89eb7450527e',1,'size.hh']]],
+  ['readme_2emd_163',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['reset_5fmatrix_164',['reset_matrix',['../class_matrix.html#ab44f2b44f6003b43b11e24b0e2fa601e',1,'Matrix']]],
+  ['roration_5fangle_5fzaxis_165',['Roration_angle_Zaxis',['../class_cuboid.html#a4f4bce99caa1af15c3a5c108e9ead271',1,'Cuboid::Roration_angle_Zaxis()'],['../class_hexagonal__prism.html#a8774d5f4e0f8ffcc493712cad73f4500',1,'Hexagonal_prism::Roration_angle_Zaxis()']]],
+  ['rotacjax_166',['RotacjaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#addf0b844f626f3f5220de70efcbbdbb3',1,'PzG::LaczeDoGNUPlota']]],
+  ['rotacjaz_167',['RotacjaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9dac73754fab10644b287756003e9c79',1,'PzG::LaczeDoGNUPlota']]],
+  ['rotate_5fdrone_168',['rotate_drone',['../class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0',1,'Drone']]],
+  ['rotor_5fscale_169',['ROTOR_SCALE',['../size_8hh.html#ae07a5abaf487d2c2553c2212f2f7e535',1,'size.hh']]],
+  ['rotors_170',['rotors',['../class_drone.html#a24b0c383d2368a15bf4e451faa3b1f2f',1,'Drone']]],
+  ['roz_5flinii_171',['ROZ_LINII',['../lacze__do__gnuplota_8cpp.html#a2b501945c8d86114fcf6420cc1ee6306',1,'lacze_do_gnuplota.cpp']]],
+  ['rysuj_172',['Rysuj',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335',1,'PzG::LaczeDoGNUPlota']]],
+  ['rysujdopliku_173',['RysujDoPliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#aacb7ae45d283c741fb330f27b132e1a3',1,'PzG::LaczeDoGNUPlota']]]
 ];

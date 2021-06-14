@@ -19,7 +19,7 @@
 using namespace std;
 
 /*!
- * \file
+ * \file lacze_do_gnuplota.cpp
  *
  *  Ostatnia modyfikacja: 2020.06.07
  */

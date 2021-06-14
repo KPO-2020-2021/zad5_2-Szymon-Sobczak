@@ -1,25 +1,10 @@
 var searchData=
 [
-  ['update_5fangle_203',['update_angle',['../class_drone.html#a3c99b69b08004b87e3555839b0b319dd',1,'Drone']]],
-  ['update_5fanglez_204',['update_angleZ',['../class_cuboid.html#aa7e28082277e96871e189ff01e12b825',1,'Cuboid::update_angleZ()'],['../class_hexagonal__prism.html#a6ea7417039a3d731cbc572d52ffb554c',1,'Hexagonal_prism::update_angleZ()']]],
-  ['update_5fname_5fof_5ffile_5fglobal_205',['update_Name_of_file_global',['../class_geometrical__solid.html#a5ead7c5b0fc35bc36b58b06372784a41',1,'Geometrical_solid']]],
-  ['update_5fscale_206',['update_scale',['../class_geometrical__solid.html#ac1b0e258250344308e07f7f7175e19f3',1,'Geometrical_solid']]],
-  ['uruchamianie_20programu_207',['Uruchamianie Programu',['../md__home_ader__pulpit__zad_5_2__g_i_t_zad5_2__szymon__sobczak__r_e_a_d_m_e.html',1,'']]],
-  ['use_5factive_5fdrone_208',['use_active_drone',['../class_scene.html#a47624ea43c8ab2165e46b8c93542c937',1,'Scene']]],
-  ['ustawrotacjex_209',['UstawRotacjeX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#acb7456c930015c9a48f43b8618bd9391',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawrotacjexz_210',['UstawRotacjeXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ac48fed259e4ebf93072e3111264c9433',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawrotacjez_211',['UstawRotacjeZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab9c4c731e2cebe67e04221e0bb528809',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalex_212',['UstawSkaleX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a855b8338bfe3e5d294d719f24b11090e',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalexz_213',['UstawSkaleXZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4308151b54e105d302803146a3238699',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawskalez_214',['UstawSkaleZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ab0486db3166d8db6580a221079af241f',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawwspolrzetykietydlaprzesuniecia_215',['UstawWspolrzEtykietyDlaPrzesuniecia',['../class_pz_g_1_1_info_punkty_do_rysowania.html#aee45bb223dcbb35b32934eba41a723c6',1,'PzG::InfoPunktyDoRysowania']]],
-  ['ustawzakresx_216',['UstawZakresX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9c91987dfc869d6fcea96205c581daef',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawzakresy_217',['UstawZakresY',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a54c6e9cf9ab2eae479451fd953c2717c',1,'PzG::LaczeDoGNUPlota']]],
-  ['ustawzakresz_218',['UstawZakresZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1dbbb2b86fb13b8632e6bad9df2a82e3',1,'PzG::LaczeDoGNUPlota']]],
-  ['usunnazwepliku_219',['UsunNazwePliku',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6',1,'PzG::LaczeDoGNUPlota::UsunNazwePliku(const InfoPlikuDoRysowania *wInfoPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a9f31ec3f418db5df94e2b24096dfc64d',1,'PzG::LaczeDoGNUPlota::UsunNazwePliku(const char *sNazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)'],['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a29f5e5b048a278b4c032b6d9275d0826',1,'PzG::LaczeDoGNUPlota::UsunNazwePliku(const std::string &amp;NazwaPliku, TypDostepuDoZasobu Dostep=DZ_Lokalny)']]],
-  ['usunostatnianazwe_5flistaglobalna_220',['UsunOstatniaNazwe_ListaGlobalna',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#ac9b77a032e256c3143b984509a8b4bb5',1,'PzG::LaczeDoGNUPlota']]],
-  ['usunostatnianazwe_5flistalokalna_221',['UsunOstatniaNazwe_ListaLokalna',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a263a9dba2ef8030028a48217a183ecdf',1,'PzG::LaczeDoGNUPlota']]],
-  ['usunostatnianazwepliku_222',['UsunOstatniaNazwePliku',['../namespace_pz_g.html#a3927f83244df8a7245e105150a9fb3b2',1,'PzG']]],
-  ['usunwszystkienazwyplikow_223',['UsunWszystkieNazwyPlikow',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a89a1d90d017d264cd26398464d074073',1,'PzG::LaczeDoGNUPlota']]],
-  ['utworzprocespotomny_224',['UtworzProcesPotomny',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a1c7b9acc40de8d8bbb40fb0722512933',1,'PzG::LaczeDoGNUPlota']]]
+  ['value_224',['value',['../class_matrix.html#a10f33870797838072ca4ea56bd5fe56c',1,'Matrix']]],
+  ['vector_225',['Vector',['../class_vector.html',1,'Vector&lt; Size &gt;'],['../class_vector.html#a14c3a232bcf39100618dffbbf11b16d1',1,'Vector::Vector()'],['../class_vector.html#ae2bd2cdff2dd7e5baea847c2f9536ab0',1,'Vector::Vector(const Vector&lt; Size &gt; &amp;Ob)'],['../class_vector.html#abf000254d58e7b620815e4772733786e',1,'Vector::Vector(double tmp[Size])']]],
+  ['vector_2ehh_226',['vector.hh',['../vector_8hh.html',1,'']]],
+  ['vector3d_227',['Vector3D',['../vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0',1,'vector3D.hh']]],
+  ['vector3d_2ehh_228',['vector3D.hh',['../vector3_d_8hh.html',1,'']]],
+  ['vector_3c_203_20_3e_229',['Vector&lt; 3 &gt;',['../class_vector.html',1,'']]],
+  ['vector_5flength_230',['vector_length',['../vector_8hh.html#a929ea1c63656cd8395d15f97393c4f65',1,'vector.hh']]]
 ];

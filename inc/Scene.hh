@@ -19,7 +19,7 @@
 #include "lacze_do_gnuplota.hh"
 
 /*!
-    \file
+    \file Scene.hh
         \brief  Definicja klasy Scene.
 
     Prototypy funkcji i metod klasy Scene.

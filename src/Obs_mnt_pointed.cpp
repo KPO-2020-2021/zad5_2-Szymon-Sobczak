@@ -1,7 +1,7 @@
 #include "Obs_mnt_pointed.hh"
 
 /*!
-    \file
+    \file Obs_mnt_pointed.cpp
         \brief Definicje metod klasy Mnt_pointed
 
     Zawiera definicje metod klasy Mnt_pointed.
@@ -21,7 +21,6 @@ Mnt_pointed::Mnt_pointed(Vector3D const & position, Vector3D const & scale, unsi
     update_scale (scale);
     transform_shape();
     save_to_file(position);
-    std::cout << get_center() << std::endl;
 }
 
 /*!

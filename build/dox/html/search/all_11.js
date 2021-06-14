@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['save_5fto_5ffile_175',['save_to_file',['../class_mnt__long.html#a702fb3916bd52fa185bb50e8f109aa6a',1,'Mnt_long::save_to_file()'],['../class_mnt__pointed.html#aea2c46332bf466a64d26394a4eaee331',1,'Mnt_pointed::save_to_file()'],['../class_plateau.html#a856b51e1fe86e60ed79eec7fea0b6b0c',1,'Plateau::save_to_file()']]],
-  ['scale_176',['Scale',['../class_geometrical__solid.html#a321aa5b8a272eac4d69a3396e5a1958a',1,'Geometrical_solid']]],
-  ['scene_177',['Scene',['../class_scene.html',1,'Scene'],['../class_scene.html#aeb043a65c813c658bc4dfdb6f81b504e',1,'Scene::Scene()']]],
-  ['scene_2ecpp_178',['Scene.cpp',['../_scene_8cpp.html',1,'']]],
-  ['scene_2ehh_179',['Scene.hh',['../_scene_8hh.html',1,'']]],
-  ['scene_5fobject_180',['Scene_object',['../class_scene__object.html',1,'Scene_object'],['../class_scene__object.html#a33323a37328469c4d005165496dd28b3',1,'Scene_object::Scene_object()']]],
-  ['scene_5fobject_2ecpp_181',['Scene_object.cpp',['../_scene__object_8cpp.html',1,'']]],
-  ['scene_5fobject_2ehh_182',['Scene_object.hh',['../_scene__object_8hh.html',1,'']]],
-  ['size_183',['size',['../class_vector.html#af8d2f9e7e9102eb94607a5292a72f068',1,'Vector']]],
-  ['size_2ehh_184',['size.hh',['../size_8hh.html',1,'']]],
-  ['skalax_185',['SkalaX',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a4b1eb252fd785a5aeff938e7b2dce2b1',1,'PzG::LaczeDoGNUPlota']]],
-  ['skalaz_186',['SkalaZ',['../class_pz_g_1_1_lacze_do_g_n_u_plota.html#a44f922ccbc508d6cd7809c669238dae3',1,'PzG::LaczeDoGNUPlota']]],
-  ['sr_5fciagly_187',['SR_Ciagly',['../namespace_pz_g.html#a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546',1,'PzG']]],
-  ['sr_5fpunktowy_188',['SR_Punktowy',['../namespace_pz_g.html#a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4',1,'PzG']]],
-  ['sr_5fpunktowyniejednorodny_189',['SR_PunktowyNiejednorodny',['../namespace_pz_g.html#a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317',1,'PzG']]],
-  ['stdin_190',['STDIN',['../lacze__do__gnuplota_8cpp.html#ac00bfb46347d26fdc58568fe1ab5fa5b',1,'lacze_do_gnuplota.cpp']]],
-  ['stdout_191',['STDOUT',['../lacze__do__gnuplota_8cpp.html#a8875037d0772a4fc34516f1e03d7e238',1,'lacze_do_gnuplota.cpp']]]
+  ['tab_5fof_5fproperties_5fd1_191',['Tab_of_properties_d1',['../class_scene.html#af7bfa681f18381ea6a2d7d2370de6c2e',1,'Scene']]],
+  ['tab_5fof_5fproperties_5fd2_192',['Tab_of_properties_d2',['../class_scene.html#a7729083721fe86d7763946f97f8d8864',1,'Scene']]],
+  ['tr_5f2d_193',['TR_2D',['../namespace_pz_g.html#aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4',1,'PzG']]],
+  ['tr_5f3d_194',['TR_3D',['../namespace_pz_g.html#aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2',1,'PzG']]],
+  ['transform_5fshape_195',['transform_shape',['../class_mnt__long.html#a37829bce7abeeecf2a775d781c634b48',1,'Mnt_long::transform_shape()'],['../class_mnt__pointed.html#a6f2468afb3429ac006faf397766613e8',1,'Mnt_pointed::transform_shape()']]],
+  ['transform_5fto_5fglobal_5fcoords_196',['Transform_to_global_coords',['../class_cuboid.html#a940aebd7222c87874c7e780f0d9376d5',1,'Cuboid::Transform_to_global_coords()'],['../class_hexagonal__prism.html#a816173bc7296b7b9ae88da8cf3a56872',1,'Hexagonal_prism::Transform_to_global_coords()']]],
+  ['typdostepudozasobu_197',['TypDostepuDoZasobu',['../namespace_pz_g.html#af74528dea7061dcb07cf44f315703cf4',1,'PzG']]],
+  ['type_5fof_5fobj_198',['type_of_obj',['../class_scene__object.html#ab9012972539a46200049a3aa9277905d',1,'Scene_object']]],
+  ['typlistapunktow_199',['TypListaPunktow',['../namespace_pz_g.html#a663e923efc195ea10f6f7086c6da490b',1,'PzG']]],
+  ['typsposoburysowania_200',['TypSposobuRysowania',['../namespace_pz_g.html#a53d89f50686ddd39301f9706cc1247dc',1,'PzG']]],
+  ['typtryburysowania_201',['TypTrybuRysowania',['../namespace_pz_g.html#aef59d70a0ee2eab473790613c3628944',1,'PzG']]]
 ];
