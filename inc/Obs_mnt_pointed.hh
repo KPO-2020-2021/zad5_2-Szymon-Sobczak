@@ -4,6 +4,7 @@
 #include <fstream>
 #include <cmath>
 #include <iomanip>
+
 #include "Cuboid.hh"
 #include "Scene_object.hh"
 
@@ -31,7 +32,7 @@
 class Mnt_pointed: public Cuboid, public Scene_object{
     private:
         /*! \brief Metoda pozwalajaca zapisac gore ze szczytem do pliku */
-        void save_to_file(Vector3D const &  position);
+        void save_to_file(Vector3D const & position);
 
     public:
         /*! \brief Konstruktor wieloparametryczny klasy */

@@ -5,12 +5,11 @@
 #include <cmath>
 #include <iomanip>
 #include <unistd.h>
-#include "matrix3x3.hh"
-#include "vector3D.hh"
-#include "Cuboid.hh"
+
 #include "Scene_object.hh"
-#include "Hexagonal_prism.hh"
 #include "lacze_do_gnuplota.hh"
+#include "Cuboid.hh"
+#include "Hexagonal_prism.hh"
 
 /*!
     \file

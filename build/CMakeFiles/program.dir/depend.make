@@ -90,8 +90,6 @@ CMakeFiles/program.dir/src/Scene.cpp.o: ../src/Scene.cpp
 
 CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/Geometrical_solid.hh
 CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/Scene_object.hh
-CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/matrix.hh
-CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/matrix3x3.hh
 CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/size.hh
 CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/vector.hh
 CMakeFiles/program.dir/src/Scene_object.cpp.o: ../inc/vector3D.hh

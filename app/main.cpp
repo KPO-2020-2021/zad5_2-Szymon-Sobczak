@@ -7,20 +7,7 @@ users, this can be left out. */
         \brief Plik zawierajacy "main" programu.
 */
 
-#ifdef ENABLE_DOCTEST_IN_LIBRARY
-#define DOCTEST_CONFIG_IMPLEMENT
-#include "../tests/doctest/doctest.h"
-#endif
-
-#include "exampleConfig.h"
-#include "vector.hh"
-#include "matrix.hh"
-#include "vector3D.hh"
-#include "matrix3x3.hh"
-#include "vector.hh"
-#include "Drone.hh"
 #include "Scene.hh"
-#include "Scene_object.hh"
 #include "../inc/lacze_do_gnuplota.hh"
 
 /*! \brief Glowna funkcja programu.*/

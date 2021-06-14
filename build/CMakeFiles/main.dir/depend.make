@@ -18,6 +18,4 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/vector.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/vector3D.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../app/main.cpp
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/lacze_do_gnuplota.hh
-CMakeFiles/main.dir/app/main.cpp.o: ../tests/doctest/doctest.h
-CMakeFiles/main.dir/app/main.cpp.o: exampleConfig.h
 

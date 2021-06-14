@@ -4,10 +4,8 @@
 #include <fstream>
 #include <cmath>
 #include <iomanip>
-#include "vector3D.hh"
-#include "matrix3x3.hh"
-#include "Geometrical_solid.hh"
 
+#include "Geometrical_solid.hh"
 
 /*!
     \file
