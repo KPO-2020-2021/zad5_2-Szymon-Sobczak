@@ -1,11 +1,35 @@
 #include "Obs_mnt_pointed.hh"
 
+/*!
+    \file
+        \brief Definicje metod klasy Mnt_pointed
+
+    Zawiera definicje metod klasy Mnt_pointed.
+*/
+
+/*!
+    Konstrukotr przetwarza bryle prostopadloscianu do postaci gory ze szczytem i zapisuje ja do pliku. 
+
+    \param [in] position - wektor reprezentujacy polozenie srodka przeszkody.
+    \param [in] scale - skala gory ze szczytem.
+    \param [in] ID - numer ID przeszkody.
+
+    \return Gora ze szczytem o srodku w zadanej pozycji i skali, oraz zapisuje do pliku.
+*/
+
 Mnt_pointed::Mnt_pointed(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "gora ze szczytem") {
     update_scale (scale);
     transform_shape();
     save_to_file(position);
     std::cout << get_center() << std::endl;
 }
+
+/*!
+    Metoda zapisuje do pliku, o wygenerowanej automatycznie nazwie, dane o polozeniu wierzcholkow globalnych gory ze szczytem, po uprzednim wyliczeniu ich. 
+    Zapis odbywa sie w sposob umozliwajacy wyswietlenie wszystkich scian przeszkody w Gnuplot.   
+
+    \param [in] position - wektor reprezentujacy polozenie srodka przeszkody.
+*/
 
 void Mnt_pointed::save_to_file(Vector3D const & position){
     
@@ -65,13 +89,26 @@ void Mnt_pointed::save_to_file(Vector3D const & position){
     FileStrm.close();
 }
 
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Nazwe pliku zawierajacego dane o wierzcholkach gory ze szczytem, jako std::string.
+*/
+
 std::string const & Mnt_pointed::get_name_of_file(){
   return Get_Name_of_file_global();
 }
 
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Vector3D reprezentujacy srodek gory ze szczytem.
+*/
 Vector3D const & Mnt_pointed::get_position(){
   return get_center();
 }
+
+/*! 
+    Metoda modelujaca ksztalt gory ze szczytem.
+*/
 
 void Mnt_pointed::transform_shape(){
     Vector3D apex = ((*this)(7)  + (*this)(4)) / 2; 

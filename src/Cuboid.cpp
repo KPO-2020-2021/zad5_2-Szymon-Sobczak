@@ -125,7 +125,7 @@ double Cuboid::get_angle() const{
 }
 
 /*! 
-    Metoda zwraca aktualne polozenie sodka postopadloscianu.
+    Metoda zwraca aktualne polozenie srodka postopadloscianu.
 
     \return Wspolrzedne polozenia srodka prostopadloscianu, jako wartosc typu Vector3D.
 */

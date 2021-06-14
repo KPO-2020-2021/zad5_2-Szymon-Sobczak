@@ -1,10 +1,33 @@
 #include "Obs_plateau.hh"
 
- Plateau::Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "plaskowyz") {
+/*!
+    \file
+        \brief Definicje metod klasy Plateau
+
+    Zawiera definicje metod klasy Plateau.
+*/
+
+/*!
+    Konstrukotr przetwarza bryle prostopadloscianu do postaci plaskowyzu i zapisuje go do pliku. 
+
+    \param [in] position - wektor reprezentujacy polozenie srodka przeszkody.
+    \param [in] scale - skala plaskowyzu.
+    \param [in] ID - numer ID przeszkody.
+
+    \return Plaskowyz o srodku w zadanej pozycji i skali, oraz zapisuje do pliku.
+*/
+
+Plateau::Plateau(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "plaskowyz") {
     update_scale (scale);
     save_to_file(position);
 }
 
+/*!
+    Metoda zapisuje do pliku, o wygenerowanej automatycznie nazwie, dane o polozeniu wierzcholkow globalnych plaskowyzu, po uprzednim wyliczeniu ich. 
+    Zapis odbywa sie w sposob umozliwajacy wyswietlenie wszystkich scian przeszkody w Gnuplot.   
+
+    \param [in] position - wektor reprezentujacy polozenie srodka przeszkody.
+*/
 
 void Plateau::save_to_file(Vector3D const & position){
     
@@ -63,9 +86,19 @@ void Plateau::save_to_file(Vector3D const & position){
     FileStrm.close();
 }
 
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Nazwe pliku zawierajacego dane o wierzcholkach plaskowyzu jako std::string.
+*/
+
 std::string const & Plateau::get_name_of_file(){
   return Get_Name_of_file_global();
 }
+
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Vector3D reprezentujacy srodek plaskowyzu.
+*/
 
 Vector3D const & Plateau::get_position(){
   return get_center();

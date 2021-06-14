@@ -42,13 +42,9 @@ int main(){
       
       /* Zapis i wyswietlenie stanu poczatkowego dronow */
       Scenery.use_active_drone()->Calculate_and_save_to_file_drone();
-      
       Scenery.choose_drone(2);
-
       Scenery.use_active_drone()->Calculate_and_save_to_file_drone();
-      
       Scenery.choose_drone(1);
-      
       Link.Rysuj();
       
       std::cout << "Menu wyboru opcji:" << std::endl
@@ -160,12 +156,8 @@ int main(){
                << "\tz - wykonaj zwiad" << std::endl << std::endl
                << "\tk - koniec dzialania programu" << std::endl << std::endl;
             break;
-               
-            case 'k': /* Opcja konczaca program */
-               std::cout << "Konczenie pracy programu ..." << std::endl;
-            break;
 
-            case 'z': /* Opcjaq pozwalajaca na wykonanie zwiadu, predefiniowanego ruchu po osmiokacie */
+            case 'z': /* Opcja pozwalajaca na wykonanie zwiadu, predefiniowanego ruchu po osmiokacie */
                
                std::cout << "Wykonywanie zwiadu ..." << std::endl;
 
@@ -214,7 +206,7 @@ int main(){
             break;
 
 
-            case 'd':
+            case 'd': /* Opcja pozwalajaca na dodanie nowej przeszkody do sceny  */
                while (true){
                   try{
                         std::cout << "Wybierz rodzaj powierzchniowego elementu" << std::endl
@@ -238,7 +230,7 @@ int main(){
                         std::cout << "Podaj wspolrzedne srodka podstawy x, y. " << std::endl
                                   << "Wprowadz wspolrzedne: x y > ";
                         std::cin >> temp_position[0]  >> temp_position[1];
-                        temp_position[2] = temp_scale[2]/2;
+                        temp_position[2] = temp_scale[2]/2; /* Wyznaczenie przesuniecia srodka bryly od podloza */
                         if(std::cin.fail())
                            throw std::invalid_argument(":/ Podano bledna wartosc dlugosci lotu ");
                         else   {
@@ -248,9 +240,9 @@ int main(){
                               Scenery.add_obstacle_mnt_long(temp_position, temp_scale);
                            if(type_of_obstacle == 3)
                               Scenery.add_obstacle_plateau(temp_position, temp_scale);
-                           break;
-
+               
                            std::cout << "Element zostal dodany do sceny" << std::endl;
+                           break;
                         }
                   }
                   catch (std::invalid_argument & f){ /* W wyniku wyrzucenia bledu dot. wprowadzania liczby, program poinformuje o tym i usunie blad ze strumienia */
@@ -262,7 +254,7 @@ int main(){
 
             break;
 
-            case 'u':
+            case 'u': /* Opcja pozwalajaca na usuniecie przeszkody ze sceny */
                while (true){
                   try{
                         std::cout << "Wybierz element powierzchni do usuniecia: " << std::endl;
@@ -285,6 +277,10 @@ int main(){
                }
                Link.Rysuj();
                std::cout << "Element zostal usuniety ze sceny" << std::endl;
+            break;
+
+            case 'k': /* Opcja konczaca program */
+               std::cout << "Konczenie pracy programu ..." << std::endl;
             break;
 
             default: /* dzialanie, gdy podana opcja nie bedzie uprzednio zdefiniowana */

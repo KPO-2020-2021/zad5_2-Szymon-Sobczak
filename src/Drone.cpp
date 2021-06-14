@@ -19,7 +19,6 @@
 
 Drone::Drone(Vector3D const & location, unsigned int ID) : Scene_object(ID, "dron"){
     drone_location = location;
-    Drone_ID = ID;
     Orientation_angle = 0;
 }
 
@@ -35,7 +34,8 @@ void Drone::Calculate_and_save_to_file_fuselage(){
     Vector3D P1,P2;
     
     std::string name_of_file = fuselage.Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_fuselage.dat";
-    
+    fuselage.update_Name_of_file_global(name_of_file);
+
     FileStrm.open(name_of_file);
     if (!FileStrm.is_open()){
       throw std::runtime_error(":(  Operacja otwarcia pliku do zapisu nie powiodla sie.");
@@ -93,11 +93,12 @@ void Drone::Calculate_and_save_to_file_front_camera(Vector3D const & Trasnlation
     front_camera.update_scale(camera_scale);
 
     front_camera.Transform_to_global_coords(Trasnlation, drone_location, fuselage.get_angle());
-
+    
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = front_camera.Get_Name_of_file_global() + "No_" + std::to_string(Drone_ID) + "_front_camera.dat";
+    std::string name_of_file = front_camera.Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_front_camera.dat";
+    front_camera.update_Name_of_file_global(name_of_file);
 
     FileStrm.open(name_of_file);
     if (!FileStrm.is_open()){
@@ -172,7 +173,8 @@ void Drone::Calculate_and_save_to_file_rotor(unsigned int index, Vector3D const 
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = rotors[index].Get_Name_of_file_global() + "No_" + std::to_string(Drone_ID) + "_rotor" + std::to_string(index) + ".dat";
+    std::string name_of_file = rotors[index].Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_rotor" + std::to_string(index) + ".dat";
+    rotors[index].update_Name_of_file_global(name_of_file);
 
     FileStrm.open(name_of_file);
     if (!FileStrm.is_open()){
@@ -452,16 +454,6 @@ void Drone::plan_reacon(PzG::LaczeDoGNUPlota & Link){
 } 
 
 /*!
-    Metoda zmienia numer ID, potrzebny przy zapisie elementow drona do pliku.
-
-    \param [in] new_ID - nowe ID drona.
-*/
-
-void Drone::set_ID(unsigned int const & new_ID){
-    Drone_ID = new_ID;
-}
-
-/*!
     \return Vector3D aktualnego polozenia srodka kadluba drona w ukladzie globalnym sceny.
 */
 
@@ -498,7 +490,7 @@ double Drone::get_angle() const{
 
  std::string const & Drone::get_name_of_file(){
    return fuselage.Get_Name_of_file_global();
- }
+}
 
 /*! 
     Metoda przeslaniajaca metode wirtualna z klasy Scene_object.

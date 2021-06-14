@@ -29,17 +29,23 @@
   \brief Klasa modelujaca w programie pojecie Sceny.   
 
     Klasa posiada:
-        - Prywatne pole "Drones" bedace typu std::vector, reprezentuje zbior dronow znajdujacych sie na scenie.
+        - Prywatne pole "Drone_list" bedace lita std::shared_ptr <Drone> - reprezentuje zbior dronow znajdujacych sie na scenie.
+        - Prywatne pole "Obstacle_list" bedace lita std::shared_ptr <Scene_object> - reprezentuje zbior przeszkod w znajdujacych sie na scenie.
+        - Prywatne pole "Objects_list" bedace lita std::shared_ptr <Scene_object> - reprezentuje zbior wszyskich obietkow znajdujacych sie na scenie.
         - Prywatne pole "tab_of_properties_d1" bedace zbiorem wskaznikow na PzG::InfoPlikuDoRysowania, reprezentuje ono zbior ustawien rysowania drona 1. w Gnuplot.
         - Prywatne pole "tab_of_properties_d2" bedace zbiorem wskaznikow na PzG::InfoPlikuDoRysowania, reprezentuje ono zbior ustawien rysowania drona 2. w Gnuplot.
-        - Prywatne pole "nbr_of_active_drone" typu unsigned int  okreslajace, ktory z dronow jest obecnie aktywny. 
-        - Prywatne pole "Link" okreslajce lacze do gnuplota.
-        - publiczny konstruktor z parametrem, ktory okresla lacze do gnuplota.
+        - Prywatne pole "nbr_of_active_drone" typu unsigned int okreslajace, ktory z dronow jest obecnie aktywny. 
+        - Prywatne pole "Number_of_drones" reprezentuje ono ilosc wszyskich powstalych dronow na scenie.
+        - Prywatne pole "Number_of_obstacles" reprezentuje ono ilosc wszyskich powstalych przeszkod na scenie.
+        - Prywatne pole "Link" okreslajce wskaznik na lacze do gnuplota.
+        - Publiczny konstruktor z parametrem, ktory okresla lacze do gnuplota.
  
     Utworzona klasa zawiera publiczne metody pozwalajace na:
         - Zmiane aktywnego drona.
-        - Pobranie informacji o aktywnym dronie.
-        - Modyfikacje danych aktywnego drona./ 
+        - Pobranie informacji i modyfikacje danych aktywnego drona.
+        - Dodanie do sceny trzech roznych przeszkod terenowych.
+        - Wypisanie danych o wszystkich przeszkodach znajdujacych sie na scenie. 
+        - Usuniecie wybranej przeszkody. 
 */
 
 class Scene{
@@ -81,10 +87,7 @@ class Scene{
         /*! \brief Metoda sluzaca zmianie numeru aktywnego drona */
         void choose_drone(int active_drone);
 
-        /*! \brief Metoda sluzaca pobraniu informacji o aktywnym dronie */
-        const std::shared_ptr <Drone> get_active_drone();
-        
-        /*! \brief Metoda sluzaca probraniu aktywnego drona aby dokonywac w nim zmian */
+        /*! \brief Metoda sluzaca probraniu wskaznika na aktywnego drona */
         std::shared_ptr <Drone> use_active_drone();
 
         /* Metoda pozwalajaca dodac nowego drona do sceny */
@@ -96,7 +99,7 @@ class Scene{
         /* Metoda pozwalajaca dodac nowa przeszkode - zbocze do sceny */
         void add_obstacle_mnt_long(Vector3D const & position, Vector3D const & scale);
 
-        /* Metoda pozwalajaca dodac nowa przeszkode - gore z czubkiem do sceny */
+        /* Metoda pozwalajaca dodac nowa przeszkode - gore ze szczytem do sceny */
         void add_obstacle_mnt_pointed(Vector3D const & position, Vector3D const & scale);
 
         /* Metoda pozwalajaca wylistowac wszystkie przeszkody na scenie */
@@ -104,5 +107,4 @@ class Scene{
         
         /* Metoda pozwalajaca usunac wybrana przeszkode ze sceny */
         void delete_obstacle(int obstacle_ID); 
-
 };

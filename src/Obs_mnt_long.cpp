@@ -1,10 +1,35 @@
 #include "Obs_mnt_long.hh"
 
- Mnt_long::Mnt_long(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "gora z grania") {
+/*!
+    \file
+        \brief Definicje metod klasy Mnt_long
+
+    Zawiera definicje metod klasy Mnt_long.
+*/
+
+/*!
+    Konstrukotr przetwarza bryle prostopadloscianu do postaci gory ze zboczem i zapisuje ja do pliku. 
+
+    \param [in] position - wektor reprezentujacy polozenie srodka przeszkody.
+    \param [in] scale - skala  gory ze zboczem.
+    \param [in] ID - numer ID przeszkody.
+
+    \return Gora ze zboczem o srodku nachylonego boku w zadanej pozycji i skali, oraz zapisuje do pliku.
+*/
+
+Mnt_long::Mnt_long(Vector3D const & position, Vector3D const & scale, unsigned int ID) : Cuboid (), Scene_object(ID, "gora z grania") {
     update_scale (scale);
     transform_shape();
     save_to_file(position);
 }
+
+
+/*!
+    Metoda zapisuje do pliku, o wygenerowanej automatycznie nazwie, dane o polozeniu wierzcholkow globalnych gory ze zboczem, po uprzednim wyliczeniu ich. 
+    Zapis odbywa sie w sposob umozliwajacy wyswietlenie wszystkich scian przeszkody w Gnuplot.   
+
+    \param [in] position - wektor reprezentujacy polozenie srodka nachylonego boku przeszkody.
+*/
 
 void Mnt_long::save_to_file(Vector3D const & position){
     
@@ -63,13 +88,26 @@ void Mnt_long::save_to_file(Vector3D const & position){
     FileStrm.close();
 }
 
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Nazwe pliku zawierajacego dane o wierzcholkach gory ze zboczem, jako std::string.
+*/
 std::string const & Mnt_long::get_name_of_file(){
   return Get_Name_of_file_global();
 }
 
+/*!
+    Metoda przeslaniajaca metode wirtualna z klasy Scene_object.
+    \return Vector3D reprezentujacy srodek nachylonego boku gory ze zboczem.
+*/
+
 Vector3D const & Mnt_long::get_position(){
   return get_center();
 }
+
+/*! 
+    Metoda modelujaca ksztalt gory ze zboczem.
+*/
 
 void Mnt_long::transform_shape(){
     (*this)(4) = (*this)(5);

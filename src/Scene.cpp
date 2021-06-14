@@ -9,16 +9,16 @@
 
 /*!
     Konstruktor z parametrem obiektu typu Scene. 
-    Tworzy scene z dwoma dronami w predefiniowanych miejscach. 
-    Dolacza pliki zawierajace dane o wierzcholkach globalnych elementow dronow do Gnuplot oraz. 
+    Tworzy scene z dwoma dronami w predefiniowanych miejscach oraz piecioma predefiniowanymi przeszkodami. 
+    Dolacza pliki zawierajace dane o wierzcholkach globalnych elementow dronow i przszkod do Gnuplot oraz. 
     Ustala zakres rysowania w Gnuplot i grubosc rysowania linii.
 
-    \param [in] Link - lacze do Gnuplota. 
+    \param [in] Link - wskaznik na lacze do Gnuplota. 
 
-    \return Scene zawierajaca dwa drony.        
+    \return Scene zawierajaca dwa drony oraz 5 przeszkod.        
 */
 
-Scene::Scene(PzG::LaczeDoGNUPlota *Link){
+Scene::Scene(PzG::LaczeDoGNUPlota * Link){
     Link_to_gnuplot = Link;
     Nbr_of_active_drone = 1;
 
@@ -76,7 +76,9 @@ Scene::Scene(PzG::LaczeDoGNUPlota *Link){
     (*Link_to_gnuplot).Rysuj();
 }
 
-
+/*
+    Usuwa pliki zawierajace dane o polozeniu wierzcholkow przeszkod znajdujacych sie na scenie. 
+*/
 
 Scene::~Scene(){
     for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
@@ -122,27 +124,9 @@ void Scene::choose_drone(int active_drone){
 }
 
 /*!
-    \return Instancje aktywnego drona z std::vector jako stala. 
-*/
+    Metoda pozwala uzyskac dostep do dronow umieszczonych na liscie dronow. 
 
-std::shared_ptr <Drone> const Scene::get_active_drone() {
-    int Number = Nbr_of_active_drone - 1;
-    
-    auto check_nbr = [Number](std::shared_ptr<Drone> Ptr) -> bool{ 
-        return (Ptr->get_obj_ID() == Number); 
-    };
-    
-    std::list<std::shared_ptr<Drone>>::iterator Drone_iterator = std::find_if(Drone_list.begin(), Drone_list.end(), check_nbr);
-    
-    if (Drone_iterator == Drone_list.end()){
-        throw std::invalid_argument(":/ Podano bledny numer drona ");
-    }
-
-    return *Drone_iterator;
-}
-
-/*!
-    \return Instancje aktywnego drona z std::vector dronow. 
+    \return Wskaznik na aktywnego drona. 
 */
 
 std::shared_ptr <Drone> Scene::use_active_drone(){
@@ -162,6 +146,14 @@ std::shared_ptr <Drone> Scene::use_active_drone(){
     return *Drone_iterator;
 }
 
+/*!
+    Dodaje do sceny obiekt - plaskowyz o okreslonej skali i w okreslonym miescju. 
+    Dodaje nowy obiekt- plaskowyz do listy wszystkich przeszkod oraz do listy wszykisch obiektow sceny.
+
+    \param [in] position - Wektor opisujacy srodek plaskowyzu. 
+    \param [in] scale - skala plaskowyzu. 
+*/
+
 void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & scale){
     std::shared_ptr<Plateau> tmp_ptr = std::make_shared<Plateau>(position, scale, Number_of_obstacles++);
 
@@ -176,6 +168,14 @@ void Scene::add_obstacle_plateau(Vector3D const & position, Vector3D const & sca
     (*Link_to_gnuplot).Rysuj();
 }  
 
+/*!
+    Dodaje do sceny obiekt - gore ze zboczem o okreslonej skali i w okreslonym miejscu. 
+    Dodaje nowy obiekt- gore ze zboczem do listy przeszkod oraz do listy wszykisch obiektow sceny.
+
+    \param [in] position - Wektor opisujacy srodek nachylonego boku gory ze zboczem. 
+    \param [in] scale - skala gory ze zboczem. 
+*/
+
 void Scene::add_obstacle_mnt_long(Vector3D const & position, Vector3D const & scale){
     std::shared_ptr<Mnt_long> tmp_ptr = std::make_shared<Mnt_long>(position, scale, Number_of_obstacles++);
 
@@ -189,6 +189,14 @@ void Scene::add_obstacle_mnt_long(Vector3D const & position, Vector3D const & sc
     (*Link_to_gnuplot).Rysuj();
 }  
 
+/*!
+    Dodaje do sceny obiekt - gore ze szczytem o okreslonej skali i w okreslonym miejscu. 
+    Dodaje nowy obiekt- gore ze szczytem do listy przeszkod oraz do listy wszykisch obiektow sceny.
+
+    \param [in] position - Wektor opisujacy srodek gory ze szczytem. 
+    \param [in] scale - skala gory ze zboczem. 
+*/
+
 void Scene::add_obstacle_mnt_pointed(Vector3D const & position, Vector3D const & scale){
     std::shared_ptr<Mnt_pointed> tmp_ptr = std::make_shared<Mnt_pointed>(position, scale, Number_of_obstacles++);
 
@@ -200,7 +208,14 @@ void Scene::add_obstacle_mnt_pointed(Vector3D const & position, Vector3D const &
     Objects_list.push_back(tmp_ptr);
 
     (*Link_to_gnuplot).Rysuj();
-}  
+} 
+
+/*!
+    Dodaje do sceny obiekt - drona w okreslonym miejscu. 
+    Dodaje nowy obiekt- drona do listy dronow oraz do listy wszykisch obiektow sceny.
+
+    \param [in] position - Wektor opisujacy pozycje drona. 
+*/
 
 void Scene::add_new_drone(Vector3D const & position){
     std::shared_ptr<Drone> tmp_ptr = std::make_shared<Drone>(position, Number_of_drones++);
@@ -208,11 +223,23 @@ void Scene::add_new_drone(Vector3D const & position){
     Objects_list.push_back(tmp_ptr);
 }
 
+/*!
+    Metoda pozwala na wypisanie danych przeszkod znajdujacych sie aktualnie na liscie przeszkod na standardowe wyjscie.  
+*/
+
 void Scene::list_obstacles(){
     for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
       std::cout << "ID: " <<  Obstacle->get_obj_ID() << " "  << std::fixed << std::setprecision(2) << "(" << Obstacle->get_position()[0] << " " << Obstacle->get_position()[1] <<") - "<< Obstacle->get_type() << std::endl; 
     }
 }
+
+/*!
+    Metoda pozwala usunac przeszkode ze sceny. 
+    Usuwa przeszkode o okrelsonym ID z listy przeszkod oraz z listy wszystkich obiektow sceny. 
+    Odlacza od Gnuplot oraz usuwa plik zawierajacy dane o usuwanej przeszkodzie. 
+
+    \param [in] obstacle_ID - ID przeszkody do usuniecia
+*/
 
 void Scene::delete_obstacle(int obstacle_ID){
 
