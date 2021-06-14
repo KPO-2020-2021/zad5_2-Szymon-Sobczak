@@ -5,6 +5,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/main.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/main.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Cuboid.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Cuboid.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Drone.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Geometrical_solid.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Geometrical_solid.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Hexagonal_prism.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Hexagonal_prism.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_mnt_long.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_long.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_mnt_pointed.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_pointed.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_plateau.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_Obs_plateau.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_matrix3x3.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_vector3D.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o"
+  "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_vector3D_counters.cpp" "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build/tests/CMakeFiles/unit_tests.dir/test_vector3D_counters.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

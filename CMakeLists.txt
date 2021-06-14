@@ -53,15 +53,17 @@ set(SOURCES          # All .cpp files in src/
     src/Obs_plateau.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
-     tests/main.cpp
-    # tests/test_vector3D.cpp
-    # tests/test_vector3D_counters.cpp
-    # tests/test_matrix3x3.cpp
-    # tests/test_Cuboid.cpp
-    # tests/test_Drone.cpp
-    # tests/test_Geometrical_solid.cpp
-    # tests/test_Hexagonal_prism.cpp
-    # tests/test_Scene.cpp
+    tests/main.cpp
+    tests/test_vector3D.cpp
+    tests/test_vector3D_counters.cpp
+    tests/test_matrix3x3.cpp
+    tests/test_Cuboid.cpp
+    tests/test_Drone.cpp
+    tests/test_Geometrical_solid.cpp
+    tests/test_Hexagonal_prism.cpp
+    tests/test_Obs_mnt_long.cpp
+    tests/test_Obs_mnt_pointed.cpp
+    tests/test_Obs_plateau.cpp
 )
 set(LIBRARY_NAME program)  # Default name for the library built from src/*.cpp (change if you wish)
 

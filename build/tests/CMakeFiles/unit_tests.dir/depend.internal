@@ -4,3 +4,100 @@
 tests/CMakeFiles/unit_tests.dir/main.cpp.o
  /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
  /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/main.cpp
+tests/CMakeFiles/unit_tests.dir/test_Cuboid.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/Geometrical_solid.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Cuboid.cpp
+tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/Drone.hh
+ ../inc/Geometrical_solid.hh
+ ../inc/Hexagonal_prism.hh
+ ../inc/Scene_object.hh
+ ../inc/lacze_do_gnuplota.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Drone.cpp
+tests/CMakeFiles/unit_tests.dir/test_Geometrical_solid.cpp.o
+ ../inc/Geometrical_solid.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Geometrical_solid.cpp
+tests/CMakeFiles/unit_tests.dir/test_Hexagonal_prism.cpp.o
+ ../inc/Geometrical_solid.hh
+ ../inc/Hexagonal_prism.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Hexagonal_prism.cpp
+tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_long.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/Geometrical_solid.hh
+ ../inc/Obs_mnt_long.hh
+ ../inc/Scene_object.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_mnt_long.cpp
+tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_pointed.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/Geometrical_solid.hh
+ ../inc/Obs_mnt_pointed.hh
+ ../inc/Scene_object.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_mnt_pointed.cpp
+tests/CMakeFiles/unit_tests.dir/test_Obs_plateau.cpp.o
+ ../inc/Cuboid.hh
+ ../inc/Geometrical_solid.hh
+ ../inc/Obs_plateau.hh
+ ../inc/Scene_object.hh
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_Obs_plateau.cpp
+tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o
+ ../inc/matrix.hh
+ ../inc/matrix3x3.hh
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_matrix3x3.cpp
+tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_vector3D.cpp
+tests/CMakeFiles/unit_tests.dir/test_vector3D_counters.cpp.o
+ ../inc/size.hh
+ ../inc/vector.hh
+ ../inc/vector3D.hh
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/doctest/doctest.h
+ /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/tests/test_vector3D_counters.cpp

@@ -18,3 +18,14 @@ TEST_CASE("Test metody pozwalajacej na zaktualizowanie skali. "){
 
     CHECK((Example.get_scale()[0] == 10 && Example.get_scale()[1] == -9 && Example.get_scale()[2] == 2.5 ));
 }
+
+TEST_CASE("Test metod pozwalajacych na zaktualizowanie i na pobranie nazwy. "){
+    Geometrical_solid Example;
+    std::string new_file_name = "new_name";
+    
+    CHECK((Example.Get_Name_of_file_global() == "../datasets/Glb_crd_")); 
+    
+    Example.update_Name_of_file_global(new_file_name);
+    
+    CHECK((Example.Get_Name_of_file_global() == "new_name")); 
+}

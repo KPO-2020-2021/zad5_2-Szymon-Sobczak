@@ -38,7 +38,7 @@ void Mnt_long::save_to_file(Vector3D const & position){
     std::ofstream  FileStrm;
     Vector3D P1,P2;
 
-    std::string name_of_file = this->Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_mnt_long.dat";
+    std::string name_of_file = "../datasets/Glb_crd_No_" + std::to_string(get_obj_ID()) + "_mnt_long.dat";
     
     update_Name_of_file_global(name_of_file);
 

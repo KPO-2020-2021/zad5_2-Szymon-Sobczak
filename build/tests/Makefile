@@ -197,6 +197,276 @@ main.cpp.s:
 	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test_Cuboid.o: test_Cuboid.cpp.o
+
+.PHONY : test_Cuboid.o
+
+# target to build an object file
+test_Cuboid.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Cuboid.cpp.o
+.PHONY : test_Cuboid.cpp.o
+
+test_Cuboid.i: test_Cuboid.cpp.i
+
+.PHONY : test_Cuboid.i
+
+# target to preprocess a source file
+test_Cuboid.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Cuboid.cpp.i
+.PHONY : test_Cuboid.cpp.i
+
+test_Cuboid.s: test_Cuboid.cpp.s
+
+.PHONY : test_Cuboid.s
+
+# target to generate assembly for a file
+test_Cuboid.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Cuboid.cpp.s
+.PHONY : test_Cuboid.cpp.s
+
+test_Drone.o: test_Drone.cpp.o
+
+.PHONY : test_Drone.o
+
+# target to build an object file
+test_Drone.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.o
+.PHONY : test_Drone.cpp.o
+
+test_Drone.i: test_Drone.cpp.i
+
+.PHONY : test_Drone.i
+
+# target to preprocess a source file
+test_Drone.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.i
+.PHONY : test_Drone.cpp.i
+
+test_Drone.s: test_Drone.cpp.s
+
+.PHONY : test_Drone.s
+
+# target to generate assembly for a file
+test_Drone.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Drone.cpp.s
+.PHONY : test_Drone.cpp.s
+
+test_Geometrical_solid.o: test_Geometrical_solid.cpp.o
+
+.PHONY : test_Geometrical_solid.o
+
+# target to build an object file
+test_Geometrical_solid.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Geometrical_solid.cpp.o
+.PHONY : test_Geometrical_solid.cpp.o
+
+test_Geometrical_solid.i: test_Geometrical_solid.cpp.i
+
+.PHONY : test_Geometrical_solid.i
+
+# target to preprocess a source file
+test_Geometrical_solid.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Geometrical_solid.cpp.i
+.PHONY : test_Geometrical_solid.cpp.i
+
+test_Geometrical_solid.s: test_Geometrical_solid.cpp.s
+
+.PHONY : test_Geometrical_solid.s
+
+# target to generate assembly for a file
+test_Geometrical_solid.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Geometrical_solid.cpp.s
+.PHONY : test_Geometrical_solid.cpp.s
+
+test_Hexagonal_prism.o: test_Hexagonal_prism.cpp.o
+
+.PHONY : test_Hexagonal_prism.o
+
+# target to build an object file
+test_Hexagonal_prism.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Hexagonal_prism.cpp.o
+.PHONY : test_Hexagonal_prism.cpp.o
+
+test_Hexagonal_prism.i: test_Hexagonal_prism.cpp.i
+
+.PHONY : test_Hexagonal_prism.i
+
+# target to preprocess a source file
+test_Hexagonal_prism.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Hexagonal_prism.cpp.i
+.PHONY : test_Hexagonal_prism.cpp.i
+
+test_Hexagonal_prism.s: test_Hexagonal_prism.cpp.s
+
+.PHONY : test_Hexagonal_prism.s
+
+# target to generate assembly for a file
+test_Hexagonal_prism.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Hexagonal_prism.cpp.s
+.PHONY : test_Hexagonal_prism.cpp.s
+
+test_Obs_mnt_long.o: test_Obs_mnt_long.cpp.o
+
+.PHONY : test_Obs_mnt_long.o
+
+# target to build an object file
+test_Obs_mnt_long.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_long.cpp.o
+.PHONY : test_Obs_mnt_long.cpp.o
+
+test_Obs_mnt_long.i: test_Obs_mnt_long.cpp.i
+
+.PHONY : test_Obs_mnt_long.i
+
+# target to preprocess a source file
+test_Obs_mnt_long.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_long.cpp.i
+.PHONY : test_Obs_mnt_long.cpp.i
+
+test_Obs_mnt_long.s: test_Obs_mnt_long.cpp.s
+
+.PHONY : test_Obs_mnt_long.s
+
+# target to generate assembly for a file
+test_Obs_mnt_long.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_long.cpp.s
+.PHONY : test_Obs_mnt_long.cpp.s
+
+test_Obs_mnt_pointed.o: test_Obs_mnt_pointed.cpp.o
+
+.PHONY : test_Obs_mnt_pointed.o
+
+# target to build an object file
+test_Obs_mnt_pointed.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_pointed.cpp.o
+.PHONY : test_Obs_mnt_pointed.cpp.o
+
+test_Obs_mnt_pointed.i: test_Obs_mnt_pointed.cpp.i
+
+.PHONY : test_Obs_mnt_pointed.i
+
+# target to preprocess a source file
+test_Obs_mnt_pointed.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_pointed.cpp.i
+.PHONY : test_Obs_mnt_pointed.cpp.i
+
+test_Obs_mnt_pointed.s: test_Obs_mnt_pointed.cpp.s
+
+.PHONY : test_Obs_mnt_pointed.s
+
+# target to generate assembly for a file
+test_Obs_mnt_pointed.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_mnt_pointed.cpp.s
+.PHONY : test_Obs_mnt_pointed.cpp.s
+
+test_Obs_plateau.o: test_Obs_plateau.cpp.o
+
+.PHONY : test_Obs_plateau.o
+
+# target to build an object file
+test_Obs_plateau.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_plateau.cpp.o
+.PHONY : test_Obs_plateau.cpp.o
+
+test_Obs_plateau.i: test_Obs_plateau.cpp.i
+
+.PHONY : test_Obs_plateau.i
+
+# target to preprocess a source file
+test_Obs_plateau.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_plateau.cpp.i
+.PHONY : test_Obs_plateau.cpp.i
+
+test_Obs_plateau.s: test_Obs_plateau.cpp.s
+
+.PHONY : test_Obs_plateau.s
+
+# target to generate assembly for a file
+test_Obs_plateau.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_Obs_plateau.cpp.s
+.PHONY : test_Obs_plateau.cpp.s
+
+test_matrix3x3.o: test_matrix3x3.cpp.o
+
+.PHONY : test_matrix3x3.o
+
+# target to build an object file
+test_matrix3x3.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.o
+.PHONY : test_matrix3x3.cpp.o
+
+test_matrix3x3.i: test_matrix3x3.cpp.i
+
+.PHONY : test_matrix3x3.i
+
+# target to preprocess a source file
+test_matrix3x3.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.i
+.PHONY : test_matrix3x3.cpp.i
+
+test_matrix3x3.s: test_matrix3x3.cpp.s
+
+.PHONY : test_matrix3x3.s
+
+# target to generate assembly for a file
+test_matrix3x3.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_matrix3x3.cpp.s
+.PHONY : test_matrix3x3.cpp.s
+
+test_vector3D.o: test_vector3D.cpp.o
+
+.PHONY : test_vector3D.o
+
+# target to build an object file
+test_vector3D.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.o
+.PHONY : test_vector3D.cpp.o
+
+test_vector3D.i: test_vector3D.cpp.i
+
+.PHONY : test_vector3D.i
+
+# target to preprocess a source file
+test_vector3D.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.i
+.PHONY : test_vector3D.cpp.i
+
+test_vector3D.s: test_vector3D.cpp.s
+
+.PHONY : test_vector3D.s
+
+# target to generate assembly for a file
+test_vector3D.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D.cpp.s
+.PHONY : test_vector3D.cpp.s
+
+test_vector3D_counters.o: test_vector3D_counters.cpp.o
+
+.PHONY : test_vector3D_counters.o
+
+# target to build an object file
+test_vector3D_counters.cpp.o:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D_counters.cpp.o
+.PHONY : test_vector3D_counters.cpp.o
+
+test_vector3D_counters.i: test_vector3D_counters.cpp.i
+
+.PHONY : test_vector3D_counters.i
+
+# target to preprocess a source file
+test_vector3D_counters.cpp.i:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D_counters.cpp.i
+.PHONY : test_vector3D_counters.cpp.i
+
+test_vector3D_counters.s: test_vector3D_counters.cpp.s
+
+.PHONY : test_vector3D_counters.s
+
+# target to generate assembly for a file
+test_vector3D_counters.cpp.s:
+	cd "/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/build" && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/test_vector3D_counters.cpp.s
+.PHONY : test_vector3D_counters.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +481,36 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test_Cuboid.o"
+	@echo "... test_Cuboid.i"
+	@echo "... test_Cuboid.s"
+	@echo "... test_Drone.o"
+	@echo "... test_Drone.i"
+	@echo "... test_Drone.s"
+	@echo "... test_Geometrical_solid.o"
+	@echo "... test_Geometrical_solid.i"
+	@echo "... test_Geometrical_solid.s"
+	@echo "... test_Hexagonal_prism.o"
+	@echo "... test_Hexagonal_prism.i"
+	@echo "... test_Hexagonal_prism.s"
+	@echo "... test_Obs_mnt_long.o"
+	@echo "... test_Obs_mnt_long.i"
+	@echo "... test_Obs_mnt_long.s"
+	@echo "... test_Obs_mnt_pointed.o"
+	@echo "... test_Obs_mnt_pointed.i"
+	@echo "... test_Obs_mnt_pointed.s"
+	@echo "... test_Obs_plateau.o"
+	@echo "... test_Obs_plateau.i"
+	@echo "... test_Obs_plateau.s"
+	@echo "... test_matrix3x3.o"
+	@echo "... test_matrix3x3.i"
+	@echo "... test_matrix3x3.s"
+	@echo "... test_vector3D.o"
+	@echo "... test_vector3D.i"
+	@echo "... test_vector3D.s"
+	@echo "... test_vector3D_counters.o"
+	@echo "... test_vector3D_counters.i"
+	@echo "... test_vector3D_counters.s"
 .PHONY : help
 
 

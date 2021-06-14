@@ -73,7 +73,6 @@ Scene::Scene(PzG::LaczeDoGNUPlota * Link){
         Tab_of_properties_d1[i] -> ZmienSzerokosc(2);
         Tab_of_properties_d2[i] -> ZmienSzerokosc(2);
     } 
-    (*Link_to_gnuplot).Rysuj();
 }
 
 /*
@@ -81,9 +80,9 @@ Scene::Scene(PzG::LaczeDoGNUPlota * Link){
 */
 
 Scene::~Scene(){
-    for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list) {
+    for(std::shared_ptr<Scene_object> Obstacle : Obstacle_list){
        remove (Obstacle->get_name_of_file().c_str());
-    }
+    } 
 }
 
 /*!
