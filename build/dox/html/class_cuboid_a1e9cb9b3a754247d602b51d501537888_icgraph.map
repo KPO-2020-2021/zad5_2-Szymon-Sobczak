@@ -1,7 +1,0 @@
-<map id="Cuboid::get_center" name="Cuboid::get_center">
-<area shape="rect" id="node1" title="Metoda pozwalaja na pobranie pozycji srodka prostopadloscianu." alt="" coords="244,81,388,108"/>
-<area shape="rect" id="node2" href="$class_drone.html#ab706f7738284de4760264ce9dd8d469a" title="Metoda pozwalajca pobrac pozycje obiektu sceny &#45; drona." alt="" coords="26,5,175,32"/>
-<area shape="rect" id="node3" href="$class_mnt__long.html#a0004eda65d853a0d4bb14e67a8186ff9" title="Metoda sluzy do pobrania pozycji srodka gory ze zboczem." alt="" coords="15,56,186,83"/>
-<area shape="rect" id="node4" href="$class_mnt__pointed.html#a163000d39030a8a1ccd3f20e9d9de23a" title="Metoda sluzy do pobrania pozycji srodka gory ze szczytem." alt="" coords="5,107,196,133"/>
-<area shape="rect" id="node5" href="$class_plateau.html#abdf10c504ab7b86f1750986d261a0499" title="Metoda sluzy do pobrania pozycji srodka plaskowyzu." alt="" coords="21,157,180,184"/>
-</map>
