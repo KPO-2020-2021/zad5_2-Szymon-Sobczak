@@ -1,12 +1,12 @@
 /*!
-    \mainpage Dron Dragonfly Faza 1. - Zadanie 5.1.
+    \mainpage Dron Dragonfly Faza 2. - Zadanie 5.2.
     
     \author Szymon Sobczak nr 259275.
     \date 06.06.2021
     \version 1.0
 
     Aplikacja realizuje schematyczna wizualizacje w Gnuplot poruszania sie wymodelowanym dronem po powierzchni Tytana, ksiezyca Saturna. 
-    Jest to realizacja pierwszej fazy projetku. 
+    Jest to realizacja drugiej fazy projetku. Dodano mozliwosc umieszczania trzech typow przeszkod terenowych na powierzchni ksiezyca.  
     
     \section etykieta-cel-cw Cel ćwiczenia
     Wykształcenie umiejętnosci modelowania kluczowych dla danego problemu pojęć.\n
@@ -19,11 +19,7 @@
         - Wykonywanie predefiniowanego zestawu ruchow przez drona do wykonania tak zwanego "zwiadu".
         - Animowanie ruchu drona. 
         - Umiejetnosc wykorzystania pol statycznych oraz konstruktorow kopiujacych do swotrzenia licznika wektorow3D.
-
-    \section etykieta-dodatkowe-elem Dodatkowe elementy programu.
-        - Dodanie elementu, ktory pozwala na rozroznienie przodu drona od tylu. 
-        - Zmiana kolorow aktywnego drona.
-        - Animacja ruchu rotorow, w sposob nasladujacy rzeczywista zasade ich dzialania.
+        - Umiejetnosc dzialania na listach wskaznikow na rozne obiekty.
 
     \section etykieta-diagram Diagram UML projektu.
     

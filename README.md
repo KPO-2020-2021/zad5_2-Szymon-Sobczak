@@ -12,11 +12,6 @@
 ## Wcześniej wygenerowana dokumentacja
  * Repozytorum posiada wcześniej wygenerowane najaktualniejsze pliki dokumentacji w katalogu `dox/`. Aby uruchomić stronę główną dokumetnacji należy uruchomić plik `./dox/html/index.html`
 
-## Informacje dodatkowe
- * Drony posiadaja dodatkowy element, aby dalo sie rozroznic przod i tyl jednostki. 
- * Kolor drona zmienia sie, wskazujac, ktory dron jest aktualnie aktywny. 
- * Rotory obracaja sie z rozna predkoscia, zaleznie od potrzeby, nasladujac zachowanie rotorow prawdziwego drona. 
-
 ## Building
 Build by making a build directory (i.e. `build/`), run `cmake` in that dir, and then use `make` to build the desired target.
 

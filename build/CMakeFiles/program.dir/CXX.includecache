@@ -196,27 +196,11 @@ cmath
 vector.hh
 ../inc/vector.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Drone.cpp
-Drone.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Drone.hh
-
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.cpp
 Obs_mnt_long.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_long.hh
 
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.cpp
-Obs_mnt_pointed.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_mnt_pointed.hh
-
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.cpp
-Obs_plateau.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Obs_plateau.hh
-
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.cpp
 Scene.hh
 /home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene.hh
-
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.cpp
-Scene_object.hh
-/home/ader/Pulpit/Zad 5.2 GIT/zad5_2-Szymon-Sobczak/src/Scene_object.hh
 

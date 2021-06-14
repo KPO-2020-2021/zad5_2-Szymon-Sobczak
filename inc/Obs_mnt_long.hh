@@ -32,7 +32,7 @@
 class Mnt_long: public Cuboid, public Scene_object{
     private:
         /*! \brief Metoda pozwalajaca zapisac gore ze zboczem do pliku */
-        void save_to_file(Vector3D const &  position);
+        void save_to_file(Vector3D const & position);
 
     public:
         /*! \brief Konstruktor wieloparametryczny klasy */
