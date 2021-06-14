@@ -33,7 +33,7 @@ void Drone::Calculate_and_save_to_file_fuselage(){
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = fuselage.Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_fuselage.dat";
+    std::string name_of_file = "../datasets/Glb_crd_No_" + std::to_string(get_obj_ID()) + "_fuselage.dat";
     fuselage.update_Name_of_file_global(name_of_file);
 
     FileStrm.open(name_of_file);
@@ -97,7 +97,7 @@ void Drone::Calculate_and_save_to_file_front_camera(Vector3D const & Trasnlation
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = front_camera.Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_front_camera.dat";
+    std::string name_of_file = "../datasets/Glb_crd_No_" + std::to_string(get_obj_ID()) + "_front_camera.dat";
     front_camera.update_Name_of_file_global(name_of_file);
 
     FileStrm.open(name_of_file);
@@ -173,7 +173,7 @@ void Drone::Calculate_and_save_to_file_rotor(unsigned int index, Vector3D const 
     std::ofstream  FileStrm;
     Vector3D P1,P2;
     
-    std::string name_of_file = rotors[index].Get_Name_of_file_global() + "No_" + std::to_string(get_obj_ID()) + "_rotor" + std::to_string(index) + ".dat";
+    std::string name_of_file = "../datasets/Glb_crd_No_" + std::to_string(get_obj_ID()) + "_rotor" + std::to_string(index) + ".dat";
     rotors[index].update_Name_of_file_global(name_of_file);
 
     FileStrm.open(name_of_file);
