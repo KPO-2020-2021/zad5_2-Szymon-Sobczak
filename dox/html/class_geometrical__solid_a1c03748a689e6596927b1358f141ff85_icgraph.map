@@ -1,11 +1,7 @@
 <map id="Geometrical_solid::Get_Name_of_file_global" name="Geometrical_solid::Get_Name_of_file_global">
-<area shape="rect" id="node1" title="Metoda pozwalajaca na pobranie nazwy bryly geometrycznej." alt="" coords="972,71,1157,112"/>
-<area shape="rect" id="node2" href="$class_drone.html#ad004be2850d0e4f39b69bacfc8c5dbd4" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych kamery przedniej do pli..." alt="" coords="723,5,924,47"/>
-<area shape="rect" id="node8" href="$class_drone.html#a720acea4a98e74872e80c88a2f24faa6" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych kadluba do pliku." alt="" coords="738,71,909,112"/>
-<area shape="rect" id="node9" href="$class_drone.html#a272c0597d236f80545bff08a4d29b330" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych wybranego rotora do pli..." alt="" coords="743,136,904,177"/>
-<area shape="rect" id="node3" href="$class_drone.html#aa10733e2e71e7316ee19f1a09c67331e" title="Metoda realizujaca zapis calego drona do pliku." alt="" coords="513,71,675,112"/>
-<area shape="rect" id="node4" href="$class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="108,53,265,79"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Glowna funkcja programu." alt="" coords="5,103,60,130"/>
-<area shape="rect" id="node6" href="$class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="119,154,255,181"/>
-<area shape="rect" id="node7" href="$class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="313,53,465,79"/>
+<area shape="rect" id="node1" title="Metoda pozwalajaca na pobranie nazwy bryly geometrycznej." alt="" coords="244,90,429,131"/>
+<area shape="rect" id="node2" href="$class_drone.html#af7c407f2061112d1c6b190013e185503" title="Metoda pozwalajca pobrac nazwe obiektu sceny &#45; drona." alt="" coords="10,5,191,32"/>
+<area shape="rect" id="node3" href="$class_mnt__long.html#abd54ae810e0abb2d6480984021d6d306" title="Metoda sluzy do pobrania nazwy pliku zawierajacego dane o wierzcholkach gory ze zboczem." alt="" coords="23,57,178,98"/>
+<area shape="rect" id="node4" href="$class_mnt__pointed.html#ab8c9422a2d95d922a02e4ebcf1a72703" title="Metoda sluzy do pobrania nazwy pliku zawierajacego dane o wierzcholkach gory ze szczytem." alt="" coords="13,122,189,163"/>
+<area shape="rect" id="node5" href="$class_plateau.html#a9b8a17600f20acf33d74701fd94f9834" title="Metoda sluzy do pobrania nazwy pliku zawierajacego dane o wierzcholkach plaskowyzu." alt="" coords="5,188,196,215"/>
 </map>

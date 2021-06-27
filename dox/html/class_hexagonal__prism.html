@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dron Dragonfly Faza 1.: Dokumentacja klasy Hexagonal_prism</title>
+<title>Dron Dragonfly Faza 2.: Dokumentacja klasy Hexagonal_prism</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Dron Dragonfly Faza 1.
+   <div id="projectname">Dron Dragonfly Faza 2.
    &#160;<span id="projectnumber">1.0 v.</span>
    </div>
    <div id="projectbrief">Szymon Sobczak nr 259275.</div>
@@ -150,6 +150,9 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a1c03748a689e6596927b1358f141ff85 inherit pub_methods_class_geometrical__solid"><td class="memItemLeft" align="right" valign="top">std::string const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometrical__solid.html#a1c03748a689e6596927b1358f141ff85">Get_Name_of_file_global</a> ()</td></tr>
 <tr class="memdesc:a1c03748a689e6596927b1358f141ff85 inherit pub_methods_class_geometrical__solid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca na pobranie nazwy bryly geometrycznej.  <a href="class_geometrical__solid.html#a1c03748a689e6596927b1358f141ff85">Więcej...</a><br /></td></tr>
 <tr class="separator:a1c03748a689e6596927b1358f141ff85 inherit pub_methods_class_geometrical__solid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ead7c5b0fc35bc36b58b06372784a41 inherit pub_methods_class_geometrical__solid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometrical__solid.html#a5ead7c5b0fc35bc36b58b06372784a41">update_Name_of_file_global</a> (std::string const &amp;new_name)</td></tr>
+<tr class="memdesc:a5ead7c5b0fc35bc36b58b06372784a41 inherit pub_methods_class_geometrical__solid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca na aktualizacje nazwy bryly geometrycznej.  <a href="class_geometrical__solid.html#a5ead7c5b0fc35bc36b58b06372784a41">Więcej...</a><br /></td></tr>
+<tr class="separator:a5ead7c5b0fc35bc36b58b06372784a41 inherit pub_methods_class_geometrical__solid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b0e258250344308e07f7f7175e19f3 inherit pub_methods_class_geometrical__solid"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_geometrical__solid.html#ac1b0e258250344308e07f7f7175e19f3">update_scale</a> (<a class="el" href="vector3_d_8hh.html#a01090a0f6a3d1e7e9606819bd0fafda0">Vector3D</a> const &amp;new_scale)</td></tr>
 <tr class="memdesc:ac1b0e258250344308e07f7f7175e19f3 inherit pub_methods_class_geometrical__solid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda pozwalajaca na aktualizacje skali bryly geometrycznej.  <a href="class_geometrical__solid.html#ac1b0e258250344308e07f7f7175e19f3">Więcej...</a><br /></td></tr>
 <tr class="separator:ac1b0e258250344308e07f7f7175e19f3 inherit pub_methods_class_geometrical__solid"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +180,7 @@ Atrybuty prywatne</h2></td></tr>
 <p>Klasa posiada:</p><ul>
 <li>Prywatne pole "Local_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow lokalnych graniastoslupa prawidlowego szesciokatnego.</li>
 <li>Prywatne pole "Global_corners" bedace tablica wektorow, opisuje ono wektorowo pozycje wierzcholkow globalnych graniastoslupa prawidlowego szesciokatnego.</li>
-<li>Prywatne pole "Center_of_cuboid" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka graniastoslupa prawidlowego szesciokatnego.</li>
+<li>Prywatne pole "center_of_prism" bedace wektorem, opisuje ono wektorowo pozycje globalnego srodka graniastoslupa prawidlowego szesciokatnego.</li>
 <li>Prywatne pole "Roration_angle_Zaxis" opisujace obrot rotora w osi Z.</li>
 <li>Publiczny konstruktor domyśly, nadajacy graniastoslupowi wartosci wierzcholkow lokalnych.</li>
 </ul>
@@ -434,14 +437,13 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hexagonal__prism_a816173bc7296b7b9ae88da8cf3a56872_icgraph.png" border="0" usemap="#aclass_hexagonal__prism_a816173bc7296b7b9ae88da8cf3a56872_icgraph" alt=""/></div>
 <map name="aclass_hexagonal__prism_a816173bc7296b7b9ae88da8cf3a56872_icgraph" id="aclass_hexagonal__prism_a816173bc7296b7b9ae88da8cf3a56872_icgraph">
-<area shape="rect" title="Metoda pozawlajaca na transforamacje graniastoslupa prawidlowego szesciokatnego z ukladu lokalnego do..." alt="" coords="972,42,1181,83"/>
-<area shape="rect" href="class_drone.html#ad004be2850d0e4f39b69bacfc8c5dbd4" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych kamery przedniej do pli..." alt="" coords="723,9,924,50"/>
-<area shape="rect" href="class_drone.html#a272c0597d236f80545bff08a4d29b330" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych wybranego rotora do pli..." alt="" coords="743,74,904,115"/>
-<area shape="rect" href="class_drone.html#aa10733e2e71e7316ee19f1a09c67331e" title="Metoda realizujaca zapis calego drona do pliku." alt="" coords="513,42,675,83"/>
-<area shape="rect" href="class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="108,24,265,51"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Glowna funkcja programu." alt="" coords="5,75,60,101"/>
-<area shape="rect" href="class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="119,125,255,152"/>
-<area shape="rect" href="class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="313,24,465,51"/>
+<area shape="rect" title="Metoda pozawlajaca na transforamacje graniastoslupa prawidlowego szesciokatnego z ukladu lokalnego do..." alt="" coords="869,39,1079,80"/>
+<area shape="rect" href="class_drone.html#ad004be2850d0e4f39b69bacfc8c5dbd4" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych kamery przedniej do pli..." alt="" coords="620,5,821,47"/>
+<area shape="rect" href="class_drone.html#a272c0597d236f80545bff08a4d29b330" title="Metoda realizujaca obliczanie i zapisywanie danych o wierzcholkach globalnych wybranego rotora do pli..." alt="" coords="640,71,801,112"/>
+<area shape="rect" href="class_drone.html#aa10733e2e71e7316ee19f1a09c67331e" title="Metoda realizujaca zapis calego drona do pliku." alt="" coords="411,39,572,80"/>
+<area shape="rect" href="class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="5,46,163,73"/>
+<area shape="rect" href="class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="219,46,355,73"/>
+<area shape="rect" href="class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="211,97,363,123"/>
 </map>
 </div>
 
@@ -478,11 +480,10 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hexagonal__prism_a6ea7417039a3d731cbc572d52ffb554c_icgraph.png" border="0" usemap="#aclass_hexagonal__prism_a6ea7417039a3d731cbc572d52ffb554c_icgraph" alt=""/></div>
 <map name="aclass_hexagonal__prism_a6ea7417039a3d731cbc572d52ffb554c_icgraph" id="aclass_hexagonal__prism_a6ea7417039a3d731cbc572d52ffb554c_icgraph">
-<area shape="rect" title="Metoda pozwalaja na aktualizowanie kata obrotu graniastoslupa prawidlowego szesciokatnego." alt="" coords="513,15,703,56"/>
-<area shape="rect" href="class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="108,22,265,49"/>
-<area shape="rect" href="class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="119,73,255,100"/>
-<area shape="rect" href="class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="313,22,465,49"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Glowna funkcja programu." alt="" coords="5,48,60,74"/>
+<area shape="rect" title="Metoda pozwalaja na aktualizowanie kata obrotu graniastoslupa prawidlowego szesciokatnego." alt="" coords="411,15,600,56"/>
+<area shape="rect" href="class_drone.html#a5234bff0299f09ee04975cf95ad3703d" title="Metoda realizujaca przelot drona w poziomie." alt="" coords="5,22,163,49"/>
+<area shape="rect" href="class_drone.html#ad59d8053449d0d45036b4c927dc5e079" title="Metoda realizujaca przelot drona w pionie." alt="" coords="219,22,355,49"/>
+<area shape="rect" href="class_drone.html#ae55ed7a073e64ce02fdc61566534d6a0" title="Metoda realizujaca obrot drona w osi Z." alt="" coords="211,73,363,100"/>
 </map>
 </div>
 

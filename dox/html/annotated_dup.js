@@ -12,6 +12,10 @@ var annotated_dup =
     [ "Geometrical_solid", "class_geometrical__solid.html", "class_geometrical__solid" ],
     [ "Hexagonal_prism", "class_hexagonal__prism.html", "class_hexagonal__prism" ],
     [ "Matrix", "class_matrix.html", "class_matrix" ],
+    [ "Mnt_long", "class_mnt__long.html", "class_mnt__long" ],
+    [ "Mnt_pointed", "class_mnt__pointed.html", "class_mnt__pointed" ],
+    [ "Plateau", "class_plateau.html", "class_plateau" ],
     [ "Scene", "class_scene.html", "class_scene" ],
+    [ "Scene_object", "class_scene__object.html", "class_scene__object" ],
     [ "Vector", "class_vector.html", "class_vector" ]
 ];

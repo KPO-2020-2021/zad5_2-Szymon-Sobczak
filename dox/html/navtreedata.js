@@ -24,19 +24,17 @@
 */
 var NAVTREE =
 [
-  [ "Dron Dragonfly Faza 1.", "index.html", [
-    [ "Dron Dragonfly Faza 1. - Zadanie 5.1.", "index.html", [
+  [ "Dron Dragonfly Faza 2.", "index.html", [
+    [ "Dron Dragonfly Faza 2. - Zadanie 5.2.", "index.html", [
       [ "Cel ćwiczenia", "index.html#etykieta-cel-cw", null ],
       [ "Najwazniejsze elementy programu.", "index.html#etykieta-najw-elem", null ],
-      [ "Dodatkowe elementy programu.", "index.html#etykieta-dodatkowe-elem", null ],
       [ "Diagram UML projektu.", "index.html#etykieta-diagram", null ]
     ] ],
     [ "Uruchamianie Programu", "md__r_e_a_d_m_e.html", [
       [ "Uruchamianie Testów Programu", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "Generowanie dokumentacji w Doxygen", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
       [ "Wcześniej wygenerowana dokumentacja", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
-      [ "Informacje dodatkowe", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md4", null ]
     ] ],
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
@@ -74,7 +72,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_cuboid_8cpp.html",
-"files.html"
+"class_pz_g_1_1_wektor2f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

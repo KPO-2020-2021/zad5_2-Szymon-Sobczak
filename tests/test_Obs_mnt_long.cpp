@@ -1,7 +1,7 @@
 #include "../tests/doctest/doctest.h"
 #include "Obs_mnt_long.hh"
 
-TEST_CASE("Test kostrukotra klasy Mnt_long oraz metod pozwalajacych na wymodelowanie ksztaltu gory oraz pobranie numeru ID oraz nazwy typu obiektu dziedziczacego po Scene_object. "){
+TEST_CASE("Test kostrukotra klasy Mnt_long oraz metod pozwalajacych./ na wymodelowanie ksztaltu gory oraz pobranie numeru ID oraz nazwy typu obiektu dziedziczacego po Scene_object. "){
     double positon_val[3] = {150,100,15}, scale_val[3] = {60,60,30};
     Vector3D position(positon_val), scale(scale_val);
     Mnt_long Example(position,scale,99);

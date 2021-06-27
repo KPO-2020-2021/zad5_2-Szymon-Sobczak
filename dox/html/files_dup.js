@@ -22,9 +22,25 @@ var files_dup =
     [ "matrix.hh", "matrix_8hh.html", "matrix_8hh" ],
     [ "matrix3x3.cpp", "matrix3x3_8cpp.html", "matrix3x3_8cpp" ],
     [ "matrix3x3.hh", "matrix3x3_8hh.html", "matrix3x3_8hh" ],
+    [ "Obs_mnt_long.cpp", "_obs__mnt__long_8cpp.html", null ],
+    [ "Obs_mnt_long.hh", "_obs__mnt__long_8hh.html", [
+      [ "Mnt_long", "class_mnt__long.html", "class_mnt__long" ]
+    ] ],
+    [ "Obs_mnt_pointed.cpp", "_obs__mnt__pointed_8cpp.html", null ],
+    [ "Obs_mnt_pointed.hh", "_obs__mnt__pointed_8hh.html", [
+      [ "Mnt_pointed", "class_mnt__pointed.html", "class_mnt__pointed" ]
+    ] ],
+    [ "Obs_plateau.cpp", "_obs__plateau_8cpp.html", null ],
+    [ "Obs_plateau.hh", "_obs__plateau_8hh.html", [
+      [ "Plateau", "class_plateau.html", "class_plateau" ]
+    ] ],
     [ "Scene.cpp", "_scene_8cpp.html", null ],
     [ "Scene.hh", "_scene_8hh.html", [
       [ "Scene", "class_scene.html", "class_scene" ]
+    ] ],
+    [ "Scene_object.cpp", "_scene__object_8cpp.html", null ],
+    [ "Scene_object.hh", "_scene__object_8hh.html", [
+      [ "Scene_object", "class_scene__object.html", "class_scene__object" ]
     ] ],
     [ "size.hh", "size_8hh.html", "size_8hh" ],
     [ "vector.hh", "vector_8hh.html", "vector_8hh" ],
